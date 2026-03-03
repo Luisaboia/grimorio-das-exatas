@@ -9,6 +9,7 @@ import { getFormulasBySubcategory } from "@/lib/mdx";
 
 interface SubcategoryPageProps {
   params: Promise<{ category: string; subcategory: string }>;
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }
 
 export async function generateStaticParams() {
@@ -40,8 +41,13 @@ export async function generateMetadata({
 
 export default async function SubcategoryPage({
   params,
+  searchParams,
 }: SubcategoryPageProps) {
   const { category, subcategory } = await params;
+  const resolvedSearchParams = await searchParams;
+  const dificuldade = typeof resolvedSearchParams.dificuldade === "string"
+    ? resolvedSearchParams.dificuldade
+    : undefined;
 
   const cat = categories.find((c) => c.slug === category);
   if (!cat) notFound();
@@ -50,7 +56,11 @@ export default async function SubcategoryPage({
   if (!sub) notFound();
 
   const formulas = getFormulasBySubcategory(category, subcategory);
-  const frontmatters = formulas.map((f) => f.frontmatter);
+  let frontmatters = formulas.map((f) => f.frontmatter);
+
+  if (dificuldade) {
+    frontmatters = frontmatters.filter((f) => f.difficulty === dificuldade);
+  }
 
   return (
     <div className="px-6 py-10 lg:px-10">
@@ -86,6 +96,8 @@ export default async function SubcategoryPage({
         <CategoryFilter
           currentCategory={category}
           currentSubcategory={subcategory}
+          basePath={`/formulas/${category}/${subcategory}`}
+          currentDifficulty={dificuldade}
         />
       </div>
 

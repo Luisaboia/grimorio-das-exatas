@@ -9,6 +9,10 @@ interface CategoryFilterProps {
   currentCategory?: string | null;
   /** The currently selected subcategory slug */
   currentSubcategory?: string | null;
+  /** The currently selected difficulty from the search param */
+  currentDifficulty?: string;
+  /** The base path for the current page (e.g. "/formulas", "/formulas/fisica") */
+  basePath: string;
 }
 
 const difficultyOptions = [
@@ -20,6 +24,8 @@ const difficultyOptions = [
 export function CategoryFilter({
   currentCategory = null,
   currentSubcategory = null,
+  currentDifficulty,
+  basePath,
 }: CategoryFilterProps) {
   const activeCategory = categories.find((c) => c.slug === currentCategory);
 
@@ -68,24 +74,25 @@ export function CategoryFilter({
         </div>
       )}
 
-      {/* Difficulty filter — only shown on main /formulas page */}
-      {!currentCategory && (
-        <div className="flex flex-wrap items-center gap-2">
-          <span className="mr-1 text-sm font-medium text-surface-800/60 dark:text-surface-50/60">
-            Dificuldade:
-          </span>
-          {difficultyOptions.map((d) => (
-            <FilterChip
-              key={d.value}
-              href={`/formulas?dificuldade=${d.value}`}
-              active={false}
-              className={d.color}
-            >
-              {d.label}
-            </FilterChip>
-          ))}
-        </div>
-      )}
+      {/* Difficulty filter — shown on all catalog pages */}
+      <div className="flex flex-wrap items-center gap-2">
+        <span className="mr-1 text-sm font-medium text-surface-800/60 dark:text-surface-50/60">
+          Dificuldade:
+        </span>
+        <FilterChip href={basePath} active={!currentDifficulty}>
+          Todas
+        </FilterChip>
+        {difficultyOptions.map((d) => (
+          <FilterChip
+            key={d.value}
+            href={`${basePath}?dificuldade=${d.value}`}
+            active={currentDifficulty === d.value}
+            className={d.color}
+          >
+            {d.label}
+          </FilterChip>
+        ))}
+      </div>
     </div>
   );
 }

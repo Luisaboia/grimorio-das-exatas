@@ -16,9 +16,22 @@ export const metadata: Metadata = {
   },
 };
 
-export default function FormulasPage() {
+export default async function FormulasPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
+}) {
+  const resolvedSearchParams = await searchParams;
+  const dificuldade = typeof resolvedSearchParams.dificuldade === "string"
+    ? resolvedSearchParams.dificuldade
+    : undefined;
+
   const allFormulas = getAllFormulas();
-  const frontmatters = allFormulas.map((f) => f.frontmatter);
+  let frontmatters = allFormulas.map((f) => f.frontmatter);
+
+  if (dificuldade) {
+    frontmatters = frontmatters.filter((f) => f.difficulty === dificuldade);
+  }
 
   return (
     <div className="px-6 py-10 lg:px-10">
@@ -42,7 +55,7 @@ export default function FormulasPage() {
 
       {/* Filters */}
       <div className="mb-8">
-        <CategoryFilter />
+        <CategoryFilter basePath="/formulas" currentDifficulty={dificuldade} />
       </div>
 
       {/* Grid */}
