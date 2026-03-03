@@ -11,11 +11,12 @@
 - [x] Task-001: Corrigir Filtros de Dificuldade (commit: 4979471)
 - [x] Task-002: Fixar Modo Escuro como Único Tema (commit: bbc4080)
 - [x] Task-003: Criar Página Sobre e Remover Link GitHub (commit: 61558e1)
+- [x] Task-004: Renomear Projeto para Grimório das Exatas (commit: 15c3426)
 
 ### Current Iteration
 
-- Iteration: 3
-- Working on: Task-004
+- Iteration: 4
+- Working on: ALL DONE
 - Started: 2026-03-03
 
 ## Blockers
