@@ -1,13 +1,18 @@
 "use client";
 
 import Link from "next/link";
-import { useState } from "react";
-import { Input } from "@/components/ui";
+import { useState, useCallback } from "react";
+import { SearchBar } from "@/components/search/SearchBar";
+import { CommandPalette } from "@/components/search/CommandPalette";
 import { ThemeToggle } from "./ThemeToggle";
 import { MobileNav } from "./MobileNav";
 
 export function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
+  const [paletteOpen, setPaletteOpen] = useState(false);
+
+  const openPalette = useCallback(() => setPaletteOpen(true), []);
+  const closePalette = useCallback(() => setPaletteOpen(false), []);
 
   return (
     <>
@@ -33,15 +38,7 @@ export function Header() {
 
         {/* Search — desktop only */}
         <div className="mx-6 hidden max-w-md flex-1 lg:block">
-          <Input
-            type="search"
-            placeholder="Buscar fórmulas..."
-            icon={
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            }
-          />
+          <SearchBar onOpenPalette={openPalette} />
         </div>
 
         {/* Spacer */}
@@ -52,7 +49,10 @@ export function Header() {
       </header>
 
       {/* Mobile navigation drawer */}
-      <MobileNav isOpen={mobileNavOpen} onClose={() => setMobileNavOpen(false)} />
+      <MobileNav isOpen={mobileNavOpen} onClose={() => setMobileNavOpen(false)} onOpenSearch={openPalette} />
+
+      {/* Command palette (header-triggered) */}
+      <CommandPalette isOpen={paletteOpen} onClose={closePalette} />
     </>
   );
 }

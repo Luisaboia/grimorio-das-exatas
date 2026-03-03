@@ -4,14 +4,14 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { categories } from "@/lib/categories";
-import { Input } from "@/components/ui";
 
 interface MobileNavProps {
   isOpen: boolean;
   onClose: () => void;
+  onOpenSearch?: () => void;
 }
 
-export function MobileNav({ isOpen, onClose }: MobileNavProps) {
+export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
   const pathname = usePathname();
 
   // Close on route change
@@ -67,15 +67,19 @@ export function MobileNav({ isOpen, onClose }: MobileNavProps) {
 
         {/* Search */}
         <div className="border-b border-surface-200 px-4 py-3 dark:border-surface-800">
-          <Input
-            type="search"
-            placeholder="Buscar fórmulas..."
-            icon={
-              <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            }
-          />
+          <button
+            type="button"
+            onClick={() => {
+              onClose();
+              onOpenSearch?.();
+            }}
+            className="flex w-full items-center gap-3 rounded-full border border-surface-200 bg-surface-50 px-4 py-2.5 text-left text-sm text-surface-800/40 transition-colors hover:border-primary-400 dark:border-surface-800 dark:bg-surface-900 dark:text-surface-50/40 dark:hover:border-primary-500"
+          >
+            <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            Buscar fórmulas...
+          </button>
         </div>
 
         {/* Navigation */}

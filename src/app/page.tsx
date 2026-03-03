@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { Input } from "@/components/ui";
 import { Card } from "@/components/ui";
 import { Badge } from "@/components/ui";
 import { categories } from "@/lib/categories";
+import { HeroSearch } from "./HeroSearch";
 
 export default function Home() {
   return (
@@ -16,18 +16,9 @@ export default function Home() {
           Catálogo completo de fórmulas para estudo e consulta
         </p>
 
-        {/* Prominent search bar */}
+        {/* Prominent search bar — triggers command palette */}
         <div className="mx-auto mt-8 max-w-lg">
-          <Input
-            type="search"
-            placeholder="Buscar fórmulas, conceitos, equações..."
-            icon={
-              <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-              </svg>
-            }
-            className="!py-3.5 !text-lg"
-          />
+          <HeroSearch />
         </div>
       </section>
 
