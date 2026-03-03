@@ -16,9 +16,24 @@ interface CategoryFilterProps {
 }
 
 const difficultyOptions = [
-  { label: "Básico", value: "basico", color: "bg-green-100 text-green-700 bg-green-900 text-green-200" },
-  { label: "Intermediário", value: "intermediario", color: "bg-yellow-100 text-yellow-700 bg-yellow-900 text-yellow-200" },
-  { label: "Avançado", value: "avancado", color: "bg-red-100 text-red-700 bg-red-900 text-red-200" },
+  {
+    label: "Básico",
+    value: "basico",
+    activeColor: "bg-green-800 text-green-100 ring-2 ring-green-400",
+    inactiveColor: "bg-green-900/60 text-green-300 hover:bg-green-900",
+  },
+  {
+    label: "Intermediário",
+    value: "intermediario",
+    activeColor: "bg-yellow-800 text-yellow-100 ring-2 ring-yellow-400",
+    inactiveColor: "bg-yellow-900/60 text-yellow-300 hover:bg-yellow-900",
+  },
+  {
+    label: "Avançado",
+    value: "avancado",
+    activeColor: "bg-red-800 text-red-100 ring-2 ring-red-400",
+    inactiveColor: "bg-red-900/60 text-red-300 hover:bg-red-900",
+  },
 ];
 
 export function CategoryFilter({
@@ -87,7 +102,8 @@ export function CategoryFilter({
             key={d.value}
             href={`${basePath}?dificuldade=${d.value}`}
             active={currentDifficulty === d.value}
-            className={d.color}
+            activeClassName={d.activeColor}
+            inactiveClassName={d.inactiveColor}
           >
             {d.label}
           </FilterChip>
@@ -100,22 +116,27 @@ export function CategoryFilter({
 function FilterChip({
   href,
   active,
-  className = "",
+  activeClassName,
+  inactiveClassName,
   children,
 }: {
   href: string;
   active: boolean;
-  className?: string;
+  activeClassName?: string;
+  inactiveClassName?: string;
   children: React.ReactNode;
 }) {
+  const defaultActive = "bg-primary-600 text-white shadow-sm";
+  const defaultInactive =
+    "bg-surface-800 text-surface-50/70 hover:bg-surface-700";
+
   return (
     <Link
       href={href}
       className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-200 ${
         active
-          ? "bg-primary-600 text-white shadow-sm"
-          : className ||
-            "bg-surface-800 text-surface-50/70 hover:bg-surface-700"
+          ? activeClassName || defaultActive
+          : inactiveClassName || defaultInactive
       }`}
     >
       {children}
