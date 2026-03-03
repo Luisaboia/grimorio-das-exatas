@@ -9,10 +9,10 @@ export default function Home() {
     <div className="px-6 py-10 lg:px-10">
       {/* Hero section */}
       <section className="mx-auto max-w-3xl text-center">
-        <h1 className="text-4xl font-bold tracking-tight text-surface-800 dark:text-surface-50 sm:text-5xl">
+        <h1 className="text-4xl font-bold tracking-tight text-surface-50 sm:text-5xl">
           Fórmulas de Matemática e Física
         </h1>
-        <p className="mt-4 text-lg text-surface-800/60 dark:text-surface-50/60">
+        <p className="mt-4 text-lg text-surface-800/60 text-surface-50/60">
           Catálogo completo de fórmulas para estudo e consulta
         </p>
 
@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Category cards */}
       <section className="mx-auto mt-14 max-w-4xl">
-        <h2 className="mb-6 text-xl font-semibold text-surface-800 dark:text-surface-50">
+        <h2 className="mb-6 text-xl font-semibold text-surface-800 text-surface-50">
           Categorias
         </h2>
         <div className="grid gap-6 sm:grid-cols-2">
@@ -36,10 +36,10 @@ export default function Home() {
                     {category.icon}
                   </span>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-surface-800 dark:text-surface-50">
+                    <h3 className="text-xl font-bold text-surface-800 text-surface-50">
                       {category.name}
                     </h3>
-                    <p className="mt-1 text-sm text-surface-800/60 dark:text-surface-50/60">
+                    <p className="mt-1 text-sm text-surface-800/60 text-surface-50/60">
                       {category.subcategories.length} subcategorias
                     </p>
                   </div>

@@ -45,7 +45,7 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 z-50 flex h-full w-72 flex-col bg-surface-50 shadow-xl transition-transform duration-300 ease-in-out dark:bg-surface-950 lg:hidden ${
+        className={`fixed top-0 left-0 z-50 flex h-full w-72 flex-col bg-surface-50 shadow-xl transition-transform duration-300 ease-in-out bg-surface-950 lg:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         role="dialog"
@@ -53,13 +53,13 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
         aria-label="Menu de navegação"
       >
         {/* Drawer header */}
-        <div className="flex h-16 items-center justify-between border-b border-surface-200 px-4 dark:border-surface-800">
-          <Link href="/" className="text-lg font-bold text-primary-600 dark:text-primary-400" onClick={onClose}>
+        <div className="flex h-16 items-center justify-between border-b border-surface-200 px-4 border-surface-800">
+          <Link href="/" className="text-lg font-bold text-primary-600 text-primary-400" onClick={onClose}>
             Fórmulas IFPR
           </Link>
           <button
             onClick={onClose}
-            className="flex h-10 w-10 items-center justify-center rounded-full text-surface-800 transition-colors hover:bg-surface-200 dark:text-surface-50 dark:hover:bg-surface-800"
+            className="flex h-10 w-10 items-center justify-center rounded-full text-surface-800 transition-colors hover:bg-surface-200 text-surface-50 hover:bg-surface-800"
             aria-label="Fechar menu"
           >
             <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -69,14 +69,14 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
         </div>
 
         {/* Search */}
-        <div className="border-b border-surface-200 px-4 py-3 dark:border-surface-800">
+        <div className="border-b border-surface-200 px-4 py-3 border-surface-800">
           <button
             type="button"
             onClick={() => {
               onClose();
               onOpenSearch?.();
             }}
-            className="flex w-full items-center gap-3 rounded-full border border-surface-200 bg-surface-50 px-4 py-2.5 text-left text-sm text-surface-800/40 transition-colors hover:border-primary-400 dark:border-surface-800 dark:bg-surface-900 dark:text-surface-50/40 dark:hover:border-primary-500"
+            className="flex w-full items-center gap-3 rounded-full border border-surface-200 bg-surface-50 px-4 py-2.5 text-left text-sm text-surface-800/40 transition-colors hover:border-primary-400 border-surface-800 bg-surface-900 text-surface-50/40 hover:border-primary-500"
           >
             <svg className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
@@ -128,8 +128,8 @@ function MobileCategory({
         onClick={() => setIsOpen(!isOpen)}
         className={`flex w-full items-center justify-between rounded-lg px-3 py-2 text-left text-sm font-semibold transition-colors duration-150 ${
           isActive
-            ? "bg-primary-100 text-primary-700 dark:bg-primary-900/40 dark:text-primary-300"
-            : "text-surface-800 hover:bg-surface-200 dark:text-surface-50 dark:hover:bg-surface-800"
+            ? "bg-primary-100 text-primary-700 bg-primary-900/40 text-primary-300"
+            : "text-surface-800 hover:bg-surface-200 text-surface-50 hover:bg-surface-800"
         }`}
         aria-expanded={isOpen}
       >
@@ -149,7 +149,7 @@ function MobileCategory({
       </button>
 
       {isOpen && (
-        <ul className="ml-5 mt-1 space-y-0.5 border-l border-surface-200 pl-3 dark:border-surface-800">
+        <ul className="ml-5 mt-1 space-y-0.5 border-l border-surface-200 pl-3 border-surface-800">
           {subcategories.map((sub) => {
             const subPath = `/formulas/${slug}/${sub.slug}`;
             const subActive = pathname === subPath;
@@ -160,8 +160,8 @@ function MobileCategory({
                   href={subPath}
                   className={`block rounded-md px-3 py-1.5 text-sm transition-colors duration-150 ${
                     subActive
-                      ? "bg-primary-50 font-medium text-primary-600 dark:bg-primary-900/30 dark:text-primary-400"
-                      : "text-surface-800/70 hover:bg-surface-100 hover:text-surface-800 dark:text-surface-50/70 dark:hover:bg-surface-800/50 dark:hover:text-surface-50"
+                      ? "bg-primary-50 font-medium text-primary-600 bg-primary-900/30 text-primary-400"
+                      : "text-surface-800/70 hover:bg-surface-100 hover:text-surface-800 text-surface-50/70 hover:bg-surface-800/50 hover:text-surface-50"
                   }`}
                 >
                   {sub.name}

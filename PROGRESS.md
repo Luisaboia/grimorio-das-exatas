@@ -8,13 +8,13 @@
 
 ### Completed
 
-_None yet_
+- [x] Task-001: Corrigir Filtros de Dificuldade (commit: 4979471)
 
 ### Current Iteration
 
-- Iteration: 0
-- Working on: Not started
-- Started: N/A
+- Iteration: 1
+- Working on: Task-002
+- Started: 2026-03-03
 
 ## Blockers
 

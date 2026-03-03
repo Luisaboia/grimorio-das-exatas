@@ -128,15 +128,15 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
 
       {/* Modal */}
       <div
-        className="relative z-10 w-full max-w-lg overflow-hidden rounded-xl border border-surface-200 bg-surface-50 shadow-2xl dark:border-surface-700 dark:bg-surface-900 animate-[scaleIn_0.15s_ease-out]"
+        className="relative z-10 w-full max-w-lg overflow-hidden rounded-xl border border-surface-200 bg-surface-50 shadow-2xl border-surface-700 bg-surface-900 animate-[scaleIn_0.15s_ease-out]"
         role="dialog"
         aria-modal="true"
         aria-label="Paleta de comandos"
       >
         {/* Search input */}
-        <div className="flex items-center border-b border-surface-200 px-4 dark:border-surface-800">
+        <div className="flex items-center border-b border-surface-200 px-4 border-surface-800">
           <svg
-            className="mr-3 h-5 w-5 shrink-0 text-surface-800/40 dark:text-surface-50/40"
+            className="mr-3 h-5 w-5 shrink-0 text-surface-800/40 text-surface-50/40"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -156,9 +156,9 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
             onKeyDown={handleKeyDown}
             placeholder="Buscar fórmulas, conceitos, equações..."
             aria-label="Buscar fórmulas"
-            className="flex-1 bg-transparent py-4 text-base text-surface-800 placeholder:text-surface-800/40 focus:outline-none dark:text-surface-50 dark:placeholder:text-surface-50/40"
+            className="flex-1 bg-transparent py-4 text-base text-surface-800 placeholder:text-surface-800/40 focus:outline-none text-surface-50 placeholder:text-surface-50/40"
           />
-          <kbd className="ml-2 shrink-0 rounded-md border border-surface-300 bg-surface-100 px-2 py-0.5 text-xs font-medium text-surface-800/60 dark:border-surface-700 dark:bg-surface-800 dark:text-surface-50/60">
+          <kbd className="ml-2 shrink-0 rounded-md border border-surface-300 bg-surface-100 px-2 py-0.5 text-xs font-medium text-surface-800/60 border-surface-700 bg-surface-800 text-surface-50/60">
             ESC
           </kbd>
         </div>
@@ -183,7 +183,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
           {/* Quick actions when no query */}
           {!loading && showQuickActions && (
             <div className="p-2">
-              <p className="mb-2 px-2 text-xs font-medium uppercase tracking-wider text-surface-800/40 dark:text-surface-50/40">
+              <p className="mb-2 px-2 text-xs font-medium uppercase tracking-wider text-surface-800/40 text-surface-50/40">
                 Ações rápidas
               </p>
               <ul>
@@ -191,16 +191,16 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
                   <li key={action.path}>
                     <button
                       onClick={() => navigateTo(action.path)}
-                      className={`flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm transition-colors duration-100 hover:bg-surface-100 dark:hover:bg-surface-800 ${
+                      className={`flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm transition-colors duration-100 hover:bg-surface-800 ${
                         selectedIndex === index
-                          ? "bg-primary-50 dark:bg-primary-900/30"
+                          ? "bg-primary-50 bg-primary-900/30"
                           : ""
                       }`}
                     >
-                      <span className="text-surface-800 dark:text-surface-50">
+                      <span className="text-surface-800 text-surface-50">
                         {action.label}
                       </span>
-                      <span className="ml-auto text-xs text-surface-800/40 dark:text-surface-50/40">
+                      <span className="ml-auto text-xs text-surface-800/40 text-surface-50/40">
                         Ir para categoria
                       </span>
                     </button>
@@ -213,7 +213,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
                         ? navigateTo(`/busca?q=${encodeURIComponent(query)}`)
                         : navigateTo("/formulas")
                     }
-                    className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-surface-800/60 transition-colors duration-100 hover:bg-surface-100 dark:text-surface-50/60 dark:hover:bg-surface-800"
+                    className="flex w-full items-center gap-3 rounded-lg px-3 py-2 text-left text-sm text-surface-800/60 transition-colors duration-100 hover:bg-surface-100 text-surface-50/60 hover:bg-surface-800"
                   >
                     Ver todas as fórmulas →
                   </button>
@@ -224,21 +224,21 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
         </div>
 
         {/* Footer */}
-        <div className="flex items-center gap-4 border-t border-surface-200 px-4 py-2 text-xs text-surface-800/40 dark:border-surface-800 dark:text-surface-50/40">
+        <div className="flex items-center gap-4 border-t border-surface-200 px-4 py-2 text-xs text-surface-800/40 border-surface-800 text-surface-50/40">
           <span className="flex items-center gap-1">
-            <kbd className="rounded border border-surface-300 bg-surface-100 px-1.5 py-0.5 text-[10px] font-medium dark:border-surface-700 dark:bg-surface-800">
+            <kbd className="rounded border border-surface-300 bg-surface-100 px-1.5 py-0.5 text-[10px] font-medium border-surface-700 bg-surface-800">
               ↑↓
             </kbd>
             navegar
           </span>
           <span className="flex items-center gap-1">
-            <kbd className="rounded border border-surface-300 bg-surface-100 px-1.5 py-0.5 text-[10px] font-medium dark:border-surface-700 dark:bg-surface-800">
+            <kbd className="rounded border border-surface-300 bg-surface-100 px-1.5 py-0.5 text-[10px] font-medium border-surface-700 bg-surface-800">
               ↵
             </kbd>
             abrir
           </span>
           <span className="flex items-center gap-1">
-            <kbd className="rounded border border-surface-300 bg-surface-100 px-1.5 py-0.5 text-[10px] font-medium dark:border-surface-700 dark:bg-surface-800">
+            <kbd className="rounded border border-surface-300 bg-surface-100 px-1.5 py-0.5 text-[10px] font-medium border-surface-700 bg-surface-800">
               esc
             </kbd>
             fechar

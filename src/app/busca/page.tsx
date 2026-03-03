@@ -32,14 +32,14 @@ export default async function BuscaPage({ searchParams }: BuscaPageProps) {
       <div className="mx-auto max-w-5xl">
         {/* Header */}
         <div className="mb-8">
-          <h1 className="text-3xl font-bold text-surface-800 dark:text-surface-50">
+          <h1 className="text-3xl font-bold text-surface-800 text-surface-50">
             Resultados da busca
           </h1>
           {query && (
-            <p className="mt-2 text-surface-800/60 dark:text-surface-50/60">
+            <p className="mt-2 text-surface-800/60 text-surface-50/60">
               {results.length}{" "}
               {results.length === 1 ? "resultado" : "resultados"} para{" "}
-              <span className="font-semibold text-surface-800 dark:text-surface-50">
+              <span className="font-semibold text-surface-800 text-surface-50">
                 &quot;{query}&quot;
               </span>
             </p>
@@ -50,7 +50,7 @@ export default async function BuscaPage({ searchParams }: BuscaPageProps) {
         <div className="mb-8 flex flex-wrap gap-4">
           {/* Category filter */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-sm font-medium text-surface-800/60 dark:text-surface-50/60">
+            <span className="text-sm font-medium text-surface-800/60 text-surface-50/60">
               Categoria:
             </span>
             <Link
@@ -88,7 +88,7 @@ export default async function BuscaPage({ searchParams }: BuscaPageProps) {
 
           {/* Difficulty filter */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-sm font-medium text-surface-800/60 dark:text-surface-50/60">
+            <span className="text-sm font-medium text-surface-800/60 text-surface-50/60">
               Dificuldade:
             </span>
             <Link
@@ -139,27 +139,27 @@ export default async function BuscaPage({ searchParams }: BuscaPageProps) {
             ))}
           </div>
         ) : (
-          <div className="rounded-xl border border-surface-200 bg-surface-50 px-6 py-16 text-center dark:border-surface-800 dark:bg-surface-900">
+          <div className="rounded-xl border border-surface-200 bg-surface-50 px-6 py-16 text-center border-surface-800 bg-surface-900">
             <p className="text-4xl">🔍</p>
-            <h2 className="mt-4 text-lg font-semibold text-surface-800 dark:text-surface-50">
+            <h2 className="mt-4 text-lg font-semibold text-surface-800 text-surface-50">
               {query
                 ? "Nenhuma fórmula encontrada"
                 : "Digite algo para buscar"}
             </h2>
-            <p className="mt-2 text-sm text-surface-800/60 dark:text-surface-50/60">
+            <p className="mt-2 text-sm text-surface-800/60 text-surface-50/60">
               {query
                 ? "Tente usar termos diferentes ou remova os filtros."
                 : "Busque por nome, conceito ou equação."}
             </p>
             <div className="mt-6 flex flex-wrap justify-center gap-2">
-              <span className="text-sm text-surface-800/40 dark:text-surface-50/40">
+              <span className="text-sm text-surface-800/40 text-surface-50/40">
                 Sugestões:
               </span>
               {["Newton", "Bhaskara", "Cinemática", "Energia"].map((term) => (
                 <Link
                   key={term}
                   href={`/busca?q=${encodeURIComponent(term)}`}
-                  className="rounded-full border border-surface-300 bg-surface-100 px-3 py-1 text-sm text-surface-800 transition-colors hover:border-primary-400 hover:text-primary-600 dark:border-surface-700 dark:bg-surface-800 dark:text-surface-50 dark:hover:border-primary-500 dark:hover:text-primary-400"
+                  className="rounded-full border border-surface-300 bg-surface-100 px-3 py-1 text-sm text-surface-800 transition-colors hover:border-primary-400 hover:text-primary-600 border-surface-700 bg-surface-800 text-surface-50 hover:border-primary-500 hover:text-primary-400"
                 >
                   {term}
                 </Link>

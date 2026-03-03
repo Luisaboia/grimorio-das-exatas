@@ -14,9 +14,9 @@ const variantClasses: Record<ButtonVariant, string> = {
   secondary:
     "bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700 shadow-sm hover:shadow-md",
   ghost:
-    "bg-transparent text-surface-800 hover:bg-surface-100 dark:text-surface-50 dark:hover:bg-surface-800",
+    "bg-transparent text-surface-800 hover:bg-surface-100 text-surface-50 hover:bg-surface-800",
   outline:
-    "border-2 border-primary-500 text-primary-600 hover:bg-primary-50 dark:text-primary-400 dark:hover:bg-primary-950",
+    "border-2 border-primary-500 text-primary-600 hover:bg-primary-50 text-primary-400 hover:bg-primary-950",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {
@@ -33,7 +33,7 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         ref={ref}
-        className={`inline-flex cursor-pointer items-center justify-center font-medium transition-all duration-200 ease-in-out focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:outline-none active:scale-[0.97] disabled:pointer-events-none disabled:opacity-50 dark:focus:ring-offset-surface-950 ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
+        className={`inline-flex cursor-pointer items-center justify-center font-medium transition-all duration-200 ease-in-out focus:ring-2 focus:ring-primary-400 focus:ring-offset-2 focus:outline-none active:scale-[0.97] disabled:pointer-events-none disabled:opacity-50 focus:ring-offset-surface-950 ${variantClasses[variant]} ${sizeClasses[size]} ${className}`}
         {...props}
       >
         {children}

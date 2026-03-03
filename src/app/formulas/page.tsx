@@ -45,10 +45,10 @@ export default async function FormulasPage({
 
       {/* Header */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold tracking-tight text-surface-800 dark:text-surface-50 sm:text-4xl">
+        <h1 className="text-3xl font-bold tracking-tight text-surface-50 sm:text-4xl">
           Catálogo de Fórmulas
         </h1>
-        <p className="mt-2 text-lg text-surface-800/60 dark:text-surface-50/60">
+        <p className="mt-2 text-lg text-surface-800/60 text-surface-50/60">
           Todas as fórmulas de Matemática e Física em um só lugar.
         </p>
       </div>

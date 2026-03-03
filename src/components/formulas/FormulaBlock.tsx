@@ -32,9 +32,9 @@ export function FormulaBlock({ math, label }: FormulaBlockProps) {
   }, [math]);
 
   return (
-    <div className="relative my-6 rounded-lg border-l-4 border-primary-500 bg-primary-50 px-6 py-5 dark:bg-primary-950/40">
+    <div className="relative my-6 rounded-lg border-l-4 border-primary-500 bg-primary-50 px-6 py-5 bg-primary-950/40">
       {label && (
-        <p className="mb-3 text-sm font-semibold text-primary-700 dark:text-primary-300">
+        <p className="mb-3 text-sm font-semibold text-primary-700 text-primary-300">
           {label}
         </p>
       )}
@@ -45,7 +45,7 @@ export function FormulaBlock({ math, label }: FormulaBlockProps) {
 
       <button
         onClick={handleCopy}
-        className="absolute top-3 right-3 cursor-pointer rounded-md border border-primary-200 bg-white/80 px-2.5 py-1 text-xs font-medium text-primary-600 transition-colors hover:bg-primary-100 dark:border-primary-800 dark:bg-surface-900/80 dark:text-primary-400 dark:hover:bg-primary-900/60"
+        className="absolute top-3 right-3 cursor-pointer rounded-md border border-primary-200 bg-white/80 px-2.5 py-1 text-xs font-medium text-primary-600 transition-colors hover:bg-primary-100 border-primary-800 bg-surface-900/80 text-primary-400 hover:bg-primary-900/60"
         title="Copiar LaTeX"
       >
         {copied ? "Copiado!" : "Copiar LaTeX"}

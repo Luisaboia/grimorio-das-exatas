@@ -16,9 +16,9 @@ interface CategoryFilterProps {
 }
 
 const difficultyOptions = [
-  { label: "Básico", value: "basico", color: "bg-green-100 text-green-700 dark:bg-green-900 dark:text-green-200" },
-  { label: "Intermediário", value: "intermediario", color: "bg-yellow-100 text-yellow-700 dark:bg-yellow-900 dark:text-yellow-200" },
-  { label: "Avançado", value: "avancado", color: "bg-red-100 text-red-700 dark:bg-red-900 dark:text-red-200" },
+  { label: "Básico", value: "basico", color: "bg-green-100 text-green-700 bg-green-900 text-green-200" },
+  { label: "Intermediário", value: "intermediario", color: "bg-yellow-100 text-yellow-700 bg-yellow-900 text-yellow-200" },
+  { label: "Avançado", value: "avancado", color: "bg-red-100 text-red-700 bg-red-900 text-red-200" },
 ];
 
 export function CategoryFilter({
@@ -33,7 +33,7 @@ export function CategoryFilter({
     <div className="space-y-4">
       {/* Category chips */}
       <div className="flex flex-wrap items-center gap-2">
-        <span className="mr-1 text-sm font-medium text-surface-800/60 dark:text-surface-50/60">
+        <span className="mr-1 text-sm font-medium text-surface-800/60 text-surface-50/60">
           Categoria:
         </span>
         <FilterChip href="/formulas" active={!currentCategory}>
@@ -53,7 +53,7 @@ export function CategoryFilter({
       {/* Subcategory chips (show when a category is selected) */}
       {activeCategory && (
         <div className="flex flex-wrap items-center gap-2">
-          <span className="mr-1 text-sm font-medium text-surface-800/60 dark:text-surface-50/60">
+          <span className="mr-1 text-sm font-medium text-surface-800/60 text-surface-50/60">
             Subcategoria:
           </span>
           <FilterChip
@@ -76,7 +76,7 @@ export function CategoryFilter({
 
       {/* Difficulty filter — shown on all catalog pages */}
       <div className="flex flex-wrap items-center gap-2">
-        <span className="mr-1 text-sm font-medium text-surface-800/60 dark:text-surface-50/60">
+        <span className="mr-1 text-sm font-medium text-surface-800/60 text-surface-50/60">
           Dificuldade:
         </span>
         <FilterChip href={basePath} active={!currentDifficulty}>
@@ -113,9 +113,9 @@ function FilterChip({
       href={href}
       className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-200 ${
         active
-          ? "bg-primary-500 text-white shadow-sm dark:bg-primary-600"
+          ? "bg-primary-500 text-white shadow-sm bg-primary-600"
           : className ||
-            "bg-surface-100 text-surface-800/70 hover:bg-surface-200 dark:bg-surface-800 dark:text-surface-50/70 dark:hover:bg-surface-700"
+            "bg-surface-100 text-surface-800/70 hover:bg-surface-200 bg-surface-800 text-surface-50/70 hover:bg-surface-700"
       }`}
     >
       {children}

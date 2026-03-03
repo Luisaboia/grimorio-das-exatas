@@ -8,24 +8,24 @@ interface NoteProps {
 const noteStyles = {
   info: {
     container:
-      "border-primary-300 bg-primary-50/50 dark:border-primary-700 dark:bg-primary-950/30",
+      "border-primary-300 bg-primary-50/50 border-primary-700 bg-primary-950/30",
     icon: "ℹ️",
     title: "Informação",
-    titleColor: "text-primary-700 dark:text-primary-300",
+    titleColor: "text-primary-700 text-primary-300",
   },
   warning: {
     container:
-      "border-yellow-300 bg-yellow-50/50 dark:border-yellow-700 dark:bg-yellow-950/30",
+      "border-yellow-300 bg-yellow-50/50 border-yellow-700 bg-yellow-950/30",
     icon: "⚠️",
     title: "Atenção",
-    titleColor: "text-yellow-700 dark:text-yellow-300",
+    titleColor: "text-yellow-700 text-yellow-300",
   },
   tip: {
     container:
-      "border-emerald-300 bg-emerald-50/50 dark:border-emerald-700 dark:bg-emerald-950/30",
+      "border-emerald-300 bg-emerald-50/50 border-emerald-700 bg-emerald-950/30",
     icon: "💡",
     title: "Dica",
-    titleColor: "text-emerald-700 dark:text-emerald-300",
+    titleColor: "text-emerald-700 text-emerald-300",
   },
 };
 

@@ -37,19 +37,19 @@ export function FormulaCard({ formula, index = 0 }: FormulaCardProps) {
         style={{ animationDelay: `${index * 60}ms` }}
       >
         {/* KaTeX preview */}
-        <div className="mb-4 flex min-h-[3.5rem] items-center justify-center overflow-hidden rounded-lg bg-surface-100 px-3 py-3 dark:bg-surface-900">
-          <div className="text-base text-surface-800 dark:text-surface-50">
+        <div className="mb-4 flex min-h-[3.5rem] items-center justify-center overflow-hidden rounded-lg bg-surface-100 px-3 py-3 bg-surface-900">
+          <div className="text-base text-surface-800 text-surface-50">
             <KaTeXPreview math={formula.formula_preview} />
           </div>
         </div>
 
         {/* Title */}
-        <h3 className="text-lg font-bold text-surface-800 group-hover:text-primary-600 dark:text-surface-50 dark:group-hover:text-primary-400">
+        <h3 className="text-lg font-bold text-surface-800 group-hover:text-primary-600 text-surface-50 group-hover:text-primary-400">
           {formula.title}
         </h3>
 
         {/* Description (2-line clamp) */}
-        <p className="mt-1.5 line-clamp-2 flex-1 text-sm text-surface-800/60 dark:text-surface-50/60">
+        <p className="mt-1.5 line-clamp-2 flex-1 text-sm text-surface-800/60 text-surface-50/60">
           {formula.description}
         </p>
 
@@ -87,7 +87,7 @@ class KaTeXErrorBoundary extends Component<
   render() {
     if (this.state.hasError) {
       return (
-        <span className="text-sm italic text-surface-800/40 dark:text-surface-50/40">
+        <span className="text-sm italic text-surface-800/40 text-surface-50/40">
           Pré-visualização indisponível
         </span>
       );

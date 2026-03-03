@@ -66,11 +66,11 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
           <span className="text-4xl" aria-hidden="true">
             {cat.icon}
           </span>
-          <h1 className="text-3xl font-bold tracking-tight text-surface-800 dark:text-surface-50 sm:text-4xl">
+          <h1 className="text-3xl font-bold tracking-tight text-surface-50 sm:text-4xl">
             {cat.name}
           </h1>
         </div>
-        <p className="mt-2 text-lg text-surface-800/60 dark:text-surface-50/60">
+        <p className="mt-2 text-lg text-surface-800/60 text-surface-50/60">
           {cat.subcategories.length} subcategorias disponíveis
         </p>
       </div>
