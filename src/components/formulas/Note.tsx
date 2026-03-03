@@ -1,0 +1,50 @@
+import type { ReactNode } from "react";
+
+interface NoteProps {
+  type?: "info" | "warning" | "tip";
+  children: ReactNode;
+}
+
+const noteStyles = {
+  info: {
+    container:
+      "border-primary-300 bg-primary-50/50 dark:border-primary-700 dark:bg-primary-950/30",
+    icon: "ℹ️",
+    title: "Informação",
+    titleColor: "text-primary-700 dark:text-primary-300",
+  },
+  warning: {
+    container:
+      "border-yellow-300 bg-yellow-50/50 dark:border-yellow-700 dark:bg-yellow-950/30",
+    icon: "⚠️",
+    title: "Atenção",
+    titleColor: "text-yellow-700 dark:text-yellow-300",
+  },
+  tip: {
+    container:
+      "border-emerald-300 bg-emerald-50/50 dark:border-emerald-700 dark:bg-emerald-950/30",
+    icon: "💡",
+    title: "Dica",
+    titleColor: "text-emerald-700 dark:text-emerald-300",
+  },
+};
+
+export function Note({ type = "info", children }: NoteProps) {
+  const style = noteStyles[type];
+
+  return (
+    <div
+      className={`my-4 rounded-lg border-l-4 p-4 ${style.container}`}
+      role="note"
+    >
+      <div className="mb-2 flex items-center gap-2">
+        <span>{style.icon}</span>
+        <span className={`text-sm font-semibold ${style.titleColor}`}>
+          {style.title}
+        </span>
+      </div>
+
+      <div className="text-sm leading-relaxed">{children}</div>
+    </div>
+  );
+}

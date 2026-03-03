@@ -4,11 +4,12 @@
 
 - [x] Task-001: Inicialização do Projeto Next.js (commit: 842cd8a)
 - [x] Task-002: Design System e Componentes UI Base (commit: 4225c11)
+- [x] Task-004: Configuração MDX e Renderização KaTeX
 
 ## Current Iteration
 
 - Iteration: 2
-- Working on: Task-003
+- Working on: Next task
 - Started: 2026-03-03
 
 ## Blockers

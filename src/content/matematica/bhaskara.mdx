@@ -1,0 +1,51 @@
+---
+title: "Fórmula de Bhaskara"
+slug: "bhaskara"
+category: "matematica"
+subcategory: "algebra"
+tags: ["equação quadrática", "segundo grau", "raízes", "Bhaskara"]
+difficulty: "basico"
+description: "Fórmula para encontrar as raízes de uma equação do segundo grau"
+formula_preview: "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}"
+---
+
+# Fórmula de Bhaskara
+
+A fórmula de Bhaskara permite encontrar as raízes (soluções) de qualquer equação do segundo grau na forma <Formula math="ax^2 + bx + c = 0" />.
+
+<FormulaBlock math="x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}" label="Fórmula de Bhaskara" />
+
+## Variáveis
+
+<Variable symbol="x" description="Raízes (soluções) da equação" />
+<Variable symbol="a" description="Coeficiente do termo quadrático (a ≠ 0)" />
+<Variable symbol="b" description="Coeficiente do termo linear" />
+<Variable symbol="c" description="Termo independente (constante)" />
+
+## Discriminante
+
+O discriminante (delta) determina a natureza das raízes:
+
+<FormulaBlock math="\Delta = b^2 - 4ac" label="Discriminante" />
+
+<Note type="info">
+- Se <Formula math="\Delta > 0" />: duas raízes reais e distintas
+- Se <Formula math="\Delta = 0" />: duas raízes reais e iguais
+- Se <Formula math="\Delta < 0" />: não há raízes reais
+</Note>
+
+## Exemplo
+
+<Example title="Resolvendo x² - 5x + 6 = 0">
+Identificando os coeficientes: <Formula math="a = 1" />, <Formula math="b = -5" />, <Formula math="c = 6" />
+
+Calculando o discriminante:
+
+<FormulaBlock math="\Delta = (-5)^2 - 4 \cdot 1 \cdot 6 = 25 - 24 = 1" />
+
+Aplicando a fórmula:
+
+<FormulaBlock math="x = \frac{-(-5) \pm \sqrt{1}}{2 \cdot 1} = \frac{5 \pm 1}{2}" />
+
+As raízes são <Formula math="x_1 = 3" /> e <Formula math="x_2 = 2" />.
+</Example>
