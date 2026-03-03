@@ -1,0 +1,72 @@
+---
+title: "Identidades Trigonométricas Fundamentais"
+slug: "identidades-fundamentais"
+category: "matematica"
+subcategory: "trigonometria"
+tags: ["identidade trigonométrica", "seno", "cosseno", "tangente", "trigonometria"]
+difficulty: "intermediario"
+description: "Identidades trigonométricas fundamentais que relacionam seno, cosseno e tangente"
+formula_preview: "\\sin^2\\theta + \\cos^2\\theta = 1"
+---
+
+# Identidades Trigonométricas Fundamentais
+
+As identidades trigonométricas são equações que são verdadeiras para todos os valores do ângulo onde as funções estão definidas. Elas são ferramentas essenciais para simplificar expressões e resolver equações trigonométricas.
+
+## Identidade Pitagórica
+
+<FormulaBlock math="\sin^2\theta + \cos^2\theta = 1" label="Identidade pitagórica fundamental" />
+
+## Relações Derivadas
+
+Dividindo a identidade fundamental por <Formula math="\cos^2\theta" />:
+
+<FormulaBlock math="\tan^2\theta + 1 = \sec^2\theta" label="Segunda identidade" />
+
+Dividindo por <Formula math="\sin^2\theta" />:
+
+<FormulaBlock math="1 + \cot^2\theta = \csc^2\theta" label="Terceira identidade" />
+
+## Relação entre Tangente, Seno e Cosseno
+
+<FormulaBlock math="\tan\theta = \frac{\sin\theta}{\cos\theta}" label="Definição da tangente" />
+
+## Variáveis
+
+<Variable symbol="\theta" description="Ângulo (em graus ou radianos)" />
+<Variable symbol="\sin\theta" description="Seno do ângulo θ" />
+<Variable symbol="\cos\theta" description="Cosseno do ângulo θ" />
+<Variable symbol="\tan\theta" description="Tangente do ângulo θ" />
+<Variable symbol="\sec\theta" description="Secante do ângulo θ (inverso do cosseno)" />
+<Variable symbol="\csc\theta" description="Cossecante do ângulo θ (inverso do seno)" />
+<Variable symbol="\cot\theta" description="Cotangente do ângulo θ (inverso da tangente)" />
+
+## Explicação
+
+A identidade <Formula math="\sin^2\theta + \cos^2\theta = 1" /> é a mais importante da trigonometria. Ela se origina diretamente do Teorema de Pitágoras aplicado ao círculo unitário: um ponto sobre o círculo de raio 1 tem coordenadas <Formula math="(\cos\theta, \sin\theta)" />.
+
+Essas identidades permitem converter expressões entre diferentes funções trigonométricas e são fundamentais para resolver equações e integrais.
+
+<Note type="info">
+A partir da identidade fundamental, é possível expressar: <Formula math="\sin^2\theta = 1 - \cos^2\theta" /> e <Formula math="\cos^2\theta = 1 - \sin^2\theta" />.
+</Note>
+
+## Exemplo
+
+<Example title="Se sin θ = 3/5, encontrar cos θ e tan θ (θ no 1º quadrante)">
+Usando a identidade fundamental:
+
+<FormulaBlock math="\left(\frac{3}{5}\right)^2 + \cos^2\theta = 1 \implies \frac{9}{25} + \cos^2\theta = 1" />
+
+<FormulaBlock math="\cos^2\theta = 1 - \frac{9}{25} = \frac{16}{25} \implies \cos\theta = \frac{4}{5}" />
+
+(Positivo, pois θ está no 1º quadrante.)
+
+A tangente:
+
+<FormulaBlock math="\tan\theta = \frac{\sin\theta}{\cos\theta} = \frac{3/5}{4/5} = \frac{3}{4}" />
+</Example>
+
+<Note type="tip">
+Memorize a identidade pitagórica fundamental — todas as outras identidades podem ser derivadas a partir dela.
+</Note>

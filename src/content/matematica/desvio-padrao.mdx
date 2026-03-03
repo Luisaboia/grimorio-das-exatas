@@ -1,0 +1,72 @@
+---
+title: "Desvio Padrão"
+slug: "desvio-padrao"
+category: "matematica"
+subcategory: "estatistica"
+tags: ["desvio padrão", "variância", "dispersão", "estatística"]
+difficulty: "intermediario"
+description: "Fórmula do desvio padrão como medida de dispersão de um conjunto de dados"
+formula_preview: "\\sigma = \\sqrt{\\frac{\\sum(x_i - \\bar{x})^2}{n}}"
+---
+
+# Desvio Padrão
+
+O desvio padrão é uma medida de dispersão que indica o quanto os valores de um conjunto de dados se afastam da média. Quanto maior o desvio padrão, mais espalhados estão os dados.
+
+## Desvio Padrão Populacional
+
+<FormulaBlock math="\sigma = \sqrt{\frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n}}" label="Desvio padrão populacional" />
+
+## Variância
+
+O desvio padrão é a raiz quadrada da variância:
+
+<FormulaBlock math="\sigma^2 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n}" label="Variância populacional" />
+
+## Desvio Padrão Amostral
+
+Para amostras, usa-se <Formula math="n - 1" /> no denominador (correção de Bessel):
+
+<FormulaBlock math="s = \sqrt{\frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n - 1}}" label="Desvio padrão amostral" />
+
+## Variáveis
+
+<Variable symbol="\sigma" description="Desvio padrão populacional" />
+<Variable symbol="s" description="Desvio padrão amostral" />
+<Variable symbol="x_i" description="Cada valor do conjunto de dados" />
+<Variable symbol="\bar{x}" description="Média aritmética dos dados" />
+<Variable symbol="n" description="Número total de valores" />
+<Variable symbol="\sigma^2" description="Variância" />
+
+## Explicação
+
+O desvio padrão mede a "dispersão típica" dos dados em relação à média. Cada desvio <Formula math="(x_i - \bar{x})" /> é elevado ao quadrado para evitar que desvios positivos e negativos se anulem. A raiz quadrada traz o resultado de volta à mesma unidade dos dados originais.
+
+<Note type="info">
+Na distribuição normal (gaussiana), aproximadamente:
+- 68% dos dados estão a 1 desvio padrão da média
+- 95% dos dados estão a 2 desvios padrão
+- 99,7% dos dados estão a 3 desvios padrão
+</Note>
+
+## Exemplo
+
+<Example title="Desvio padrão de {2, 4, 4, 4, 5, 5, 7, 9}">
+Primeiro, a média:
+
+<FormulaBlock math="\bar{x} = \frac{2 + 4 + 4 + 4 + 5 + 5 + 7 + 9}{8} = \frac{40}{8} = 5" />
+
+Agora, os desvios ao quadrado:
+
+<FormulaBlock math="\sum(x_i - 5)^2 = 9 + 1 + 1 + 1 + 0 + 0 + 4 + 16 = 32" />
+
+Desvio padrão populacional:
+
+<FormulaBlock math="\sigma = \sqrt{\frac{32}{8}} = \sqrt{4} = 2" />
+
+O desvio padrão é <Formula math="2" />, indicando que os dados se afastam, em média, 2 unidades da média.
+</Example>
+
+<Note type="tip">
+A variância tem unidade ao quadrado (ex: cm²), enquanto o desvio padrão tem a mesma unidade dos dados (ex: cm). Por isso o desvio padrão é mais intuitivo.
+</Note>

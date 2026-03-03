@@ -1,0 +1,57 @@
+---
+title: "Lei dos Cossenos"
+slug: "lei-dos-cossenos"
+category: "matematica"
+subcategory: "trigonometria"
+tags: ["lei dos cossenos", "triângulo", "cosseno", "trigonometria"]
+difficulty: "intermediario"
+description: "A Lei dos Cossenos generaliza o Teorema de Pitágoras para triângulos quaisquer"
+formula_preview: "a^2 = b^2 + c^2 - 2bc\\cos A"
+---
+
+# Lei dos Cossenos
+
+A Lei dos Cossenos é uma generalização do Teorema de Pitágoras para triângulos quaisquer (não necessariamente retângulos).
+
+<FormulaBlock math="a^2 = b^2 + c^2 - 2bc\cos A" label="Lei dos Cossenos" />
+
+Analogamente:
+
+<FormulaBlock math="b^2 = a^2 + c^2 - 2ac\cos B" label="Lei dos Cossenos (para b)" />
+
+<FormulaBlock math="c^2 = a^2 + b^2 - 2ab\cos C" label="Lei dos Cossenos (para c)" />
+
+## Variáveis
+
+<Variable symbol="a, b, c" description="Lados do triângulo" />
+<Variable symbol="A, B, C" description="Ângulos opostos aos lados a, b e c, respectivamente" />
+
+## Explicação
+
+A Lei dos Cossenos permite calcular um lado quando se conhecem os outros dois e o ângulo entre eles (caso LAL), ou calcular um ângulo quando se conhecem os três lados (caso LLL).
+
+Quando <Formula math="A = 90°" />, temos <Formula math="\cos 90° = 0" />, e a fórmula se reduz a <Formula math="a^2 = b^2 + c^2" />, que é exatamente o Teorema de Pitágoras.
+
+<Note type="info">
+A Lei dos Cossenos é especialmente útil quando não se tem um ângulo oposto a um lado conhecido, tornando a Lei dos Senos impraticável.
+</Note>
+
+## Exemplo
+
+<Example title="Triângulo com b = 5, c = 7 e A = 60°">
+Aplicando a Lei dos Cossenos para encontrar o lado <Formula math="a" />:
+
+<FormulaBlock math="a^2 = 5^2 + 7^2 - 2 \cdot 5 \cdot 7 \cdot \cos 60°" />
+
+Como <Formula math="\cos 60° = 0{,}5" />:
+
+<FormulaBlock math="a^2 = 25 + 49 - 70 \cdot 0{,}5 = 74 - 35 = 39" />
+
+<FormulaBlock math="a = \sqrt{39} \approx 6{,}24" />
+
+O lado <Formula math="a" /> mede aproximadamente <Formula math="6{,}24" />.
+</Example>
+
+<Note type="tip">
+Para encontrar um ângulo quando os três lados são conhecidos, isole o cosseno: <Formula math="\cos A = \frac{b^2 + c^2 - a^2}{2bc}" />.
+</Note>

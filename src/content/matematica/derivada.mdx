@@ -1,0 +1,75 @@
+---
+title: "Derivada"
+slug: "derivada"
+category: "matematica"
+subcategory: "calculo"
+tags: ["derivada", "taxa de variação", "diferenciação", "cálculo"]
+difficulty: "avancado"
+description: "Definição de derivada e regras básicas de diferenciação"
+formula_preview: "f'(x) = \\lim_{h \\to 0} \\frac{f(x+h) - f(x)}{h}"
+---
+
+# Derivada
+
+A derivada de uma função representa a taxa instantânea de variação da função em relação à sua variável. Geometricamente, é o coeficiente angular da reta tangente ao gráfico da função.
+
+<FormulaBlock math="f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}" label="Definição de derivada" />
+
+## Regras Básicas de Derivação
+
+**Regra da Potência:**
+
+<FormulaBlock math="\frac{d}{dx}[x^n] = n \cdot x^{n-1}" label="Regra da potência" />
+
+**Regra da Soma:**
+
+<FormulaBlock math="[f(x) + g(x)]' = f'(x) + g'(x)" label="Regra da soma" />
+
+**Regra do Produto:**
+
+<FormulaBlock math="[f(x) \cdot g(x)]' = f'(x) \cdot g(x) + f(x) \cdot g'(x)" label="Regra do produto" />
+
+**Regra do Quociente:**
+
+<FormulaBlock math="\left[\frac{f(x)}{g(x)}\right]' = \frac{f'(x) \cdot g(x) - f(x) \cdot g'(x)}{[g(x)]^2}" label="Regra do quociente" />
+
+**Regra da Cadeia:**
+
+<FormulaBlock math="[f(g(x))]' = f'(g(x)) \cdot g'(x)" label="Regra da cadeia" />
+
+## Derivadas Especiais
+
+| Função | Derivada |
+|--------|----------|
+| <Formula math="\sin x" /> | <Formula math="\cos x" /> |
+| <Formula math="\cos x" /> | <Formula math="-\sin x" /> |
+| <Formula math="e^x" /> | <Formula math="e^x" /> |
+| <Formula math="\ln x" /> | <Formula math="\frac{1}{x}" /> |
+
+## Variáveis
+
+<Variable symbol="f'(x)" description="Derivada da função f em relação a x" />
+<Variable symbol="h" description="Incremento infinitesimal" />
+<Variable symbol="n" description="Expoente na regra da potência" />
+
+## Explicação
+
+A derivada quantifica como uma grandeza muda em relação a outra. Na física, a velocidade é a derivada da posição, e a aceleração é a derivada da velocidade. Em economia, o custo marginal é a derivada do custo total.
+
+<Note type="info">
+A notação de Leibniz <Formula math="\frac{dy}{dx}" /> é equivalente a <Formula math="f'(x)" /> (notação de Lagrange). Ambas representam a derivada de <Formula math="y" /> em relação a <Formula math="x" />.
+</Note>
+
+## Exemplo
+
+<Example title="Derivar f(x) = 3x⁴ − 2x² + 5x − 7">
+Aplicando a regra da potência a cada termo:
+
+<FormulaBlock math="f'(x) = 3 \cdot 4x^3 - 2 \cdot 2x + 5 \cdot 1 - 0 = 12x^3 - 4x + 5" />
+
+A derivada é <Formula math="f'(x) = 12x^3 - 4x + 5" />.
+</Example>
+
+<Note type="tip">
+A constante sempre desaparece na derivação (<Formula math="\frac{d}{dx}[c] = 0" />), pois uma constante não varia.
+</Note>

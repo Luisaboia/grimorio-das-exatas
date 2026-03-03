@@ -1,0 +1,56 @@
+---
+title: "Coeficiente Angular"
+slug: "coeficiente-angular"
+category: "matematica"
+subcategory: "geometria-analitica"
+tags: ["coeficiente angular", "inclinação", "reta", "geometria analítica"]
+difficulty: "intermediario"
+description: "Fórmula do coeficiente angular de uma reta dados dois pontos"
+formula_preview: "m = \\frac{y_2 - y_1}{x_2 - x_1}"
+---
+
+# Coeficiente Angular
+
+O coeficiente angular (ou inclinação) de uma reta mede o quanto ela "sobe" ou "desce" para cada unidade percorrida horizontalmente. É a tangente do ângulo que a reta forma com o eixo x positivo.
+
+<FormulaBlock math="m = \frac{y_2 - y_1}{x_2 - x_1}" label="Coeficiente angular" />
+
+Ou, em função do ângulo de inclinação:
+
+<FormulaBlock math="m = \tan\alpha" label="Coeficiente angular (forma angular)" />
+
+## Variáveis
+
+<Variable symbol="m" description="Coeficiente angular da reta" />
+<Variable symbol="(x_1, y_1)" description="Coordenadas do primeiro ponto" />
+<Variable symbol="(x_2, y_2)" description="Coordenadas do segundo ponto" />
+<Variable symbol="\alpha" description="Ângulo de inclinação da reta com o eixo x positivo (0° ≤ α < 180°)" />
+
+## Explicação
+
+O coeficiente angular pode ser interpretado como a **taxa de variação** de <Formula math="y" /> em relação a <Formula math="x" />: para cada unidade que <Formula math="x" /> aumenta, <Formula math="y" /> varia <Formula math="m" /> unidades.
+
+- <Formula math="m > 0" />: reta crescente (sobe da esquerda para a direita)
+- <Formula math="m < 0" />: reta decrescente (desce da esquerda para a direita)
+- <Formula math="m = 0" />: reta horizontal
+- <Formula math="m" /> indefinido: reta vertical (<Formula math="x_1 = x_2" />)
+
+<Note type="info">
+O coeficiente angular é o conceito precursor da derivada no cálculo diferencial: a derivada de uma função é o coeficiente angular da reta tangente.
+</Note>
+
+## Exemplo
+
+<Example title="Coeficiente angular da reta que passa por (2, 1) e (5, 7)">
+Dados: <Formula math="P_1 = (2, 1)" /> e <Formula math="P_2 = (5, 7)" />.
+
+<FormulaBlock math="m = \frac{7 - 1}{5 - 2} = \frac{6}{3} = 2" />
+
+O coeficiente angular é <Formula math="2" />. Isso significa que, para cada unidade que <Formula math="x" /> aumenta, <Formula math="y" /> aumenta <Formula math="2" /> unidades.
+
+O ângulo de inclinação: <Formula math="\alpha = \arctan(2) \approx 63{,}43°" />.
+</Example>
+
+<Note type="tip">
+Duas retas são paralelas se e somente se <Formula math="m_1 = m_2" />. São perpendiculares se <Formula math="m_1 \cdot m_2 = -1" />.
+</Note>

@@ -522,3 +522,399 @@ VALUES (
   ARRAY['força magnética', 'campo magnético', 'carga', 'Lorentz', 'eletromagnetismo'],
   'fisica/forca-magnetica.mdx'
 );
+
+-- =========================================================
+-- MATEMÁTICA — Fórmulas
+-- =========================================================
+
+-- -------------------------------------------------------
+-- Álgebra
+-- -------------------------------------------------------
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Produtos Notáveis',
+  'produtos-notaveis',
+  'Fórmulas dos principais produtos notáveis usados na simplificação de expressões algébricas',
+  '(a+b)^2 = a^2 + 2ab + b^2',
+  'a0000000-0000-0000-0000-000000000001',
+  'algebra',
+  'basico',
+  ARRAY['produtos notáveis', 'quadrado da soma', 'quadrado da diferença', 'produto da soma pela diferença'],
+  'matematica/produtos-notaveis.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Fatoração',
+  'fatoracao',
+  'Principais técnicas de fatoração de expressões algébricas',
+  'a^2 - b^2 = (a+b)(a-b)',
+  'a0000000-0000-0000-0000-000000000001',
+  'algebra',
+  'basico',
+  ARRAY['fatoração', 'diferença de quadrados', 'trinômio quadrado perfeito', 'fator comum'],
+  'matematica/fatoracao.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Progressão Aritmética (PA)',
+  'progressao-aritmetica',
+  'Fórmulas do termo geral e da soma dos termos de uma progressão aritmética',
+  'a_n = a_1 + (n-1)r',
+  'a0000000-0000-0000-0000-000000000001',
+  'algebra',
+  'basico',
+  ARRAY['PA', 'progressão aritmética', 'razão', 'sequência', 'soma'],
+  'matematica/progressao-aritmetica.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Progressão Geométrica (PG)',
+  'progressao-geometrica',
+  'Fórmulas do termo geral e da soma dos termos de uma progressão geométrica',
+  'a_n = a_1 \cdot q^{n-1}',
+  'a0000000-0000-0000-0000-000000000001',
+  'algebra',
+  'basico',
+  ARRAY['PG', 'progressão geométrica', 'razão', 'sequência', 'soma'],
+  'matematica/progressao-geometrica.mdx'
+);
+
+-- -------------------------------------------------------
+-- Geometria Plana
+-- -------------------------------------------------------
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Área do Triângulo',
+  'area-triangulo',
+  'Fórmula para calcular a área de um triângulo a partir da base e da altura',
+  'A = \frac{b \cdot h}{2}',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-plana',
+  'basico',
+  ARRAY['área', 'triângulo', 'base', 'altura', 'geometria plana'],
+  'matematica/area-triangulo.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Área do Círculo',
+  'area-circulo',
+  'Fórmula para calcular a área de um círculo a partir do raio',
+  'A = \pi r^2',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-plana',
+  'basico',
+  ARRAY['área', 'círculo', 'raio', 'pi', 'geometria plana'],
+  'matematica/area-circulo.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Teorema de Pitágoras',
+  'teorema-pitagoras',
+  'O Teorema de Pitágoras relaciona os lados de um triângulo retângulo',
+  'a^2 = b^2 + c^2',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-plana',
+  'basico',
+  ARRAY['Pitágoras', 'triângulo retângulo', 'hipotenusa', 'cateto', 'geometria plana'],
+  'matematica/teorema-pitagoras.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Perímetro de Polígonos',
+  'perimetro-poligonos',
+  'Fórmulas de perímetro para as principais figuras planas',
+  'P = \sum l_i',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-plana',
+  'basico',
+  ARRAY['perímetro', 'polígono', 'triângulo', 'quadrado', 'retângulo', 'circunferência'],
+  'matematica/perimetro-poligonos.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Área do Trapézio',
+  'area-trapezio',
+  'Fórmula para calcular a área de um trapézio a partir das bases e da altura',
+  'A = \frac{(B + b) \cdot h}{2}',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-plana',
+  'basico',
+  ARRAY['área', 'trapézio', 'base maior', 'base menor', 'geometria plana'],
+  'matematica/area-trapezio.mdx'
+);
+
+-- -------------------------------------------------------
+-- Geometria Espacial
+-- -------------------------------------------------------
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Volume da Esfera',
+  'volume-esfera',
+  'Fórmula para calcular o volume de uma esfera a partir do raio',
+  'V = \frac{4}{3}\pi r^3',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-espacial',
+  'basico',
+  ARRAY['volume', 'esfera', 'raio', 'pi', 'geometria espacial'],
+  'matematica/volume-esfera.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Volume do Cilindro',
+  'volume-cilindro',
+  'Fórmula para calcular o volume de um cilindro circular reto',
+  'V = \pi r^2 h',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-espacial',
+  'basico',
+  ARRAY['volume', 'cilindro', 'raio', 'altura', 'geometria espacial'],
+  'matematica/volume-cilindro.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Volume do Cone',
+  'volume-cone',
+  'Fórmula para calcular o volume de um cone circular reto',
+  'V = \frac{1}{3}\pi r^2 h',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-espacial',
+  'basico',
+  ARRAY['volume', 'cone', 'raio', 'altura', 'geometria espacial'],
+  'matematica/volume-cone.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Volume do Paralelepípedo',
+  'volume-paralelepipedo',
+  'Fórmula para calcular o volume de um paralelepípedo retângulo',
+  'V = a \cdot b \cdot c',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-espacial',
+  'basico',
+  ARRAY['volume', 'paralelepípedo', 'comprimento', 'largura', 'altura', 'geometria espacial'],
+  'matematica/volume-paralelepipedo.mdx'
+);
+
+-- -------------------------------------------------------
+-- Trigonometria
+-- -------------------------------------------------------
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Lei dos Senos',
+  'lei-dos-senos',
+  'A Lei dos Senos relaciona os lados de um triângulo com os senos dos ângulos opostos',
+  '\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R',
+  'a0000000-0000-0000-0000-000000000001',
+  'trigonometria',
+  'intermediario',
+  ARRAY['lei dos senos', 'triângulo', 'seno', 'circunscrito', 'trigonometria'],
+  'matematica/lei-dos-senos.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Lei dos Cossenos',
+  'lei-dos-cossenos',
+  'A Lei dos Cossenos generaliza o Teorema de Pitágoras para triângulos quaisquer',
+  'a^2 = b^2 + c^2 - 2bc\cos A',
+  'a0000000-0000-0000-0000-000000000001',
+  'trigonometria',
+  'intermediario',
+  ARRAY['lei dos cossenos', 'triângulo', 'cosseno', 'trigonometria'],
+  'matematica/lei-dos-cossenos.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Identidades Trigonométricas Fundamentais',
+  'identidades-fundamentais',
+  'Identidades trigonométricas fundamentais que relacionam seno, cosseno e tangente',
+  '\sin^2\theta + \cos^2\theta = 1',
+  'a0000000-0000-0000-0000-000000000001',
+  'trigonometria',
+  'intermediario',
+  ARRAY['identidade trigonométrica', 'seno', 'cosseno', 'tangente', 'trigonometria'],
+  'matematica/identidades-fundamentais.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Razões Trigonométricas no Triângulo Retângulo',
+  'razoes-trigonometricas',
+  'Definições de seno, cosseno e tangente no triângulo retângulo',
+  '\sin\theta = \frac{\text{cateto oposto}}{\text{hipotenusa}}',
+  'a0000000-0000-0000-0000-000000000001',
+  'trigonometria',
+  'basico',
+  ARRAY['seno', 'cosseno', 'tangente', 'triângulo retângulo', 'trigonometria'],
+  'matematica/razoes-trigonometricas.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Fórmulas de Adição de Arcos',
+  'formulas-adicao',
+  'Fórmulas para seno, cosseno e tangente da soma e diferença de dois ângulos',
+  '\sin(a \pm b) = \sin a \cos b \pm \cos a \sin b',
+  'a0000000-0000-0000-0000-000000000001',
+  'trigonometria',
+  'intermediario',
+  ARRAY['adição de arcos', 'seno', 'cosseno', 'tangente', 'trigonometria'],
+  'matematica/formulas-adicao.mdx'
+);
+
+-- -------------------------------------------------------
+-- Geometria Analítica
+-- -------------------------------------------------------
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Distância entre Dois Pontos',
+  'distancia-dois-pontos',
+  'Fórmula para calcular a distância entre dois pontos no plano cartesiano',
+  'd = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-analitica',
+  'intermediario',
+  ARRAY['distância', 'pontos', 'coordenadas', 'plano cartesiano', 'geometria analítica'],
+  'matematica/distancia-dois-pontos.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Equação da Reta',
+  'equacao-reta',
+  'Formas da equação da reta no plano cartesiano: reduzida e geral',
+  'y = mx + b',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-analitica',
+  'intermediario',
+  ARRAY['reta', 'equação', 'angular', 'linear', 'geometria analítica'],
+  'matematica/equacao-reta.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Coeficiente Angular',
+  'coeficiente-angular',
+  'Fórmula do coeficiente angular de uma reta dados dois pontos',
+  'm = \frac{y_2 - y_1}{x_2 - x_1}',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-analitica',
+  'intermediario',
+  ARRAY['coeficiente angular', 'inclinação', 'reta', 'geometria analítica'],
+  'matematica/coeficiente-angular.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Equação da Circunferência',
+  'equacao-circunferencia',
+  'Equação reduzida da circunferência no plano cartesiano',
+  '(x-a)^2 + (y-b)^2 = r^2',
+  'a0000000-0000-0000-0000-000000000001',
+  'geometria-analitica',
+  'intermediario',
+  ARRAY['circunferência', 'equação', 'centro', 'raio', 'geometria analítica'],
+  'matematica/equacao-circunferencia.mdx'
+);
+
+-- -------------------------------------------------------
+-- Cálculo
+-- -------------------------------------------------------
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Limite',
+  'limite',
+  'Definição e principais propriedades de limites de funções',
+  '\lim_{x \to a} f(x) = L',
+  'a0000000-0000-0000-0000-000000000001',
+  'calculo',
+  'avancado',
+  ARRAY['limite', 'continuidade', 'convergência', 'cálculo'],
+  'matematica/limite.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Derivada',
+  'derivada',
+  'Definição de derivada e regras básicas de diferenciação',
+  'f''(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}',
+  'a0000000-0000-0000-0000-000000000001',
+  'calculo',
+  'avancado',
+  ARRAY['derivada', 'taxa de variação', 'diferenciação', 'cálculo'],
+  'matematica/derivada.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Integral',
+  'integral',
+  'Conceito de integral e regras básicas de integração',
+  '\int f(x)\,dx',
+  'a0000000-0000-0000-0000-000000000001',
+  'calculo',
+  'avancado',
+  ARRAY['integral', 'primitiva', 'antiderivada', 'área', 'cálculo'],
+  'matematica/integral.mdx'
+);
+
+-- -------------------------------------------------------
+-- Estatística
+-- -------------------------------------------------------
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Média Aritmética',
+  'media-aritmetica',
+  'Fórmula da média aritmética simples e ponderada',
+  '\bar{x} = \frac{\sum x_i}{n}',
+  'a0000000-0000-0000-0000-000000000001',
+  'estatistica',
+  'basico',
+  ARRAY['média', 'aritmética', 'estatística', 'medida de tendência central'],
+  'matematica/media-aritmetica.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Desvio Padrão',
+  'desvio-padrao',
+  'Fórmula do desvio padrão como medida de dispersão de um conjunto de dados',
+  '\sigma = \sqrt{\frac{\sum(x_i - \bar{x})^2}{n}}',
+  'a0000000-0000-0000-0000-000000000001',
+  'estatistica',
+  'intermediario',
+  ARRAY['desvio padrão', 'variância', 'dispersão', 'estatística'],
+  'matematica/desvio-padrao.mdx'
+);
+
+INSERT INTO formulas (title, slug, description, formula_preview, category_id, subcategory, difficulty, tags, mdx_path)
+VALUES (
+  'Mediana',
+  'mediana',
+  'Definição e cálculo da mediana para conjuntos de dados com número par e ímpar de elementos',
+  'Md = x_{(n+1)/2}',
+  'a0000000-0000-0000-0000-000000000001',
+  'estatistica',
+  'basico',
+  ARRAY['mediana', 'estatística', 'medida de tendência central', 'posição'],
+  'matematica/mediana.mdx'
+);

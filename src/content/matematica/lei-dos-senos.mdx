@@ -1,0 +1,50 @@
+---
+title: "Lei dos Senos"
+slug: "lei-dos-senos"
+category: "matematica"
+subcategory: "trigonometria"
+tags: ["lei dos senos", "triângulo", "seno", "circunscrito", "trigonometria"]
+difficulty: "intermediario"
+description: "A Lei dos Senos relaciona os lados de um triângulo com os senos dos ângulos opostos"
+formula_preview: "\\frac{a}{\\sin A} = \\frac{b}{\\sin B} = \\frac{c}{\\sin C} = 2R"
+---
+
+# Lei dos Senos
+
+A Lei dos Senos estabelece que, em qualquer triângulo, a razão entre um lado e o seno do ângulo oposto é constante e igual ao diâmetro do círculo circunscrito.
+
+<FormulaBlock math="\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R" label="Lei dos Senos" />
+
+## Variáveis
+
+<Variable symbol="a, b, c" description="Lados do triângulo" />
+<Variable symbol="A, B, C" description="Ângulos opostos aos lados a, b e c, respectivamente" />
+<Variable symbol="R" description="Raio do círculo circunscrito ao triângulo" />
+
+## Explicação
+
+A Lei dos Senos é útil quando se conhecem dois ângulos e um lado (caso ALA ou AAL) ou dois lados e um ângulo oposto a um deles. Ela também permite calcular o raio <Formula math="R" /> da circunferência circunscrita ao triângulo.
+
+Como a soma dos ângulos internos de um triângulo é <Formula math="180°" />, se conhecemos dois ângulos podemos determinar o terceiro: <Formula math="C = 180° - A - B" />.
+
+<Note type="warning">
+Cuidado com o caso ambíguo: quando são dados dois lados e o ângulo oposto ao menor deles, pode haver duas soluções possíveis.
+</Note>
+
+## Exemplo
+
+<Example title="Triângulo com a = 10, A = 30° e B = 45°">
+Pela Lei dos Senos:
+
+<FormulaBlock math="\frac{10}{\sin 30°} = \frac{b}{\sin 45°}" />
+
+Como <Formula math="\sin 30° = 0{,}5" /> e <Formula math="\sin 45° = \frac{\sqrt{2}}{2} \approx 0{,}707" />:
+
+<FormulaBlock math="\frac{10}{0{,}5} = \frac{b}{0{,}707} \implies 20 = \frac{b}{0{,}707} \implies b = 14{,}14" />
+
+O lado <Formula math="b" /> mede aproximadamente <Formula math="14{,}14" />.
+</Example>
+
+<Note type="tip">
+A Lei dos Senos e a Lei dos Cossenos são complementares. Use a dos Senos quando tiver ângulo e lado oposto; use a dos Cossenos quando tiver dois lados e o ângulo entre eles.
+</Note>

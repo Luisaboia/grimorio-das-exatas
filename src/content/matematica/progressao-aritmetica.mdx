@@ -1,0 +1,68 @@
+---
+title: "Progressão Aritmética (PA)"
+slug: "progressao-aritmetica"
+category: "matematica"
+subcategory: "algebra"
+tags: ["PA", "progressão aritmética", "razão", "sequência", "soma"]
+difficulty: "basico"
+description: "Fórmulas do termo geral e da soma dos termos de uma progressão aritmética"
+formula_preview: "a_n = a_1 + (n-1)r"
+---
+
+# Progressão Aritmética (PA)
+
+Uma progressão aritmética é uma sequência numérica em que a diferença entre termos consecutivos é constante, chamada de **razão** (<Formula math="r" />).
+
+## Termo Geral
+
+<FormulaBlock math="a_n = a_1 + (n - 1) \cdot r" label="Termo geral da PA" />
+
+## Soma dos n Primeiros Termos
+
+<FormulaBlock math="S_n = \frac{(a_1 + a_n) \cdot n}{2}" label="Soma dos termos da PA" />
+
+## Variáveis
+
+<Variable symbol="a_n" description="Valor do n-ésimo termo da PA" />
+<Variable symbol="a_1" description="Primeiro termo da PA" />
+<Variable symbol="n" description="Número de termos (posição)" />
+<Variable symbol="r" description="Razão da PA (diferença constante entre termos consecutivos)" />
+<Variable symbol="S_n" description="Soma dos n primeiros termos" />
+
+## Explicação
+
+Na PA, cada termo é obtido somando a razão ao termo anterior: <Formula math="a_2 = a_1 + r" />, <Formula math="a_3 = a_1 + 2r" />, e assim por diante. A razão pode ser positiva (PA crescente), negativa (PA decrescente) ou zero (PA constante).
+
+A fórmula da soma é derivada da ideia de Gauss: ao somar o primeiro com o último termo, o segundo com o penúltimo, obtemos sempre o mesmo resultado, e há <Formula math="\frac{n}{2}" /> pares.
+
+<Note type="info">
+Se a razão <Formula math="r > 0" />, a PA é crescente. Se <Formula math="r < 0" />, é decrescente. Se <Formula math="r = 0" />, é constante.
+</Note>
+
+## Exemplo
+
+<Example title="Encontrar o 20º termo da PA (3, 7, 11, ...)">
+Dados: <Formula math="a_1 = 3" />, <Formula math="r = 7 - 3 = 4" />, <Formula math="n = 20" />.
+
+Aplicando a fórmula do termo geral:
+
+<FormulaBlock math="a_{20} = 3 + (20 - 1) \cdot 4 = 3 + 76 = 79" />
+
+O vigésimo termo da PA é <Formula math="79" />.
+</Example>
+
+<Example title="Soma dos 10 primeiros termos da PA (2, 5, 8, ...)">
+Dados: <Formula math="a_1 = 2" />, <Formula math="r = 3" />, <Formula math="n = 10" />.
+
+Primeiro, encontramos <Formula math="a_{10}" />:
+
+<FormulaBlock math="a_{10} = 2 + (10 - 1) \cdot 3 = 2 + 27 = 29" />
+
+Agora calculamos a soma:
+
+<FormulaBlock math="S_{10} = \frac{(2 + 29) \cdot 10}{2} = \frac{310}{2} = 155" />
+</Example>
+
+<Note type="tip">
+A soma de uma PA também pode ser escrita como <Formula math="S_n = \frac{(2a_1 + (n-1)r) \cdot n}{2}" />, útil quando não se conhece o último termo.
+</Note>

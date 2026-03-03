@@ -1,0 +1,68 @@
+---
+title: "Progressão Geométrica (PG)"
+slug: "progressao-geometrica"
+category: "matematica"
+subcategory: "algebra"
+tags: ["PG", "progressão geométrica", "razão", "sequência", "soma"]
+difficulty: "basico"
+description: "Fórmulas do termo geral e da soma dos termos de uma progressão geométrica"
+formula_preview: "a_n = a_1 \\cdot q^{n-1}"
+---
+
+# Progressão Geométrica (PG)
+
+Uma progressão geométrica é uma sequência numérica em que a razão entre termos consecutivos é constante, chamada de **razão** (<Formula math="q" />).
+
+## Termo Geral
+
+<FormulaBlock math="a_n = a_1 \cdot q^{n-1}" label="Termo geral da PG" />
+
+## Soma dos n Primeiros Termos
+
+Para <Formula math="q \neq 1" />:
+
+<FormulaBlock math="S_n = \frac{a_1(q^n - 1)}{q - 1}" label="Soma dos termos da PG" />
+
+## Soma da PG Infinita
+
+Para <Formula math="|q| < 1" />, a soma infinita converge:
+
+<FormulaBlock math="S_\infty = \frac{a_1}{1 - q}" label="Soma da PG infinita" />
+
+## Variáveis
+
+<Variable symbol="a_n" description="Valor do n-ésimo termo da PG" />
+<Variable symbol="a_1" description="Primeiro termo da PG" />
+<Variable symbol="n" description="Número de termos (posição)" />
+<Variable symbol="q" description="Razão da PG (quociente constante entre termos consecutivos)" />
+<Variable symbol="S_n" description="Soma dos n primeiros termos" />
+
+## Explicação
+
+Na PG, cada termo é obtido multiplicando o anterior pela razão: <Formula math="a_2 = a_1 \cdot q" />, <Formula math="a_3 = a_1 \cdot q^2" />, e assim por diante. A razão <Formula math="q" /> é calculada dividindo qualquer termo pelo anterior: <Formula math="q = \frac{a_n}{a_{n-1}}" />.
+
+<Note type="info">
+Se <Formula math="q > 1" />, a PG é crescente. Se <Formula math="0 < q < 1" />, é decrescente. Se <Formula math="q < 0" />, a PG é oscilante (alterna sinais).
+</Note>
+
+## Exemplo
+
+<Example title="Encontrar o 8º termo da PG (2, 6, 18, ...)">
+Dados: <Formula math="a_1 = 2" />, <Formula math="q = \frac{6}{2} = 3" />, <Formula math="n = 8" />.
+
+Aplicando a fórmula do termo geral:
+
+<FormulaBlock math="a_8 = 2 \cdot 3^{8-1} = 2 \cdot 3^7 = 2 \cdot 2187 = 4374" />
+
+O oitavo termo da PG é <Formula math="4374" />.
+</Example>
+
+<Example title="Soma dos 5 primeiros termos da PG (1, 2, 4, 8, ...)">
+Dados: <Formula math="a_1 = 1" />, <Formula math="q = 2" />, <Formula math="n = 5" />.
+
+<FormulaBlock math="S_5 = \frac{1 \cdot (2^5 - 1)}{2 - 1} = \frac{32 - 1}{1} = 31" />
+</Example>
+
+<Note type="tip">
+A soma da PG infinita com <Formula math="|q| < 1" /> é muito usada em problemas de dízimas periódicas e séries convergentes.
+</Note>

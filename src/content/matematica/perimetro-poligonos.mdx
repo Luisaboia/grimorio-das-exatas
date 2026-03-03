@@ -1,0 +1,74 @@
+---
+title: "Perímetro de Polígonos"
+slug: "perimetro-poligonos"
+category: "matematica"
+subcategory: "geometria-plana"
+tags: ["perímetro", "polígono", "triângulo", "quadrado", "retângulo", "circunferência"]
+difficulty: "basico"
+description: "Fórmulas de perímetro para as principais figuras planas"
+formula_preview: "P = \\sum l_i"
+---
+
+# Perímetro de Polígonos
+
+O perímetro de uma figura plana é a soma dos comprimentos de todos os seus lados (ou o comprimento total do contorno).
+
+## Perímetro Geral
+
+<FormulaBlock math="P = l_1 + l_2 + l_3 + \ldots + l_n" label="Perímetro geral" />
+
+## Triângulo
+
+<FormulaBlock math="P = a + b + c" label="Perímetro do triângulo" />
+
+## Quadrado
+
+<FormulaBlock math="P = 4l" label="Perímetro do quadrado" />
+
+## Retângulo
+
+<FormulaBlock math="P = 2(b + h)" label="Perímetro do retângulo" />
+
+## Circunferência (Perímetro do Círculo)
+
+<FormulaBlock math="C = 2\pi r" label="Circunferência" />
+
+## Variáveis
+
+<Variable symbol="P" description="Perímetro da figura" />
+<Variable symbol="l" description="Lado do quadrado" />
+<Variable symbol="b" description="Base do retângulo (ou comprimento)" />
+<Variable symbol="h" description="Altura do retângulo (ou largura)" />
+<Variable symbol="a, b, c" description="Lados do triângulo" />
+<Variable symbol="r" description="Raio do círculo" />
+<Variable symbol="C" description="Comprimento da circunferência" />
+
+## Explicação
+
+O conceito de perímetro é intuitivo: é a medida do contorno de uma figura. Para polígonos regulares (todos os lados iguais), o perímetro é simplesmente <Formula math="P = n \cdot l" />, onde <Formula math="n" /> é o número de lados e <Formula math="l" /> o comprimento de cada lado.
+
+Para o círculo, a medida do contorno recebe o nome de circunferência e vale <Formula math="C = 2\pi r = \pi d" />, onde <Formula math="d" /> é o diâmetro.
+
+<Note type="info">
+O perímetro é uma medida linear (metros, centímetros), enquanto a área é uma medida quadrática (m², cm²). Não confunda as unidades.
+</Note>
+
+## Exemplo
+
+<Example title="Perímetro de um retângulo 8 cm × 5 cm">
+Dados: <Formula math="b = 8 \text{ cm}" />, <Formula math="h = 5 \text{ cm}" />.
+
+<FormulaBlock math="P = 2(8 + 5) = 2 \cdot 13 = 26 \text{ cm}" />
+
+O perímetro do retângulo é <Formula math="26 \text{ cm}" />.
+</Example>
+
+<Example title="Circunferência de raio 7 cm">
+Dado: <Formula math="r = 7 \text{ cm}" />.
+
+<FormulaBlock math="C = 2\pi \cdot 7 = 14\pi \approx 43{,}98 \text{ cm}" />
+</Example>
+
+<Note type="tip">
+Para polígonos regulares com <Formula math="n" /> lados de comprimento <Formula math="l" />, o perímetro é simplesmente <Formula math="P = n \cdot l" />.
+</Note>

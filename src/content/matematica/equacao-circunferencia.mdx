@@ -1,0 +1,67 @@
+---
+title: "Equação da Circunferência"
+slug: "equacao-circunferencia"
+category: "matematica"
+subcategory: "geometria-analitica"
+tags: ["circunferência", "equação", "centro", "raio", "geometria analítica"]
+difficulty: "intermediario"
+description: "Equação reduzida da circunferência no plano cartesiano"
+formula_preview: "(x-a)^2 + (y-b)^2 = r^2"
+---
+
+# Equação da Circunferência
+
+A circunferência é o conjunto de todos os pontos do plano que estão a uma mesma distância (raio) de um ponto fixo (centro). Sua equação no plano cartesiano é obtida a partir da fórmula da distância.
+
+## Forma Reduzida
+
+<FormulaBlock math="(x - a)^2 + (y - b)^2 = r^2" label="Equação reduzida da circunferência" />
+
+## Forma Geral
+
+Expandindo a forma reduzida:
+
+<FormulaBlock math="x^2 + y^2 - 2ax - 2by + (a^2 + b^2 - r^2) = 0" label="Equação geral da circunferência" />
+
+## Variáveis
+
+<Variable symbol="(a, b)" description="Coordenadas do centro da circunferência" />
+<Variable symbol="r" description="Raio da circunferência (r > 0)" />
+<Variable symbol="(x, y)" description="Coordenadas de qualquer ponto sobre a circunferência" />
+
+## Explicação
+
+A equação da circunferência é uma aplicação direta da fórmula da distância: um ponto <Formula math="(x, y)" /> pertence à circunferência se sua distância ao centro <Formula math="(a, b)" /> é igual a <Formula math="r" />.
+
+Quando o centro é a origem <Formula math="(0, 0)" />, a equação se simplifica para <Formula math="x^2 + y^2 = r^2" />.
+
+Para identificar centro e raio a partir da forma geral, complete os quadrados.
+
+<Note type="info">
+Para verificar a posição de um ponto em relação à circunferência, substitua suas coordenadas na equação:
+- Se o resultado for menor que <Formula math="r^2" />: ponto interno
+- Se igual a <Formula math="r^2" />: ponto pertence à circunferência
+- Se maior que <Formula math="r^2" />: ponto externo
+</Note>
+
+## Exemplo
+
+<Example title="Circunferência com centro (3, -2) e raio 5">
+Dados: <Formula math="a = 3" />, <Formula math="b = -2" />, <Formula math="r = 5" />.
+
+<FormulaBlock math="(x - 3)^2 + (y + 2)^2 = 25" />
+
+Expandindo:
+
+<FormulaBlock math="x^2 - 6x + 9 + y^2 + 4y + 4 = 25" />
+
+<FormulaBlock math="x^2 + y^2 - 6x + 4y - 12 = 0" />
+
+Verificação: o ponto <Formula math="(3, 3)" /> pertence à circunferência?
+
+<Formula math="(3-3)^2 + (3+2)^2 = 0 + 25 = 25 = r^2" /> ✓
+</Example>
+
+<Note type="tip">
+Completar quadrados é a técnica mais usada para converter da forma geral para a forma reduzida e identificar centro e raio.
+</Note>

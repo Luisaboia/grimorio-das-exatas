@@ -1,0 +1,51 @@
+---
+title: "Volume do Cilindro"
+slug: "volume-cilindro"
+category: "matematica"
+subcategory: "geometria-espacial"
+tags: ["volume", "cilindro", "raio", "altura", "geometria espacial"]
+difficulty: "basico"
+description: "Fórmula para calcular o volume de um cilindro circular reto"
+formula_preview: "V = \\pi r^2 h"
+---
+
+# Volume do Cilindro
+
+O cilindro circular reto é o sólido gerado pela rotação de um retângulo em torno de um de seus lados. Seu volume é o produto da área da base pela altura.
+
+<FormulaBlock math="V = \pi r^2 h" label="Volume do cilindro" />
+
+## Área Total
+
+<FormulaBlock math="A_T = 2\pi r(r + h)" label="Área total do cilindro" />
+
+## Variáveis
+
+<Variable symbol="V" description="Volume do cilindro (em unidades cúbicas)" />
+<Variable symbol="r" description="Raio da base circular" />
+<Variable symbol="h" description="Altura do cilindro (distância entre as bases)" />
+<Variable symbol="A_T" description="Área total da superfície do cilindro" />
+
+## Explicação
+
+O volume de qualquer prisma ou cilindro é dado por <Formula math="V = A_{\text{base}} \cdot h" />. Como a base do cilindro é um círculo com área <Formula math="\pi r^2" />, obtemos <Formula math="V = \pi r^2 h" />.
+
+A área total inclui as duas bases circulares (<Formula math="2\pi r^2" />) e a superfície lateral (<Formula math="2\pi r h" />), que quando "desenrolada" forma um retângulo.
+
+<Note type="info">
+Para um cilindro oblíquo, a fórmula do volume é a mesma, mas a altura deve ser medida perpendicularmente às bases.
+</Note>
+
+## Exemplo
+
+<Example title="Cilindro com raio 3 cm e altura 10 cm">
+Dados: <Formula math="r = 3 \text{ cm}" />, <Formula math="h = 10 \text{ cm}" />.
+
+<FormulaBlock math="V = \pi \cdot 3^2 \cdot 10 = 90\pi \approx 282{,}74 \text{ cm}^3" />
+
+O volume do cilindro é aproximadamente <Formula math="282{,}74 \text{ cm}^3" />.
+</Example>
+
+<Note type="tip">
+Uma lata de refrigerante de 350 mL tem, aproximadamente, raio de 3,3 cm e altura de 10,2 cm. Verifique: <Formula math="\pi \cdot 3{,}3^2 \cdot 10{,}2 \approx 349 \text{ cm}^3" />.
+</Note>

@@ -1,0 +1,74 @@
+---
+title: "Integral"
+slug: "integral"
+category: "matematica"
+subcategory: "calculo"
+tags: ["integral", "primitiva", "antiderivada", "área", "cálculo"]
+difficulty: "avancado"
+description: "Conceito de integral e regras básicas de integração"
+formula_preview: "\\int f(x)\\,dx"
+---
+
+# Integral
+
+A integral é a operação inversa da derivada. A integral indefinida representa a família de primitivas (antiderivadas) de uma função, enquanto a integral definida calcula a área sob a curva.
+
+## Integral Indefinida
+
+<FormulaBlock math="\int f(x)\,dx = F(x) + C" label="Integral indefinida" />
+
+Onde <Formula math="F'(x) = f(x)" />.
+
+## Integral Definida (Teorema Fundamental do Cálculo)
+
+<FormulaBlock math="\int_a^b f(x)\,dx = F(b) - F(a)" label="Integral definida" />
+
+## Regras Básicas de Integração
+
+**Regra da Potência:**
+
+<FormulaBlock math="\int x^n\,dx = \frac{x^{n+1}}{n+1} + C, \quad n \neq -1" label="Integral da potência" />
+
+**Caso especial** (<Formula math="n = -1" />):
+
+<FormulaBlock math="\int \frac{1}{x}\,dx = \ln|x| + C" label="Integral de 1/x" />
+
+## Integrais Especiais
+
+| Função | Integral |
+|--------|----------|
+| <Formula math="\sin x" /> | <Formula math="-\cos x + C" /> |
+| <Formula math="\cos x" /> | <Formula math="\sin x + C" /> |
+| <Formula math="e^x" /> | <Formula math="e^x + C" /> |
+| <Formula math="a^x" /> | <Formula math="\frac{a^x}{\ln a} + C" /> |
+
+## Variáveis
+
+<Variable symbol="f(x)" description="Função a ser integrada (integrando)" />
+<Variable symbol="F(x)" description="Primitiva (antiderivada) de f(x)" />
+<Variable symbol="C" description="Constante de integração (pois a derivada de uma constante é zero)" />
+<Variable symbol="a, b" description="Limites de integração (integral definida)" />
+<Variable symbol="dx" description="Diferencial da variável de integração" />
+
+## Explicação
+
+A integral indefinida é a "operação inversa" da derivada: se <Formula math="F'(x) = f(x)" />, então <Formula math="\int f(x)\,dx = F(x) + C" />. A constante <Formula math="C" /> existe porque funções que diferem por uma constante têm a mesma derivada.
+
+A integral definida calcula a área algébrica (com sinal) entre o gráfico de <Formula math="f(x)" /> e o eixo x no intervalo <Formula math="[a, b]" />.
+
+<Note type="info">
+A linearidade da integral garante: <Formula math="\int [af(x) + bg(x)]\,dx = a\int f(x)\,dx + b\int g(x)\,dx" />.
+</Note>
+
+## Exemplo
+
+<Example title="Calcular a integral definida de x² de 0 a 3">
+
+<FormulaBlock math="\int_0^3 x^2\,dx = \left[\frac{x^3}{3}\right]_0^3 = \frac{3^3}{3} - \frac{0^3}{3} = \frac{27}{3} - 0 = 9" />
+
+A área sob a curva <Formula math="y = x^2" /> de <Formula math="x = 0" /> a <Formula math="x = 3" /> é <Formula math="9" /> unidades de área.
+</Example>
+
+<Note type="tip">
+Nunca se esqueça da constante <Formula math="C" /> na integral indefinida. Na integral definida, ela se cancela e não é necessária.
+</Note>

@@ -1,0 +1,62 @@
+---
+title: "Limite"
+slug: "limite"
+category: "matematica"
+subcategory: "calculo"
+tags: ["limite", "continuidade", "convergência", "cálculo"]
+difficulty: "avancado"
+description: "Definição e principais propriedades de limites de funções"
+formula_preview: "\\lim_{x \\to a} f(x) = L"
+---
+
+# Limite
+
+O conceito de limite descreve o comportamento de uma função quando a variável independente se aproxima de um determinado valor. É o fundamento do cálculo diferencial e integral.
+
+<FormulaBlock math="\lim_{x \to a} f(x) = L" label="Definição de limite" />
+
+Lê-se: "o limite de <Formula math="f(x)" /> quando <Formula math="x" /> tende a <Formula math="a" /> é <Formula math="L" />".
+
+## Propriedades dos Limites
+
+<FormulaBlock math="\lim_{x \to a} [f(x) + g(x)] = \lim_{x \to a} f(x) + \lim_{x \to a} g(x)" label="Soma de limites" />
+
+<FormulaBlock math="\lim_{x \to a} [f(x) \cdot g(x)] = \lim_{x \to a} f(x) \cdot \lim_{x \to a} g(x)" label="Produto de limites" />
+
+<FormulaBlock math="\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)}, \quad \text{se } \lim_{x \to a} g(x) \neq 0" label="Quociente de limites" />
+
+## Limites Notáveis
+
+<FormulaBlock math="\lim_{x \to 0} \frac{\sin x}{x} = 1" label="Limite trigonométrico fundamental" />
+
+<FormulaBlock math="\lim_{x \to \infty} \left(1 + \frac{1}{x}\right)^x = e" label="Limite exponencial fundamental" />
+
+## Variáveis
+
+<Variable symbol="x" description="Variável independente" />
+<Variable symbol="a" description="Valor ao qual x se aproxima" />
+<Variable symbol="L" description="Valor do limite (resultado)" />
+<Variable symbol="f(x), g(x)" description="Funções matemáticas" />
+<Variable symbol="e" description="Número de Euler, aproximadamente 2,71828" />
+
+## Explicação
+
+O limite não depende do valor da função em <Formula math="x = a" /> (que pode nem existir), mas sim do comportamento da função nas proximidades de <Formula math="a" />. Quando os limites laterais (pela esquerda e pela direita) são diferentes, dizemos que o limite não existe.
+
+<Note type="info">
+Indeterminações comuns: <Formula math="\frac{0}{0}" />, <Formula math="\frac{\infty}{\infty}" />, <Formula math="0 \cdot \infty" />, <Formula math="\infty - \infty" />, <Formula math="0^0" />, <Formula math="1^\infty" />, <Formula math="\infty^0" />. Nesses casos, é necessário manipular a expressão antes de calcular o limite.
+</Note>
+
+## Exemplo
+
+<Example title="Calcular o limite de (x² − 4)/(x − 2) quando x → 2">
+Substituição direta dá <Formula math="\frac{0}{0}" /> (indeterminação). Fatoramos:
+
+<FormulaBlock math="\lim_{x \to 2} \frac{x^2 - 4}{x - 2} = \lim_{x \to 2} \frac{(x+2)(x-2)}{x-2} = \lim_{x \to 2} (x + 2) = 4" />
+
+O limite é <Formula math="4" />.
+</Example>
+
+<Note type="tip">
+Quando a substituição direta gera indeterminação, tente fatorar, racionalizar ou aplicar a regra de L'Hôpital.
+</Note>

@@ -1,0 +1,70 @@
+---
+title: "Fatoração"
+slug: "fatoracao"
+category: "matematica"
+subcategory: "algebra"
+tags: ["fatoração", "diferença de quadrados", "trinômio quadrado perfeito", "fator comum"]
+difficulty: "basico"
+description: "Principais técnicas de fatoração de expressões algébricas"
+formula_preview: "a^2 - b^2 = (a+b)(a-b)"
+---
+
+# Fatoração
+
+A fatoração é o processo inverso da multiplicação de polinômios: transforma uma soma ou diferença de termos em um produto de fatores. É uma ferramenta essencial para simplificar expressões e resolver equações.
+
+## Fator Comum em Evidência
+
+<FormulaBlock math="ab + ac = a(b + c)" label="Fator comum em evidência" />
+
+Quando todos os termos possuem um fator em comum, ele pode ser colocado em evidência.
+
+## Diferença de Dois Quadrados
+
+<FormulaBlock math="a^2 - b^2 = (a + b)(a - b)" label="Diferença de dois quadrados" />
+
+## Trinômio Quadrado Perfeito
+
+<FormulaBlock math="a^2 + 2ab + b^2 = (a + b)^2" label="Trinômio quadrado perfeito (soma)" />
+
+<FormulaBlock math="a^2 - 2ab + b^2 = (a - b)^2" label="Trinômio quadrado perfeito (diferença)" />
+
+## Soma e Diferença de Cubos
+
+<FormulaBlock math="a^3 + b^3 = (a + b)(a^2 - ab + b^2)" label="Soma de cubos" />
+
+<FormulaBlock math="a^3 - b^3 = (a - b)(a^2 + ab + b^2)" label="Diferença de cubos" />
+
+## Variáveis
+
+<Variable symbol="a" description="Primeiro termo da expressão" />
+<Variable symbol="b" description="Segundo termo da expressão" />
+<Variable symbol="c" description="Terceiro termo (quando aplicável)" />
+
+## Explicação
+
+A estratégia de fatoração depende da forma da expressão. O primeiro passo é sempre verificar se existe um fator comum entre todos os termos. Em seguida, identifica-se se a expressão se encaixa em alguma forma notável como <Formula math="a^2 - b^2" /> ou <Formula math="a^2 \pm 2ab + b^2" />.
+
+<Note type="tip">
+Ordem sugerida: 1) Fator comum → 2) Diferença de quadrados → 3) Trinômio quadrado perfeito → 4) Agrupamento.
+</Note>
+
+## Exemplo
+
+<Example title="Fatorando x² − 9">
+A expressão <Formula math="x^2 - 9" /> é uma diferença de quadrados: <Formula math="a = x" /> e <Formula math="b = 3" />, pois <Formula math="9 = 3^2" />.
+
+<FormulaBlock math="x^2 - 9 = (x + 3)(x - 3)" />
+
+Verificação: <Formula math="(x+3)(x-3) = x^2 - 3x + 3x - 9 = x^2 - 9" />. ✓
+</Example>
+
+<Example title="Fatorando 2x² + 4x">
+Identificamos o fator comum <Formula math="2x" />:
+
+<FormulaBlock math="2x^2 + 4x = 2x(x + 2)" />
+</Example>
+
+<Note type="info">
+A fatoração é a base para simplificar frações algébricas e encontrar raízes de polinômios.
+</Note>

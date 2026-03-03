@@ -1,0 +1,46 @@
+---
+title: "Distância entre Dois Pontos"
+slug: "distancia-dois-pontos"
+category: "matematica"
+subcategory: "geometria-analitica"
+tags: ["distância", "pontos", "coordenadas", "plano cartesiano", "geometria analítica"]
+difficulty: "intermediario"
+description: "Fórmula para calcular a distância entre dois pontos no plano cartesiano"
+formula_preview: "d = \\sqrt{(x_2-x_1)^2 + (y_2-y_1)^2}"
+---
+
+# Distância entre Dois Pontos
+
+A fórmula da distância entre dois pontos permite calcular o comprimento do segmento de reta que liga dois pontos no plano cartesiano.
+
+<FormulaBlock math="d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}" label="Distância entre dois pontos" />
+
+## Variáveis
+
+<Variable symbol="d" description="Distância entre os pontos P₁ e P₂" />
+<Variable symbol="(x_1, y_1)" description="Coordenadas do primeiro ponto P₁" />
+<Variable symbol="(x_2, y_2)" description="Coordenadas do segundo ponto P₂" />
+
+## Explicação
+
+Essa fórmula é uma aplicação direta do Teorema de Pitágoras. Dados os pontos <Formula math="P_1(x_1, y_1)" /> e <Formula math="P_2(x_2, y_2)" />, formamos um triângulo retângulo cujos catetos são <Formula math="|x_2 - x_1|" /> (horizontal) e <Formula math="|y_2 - y_1|" /> (vertical). A hipotenusa é a distância <Formula math="d" />.
+
+A ordem dos pontos não importa: <Formula math="d(P_1, P_2) = d(P_2, P_1)" />, pois os quadrados eliminam o sinal.
+
+<Note type="info">
+No espaço tridimensional, a fórmula se estende para: <Formula math="d = \sqrt{(x_2-x_1)^2 + (y_2-y_1)^2 + (z_2-z_1)^2}" />.
+</Note>
+
+## Exemplo
+
+<Example title="Distância entre A(1, 2) e B(4, 6)">
+Dados: <Formula math="P_1 = (1, 2)" /> e <Formula math="P_2 = (4, 6)" />.
+
+<FormulaBlock math="d = \sqrt{(4 - 1)^2 + (6 - 2)^2} = \sqrt{3^2 + 4^2} = \sqrt{9 + 16} = \sqrt{25} = 5" />
+
+A distância entre os pontos é <Formula math="5" /> unidades.
+</Example>
+
+<Note type="tip">
+Esta fórmula é a base para a equação da circunferência e para o cálculo do ponto médio de um segmento.
+</Note>

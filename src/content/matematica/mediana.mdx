@@ -1,0 +1,71 @@
+---
+title: "Mediana"
+slug: "mediana"
+category: "matematica"
+subcategory: "estatistica"
+tags: ["mediana", "estatística", "medida de tendência central", "posição"]
+difficulty: "basico"
+description: "Definição e cálculo da mediana para conjuntos de dados com número par e ímpar de elementos"
+formula_preview: "Md = x_{(n+1)/2}"
+---
+
+# Mediana
+
+A mediana é a medida de tendência central que divide um conjunto de dados ordenado em duas metades iguais: 50% dos valores ficam abaixo e 50% acima da mediana.
+
+## Para n Ímpar
+
+<FormulaBlock math="Md = x_{\frac{n+1}{2}}" label="Mediana (n ímpar)" />
+
+A mediana é o valor que ocupa a posição central.
+
+## Para n Par
+
+<FormulaBlock math="Md = \frac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}" label="Mediana (n par)" />
+
+A mediana é a média dos dois valores centrais.
+
+## Variáveis
+
+<Variable symbol="Md" description="Mediana do conjunto de dados" />
+<Variable symbol="x_i" description="Valores do conjunto, ordenados de forma crescente" />
+<Variable symbol="n" description="Número total de valores no conjunto" />
+
+## Explicação
+
+Para encontrar a mediana, os dados devem ser **ordenados** do menor para o maior. Diferentemente da média, a mediana não é afetada por valores extremos (outliers), o que a torna uma medida robusta.
+
+Comparação entre média e mediana:
+- Se a distribuição é simétrica: média ≈ mediana
+- Se há valores extremos altos: média > mediana
+- Se há valores extremos baixos: média < mediana
+
+<Note type="info">
+A mediana é especialmente útil quando os dados contêm valores discrepantes. Por exemplo, a renda mediana de uma população é mais representativa que a renda média, pois poucos indivíduos muito ricos elevam a média.
+</Note>
+
+## Exemplo
+
+<Example title="Mediana de {3, 5, 7, 9, 11} (n ímpar)">
+Dados já ordenados: <Formula math="3, 5, 7, 9, 11" />. Temos <Formula math="n = 5" /> (ímpar).
+
+Posição central: <Formula math="\frac{5+1}{2} = 3" />
+
+<FormulaBlock math="Md = x_3 = 7" />
+
+A mediana é <Formula math="7" />.
+</Example>
+
+<Example title="Mediana de {2, 4, 6, 8} (n par)">
+Dados já ordenados: <Formula math="2, 4, 6, 8" />. Temos <Formula math="n = 4" /> (par).
+
+Posições centrais: <Formula math="\frac{4}{2} = 2" /> e <Formula math="\frac{4}{2} + 1 = 3" />
+
+<FormulaBlock math="Md = \frac{x_2 + x_3}{2} = \frac{4 + 6}{2} = 5" />
+
+A mediana é <Formula math="5" />.
+</Example>
+
+<Note type="tip">
+Sempre ordene os dados antes de calcular a mediana. É o erro mais comum: calcular a mediana sem ordenar o conjunto.
+</Note>

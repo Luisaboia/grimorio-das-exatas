@@ -1,0 +1,63 @@
+---
+title: "Fórmulas de Adição de Arcos"
+slug: "formulas-adicao"
+category: "matematica"
+subcategory: "trigonometria"
+tags: ["adição de arcos", "seno", "cosseno", "tangente", "trigonometria"]
+difficulty: "intermediario"
+description: "Fórmulas para seno, cosseno e tangente da soma e diferença de dois ângulos"
+formula_preview: "\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b"
+---
+
+# Fórmulas de Adição de Arcos
+
+As fórmulas de adição permitem calcular as funções trigonométricas da soma ou diferença de dois ângulos a partir das funções de cada ângulo separadamente.
+
+## Seno da Soma e Diferença
+
+<FormulaBlock math="\sin(a + b) = \sin a \cos b + \cos a \sin b" label="Seno da soma" />
+
+<FormulaBlock math="\sin(a - b) = \sin a \cos b - \cos a \sin b" label="Seno da diferença" />
+
+## Cosseno da Soma e Diferença
+
+<FormulaBlock math="\cos(a + b) = \cos a \cos b - \sin a \sin b" label="Cosseno da soma" />
+
+<FormulaBlock math="\cos(a - b) = \cos a \cos b + \sin a \sin b" label="Cosseno da diferença" />
+
+## Tangente da Soma e Diferença
+
+<FormulaBlock math="\tan(a + b) = \frac{\tan a + \tan b}{1 - \tan a \tan b}" label="Tangente da soma" />
+
+<FormulaBlock math="\tan(a - b) = \frac{\tan a - \tan b}{1 + \tan a \tan b}" label="Tangente da diferença" />
+
+## Variáveis
+
+<Variable symbol="a" description="Primeiro ângulo (em graus ou radianos)" />
+<Variable symbol="b" description="Segundo ângulo (em graus ou radianos)" />
+
+## Explicação
+
+Essas fórmulas são fundamentais para deduzir outras identidades, como as do arco duplo e arco metade. Por exemplo, fazendo <Formula math="a = b" /> na fórmula do seno da soma, obtemos <Formula math="\sin(2a) = 2\sin a \cos a" />.
+
+<Note type="info">
+Fórmulas do arco duplo (derivadas da adição com <Formula math="a = b" />):
+- <Formula math="\sin(2a) = 2\sin a \cos a" />
+- <Formula math="\cos(2a) = \cos^2 a - \sin^2 a = 2\cos^2 a - 1 = 1 - 2\sin^2 a" />
+</Note>
+
+## Exemplo
+
+<Example title="Calcular sin 75°">
+Escrevemos <Formula math="75° = 45° + 30°" /> e aplicamos a fórmula do seno da soma:
+
+<FormulaBlock math="\sin 75° = \sin 45° \cos 30° + \cos 45° \sin 30°" />
+
+<FormulaBlock math="\sin 75° = \frac{\sqrt{2}}{2} \cdot \frac{\sqrt{3}}{2} + \frac{\sqrt{2}}{2} \cdot \frac{1}{2} = \frac{\sqrt{6}}{4} + \frac{\sqrt{2}}{4} = \frac{\sqrt{6} + \sqrt{2}}{4}" />
+
+Numericamente: <Formula math="\sin 75° \approx 0{,}9659" />.
+</Example>
+
+<Note type="tip">
+Cuidado com os sinais: no seno, os sinais da soma/diferença se mantêm; no cosseno, eles se invertem.
+</Note>

@@ -1,0 +1,51 @@
+---
+title: "Teorema de Pitágoras"
+slug: "teorema-pitagoras"
+category: "matematica"
+subcategory: "geometria-plana"
+tags: ["Pitágoras", "triângulo retângulo", "hipotenusa", "cateto", "geometria plana"]
+difficulty: "basico"
+description: "O Teorema de Pitágoras relaciona os lados de um triângulo retângulo"
+formula_preview: "a^2 = b^2 + c^2"
+---
+
+# Teorema de Pitágoras
+
+O Teorema de Pitágoras é uma das relações mais importantes da geometria. Ele estabelece que, em todo triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos.
+
+<FormulaBlock math="a^2 = b^2 + c^2" label="Teorema de Pitágoras" />
+
+## Variáveis
+
+<Variable symbol="a" description="Hipotenusa — o maior lado, oposto ao ângulo reto" />
+<Variable symbol="b" description="Cateto — um dos lados que formam o ângulo reto" />
+<Variable symbol="c" description="Cateto — o outro lado que forma o ângulo reto" />
+
+## Explicação
+
+O teorema se aplica exclusivamente a **triângulos retângulos** (que possuem um ângulo de 90°). A hipotenusa <Formula math="a" /> é sempre o lado oposto ao ângulo reto e é o maior lado do triângulo.
+
+A partir do teorema, podemos encontrar qualquer um dos três lados se conhecermos os outros dois:
+
+- Hipotenusa: <Formula math="a = \sqrt{b^2 + c^2}" />
+- Cateto: <Formula math="b = \sqrt{a^2 - c^2}" />
+
+<Note type="warning">
+O Teorema de Pitágoras vale apenas para triângulos retângulos. Para outros triângulos, use a Lei dos Cossenos.
+</Note>
+
+## Exemplo
+
+<Example title="Triângulo com catetos 3 e 4">
+Dados: <Formula math="b = 3" /> e <Formula math="c = 4" />.
+
+<FormulaBlock math="a^2 = 3^2 + 4^2 = 9 + 16 = 25" />
+
+<FormulaBlock math="a = \sqrt{25} = 5" />
+
+A hipotenusa mede <Formula math="5" /> unidades. Este é o famoso triângulo pitagórico 3-4-5.
+</Example>
+
+<Note type="tip">
+Ternos pitagóricos comuns para memorizar: (3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25). Qualquer múltiplo deles também funciona, por exemplo (6, 8, 10).
+</Note>

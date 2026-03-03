@@ -1,0 +1,46 @@
+---
+title: "Área do Triângulo"
+slug: "area-triangulo"
+category: "matematica"
+subcategory: "geometria-plana"
+tags: ["área", "triângulo", "base", "altura", "geometria plana"]
+difficulty: "basico"
+description: "Fórmula para calcular a área de um triângulo a partir da base e da altura"
+formula_preview: "A = \\frac{b \\cdot h}{2}"
+---
+
+# Área do Triângulo
+
+A área de um triângulo é a medida da superfície delimitada pelos seus três lados. A fórmula mais utilizada relaciona a base e a altura do triângulo.
+
+<FormulaBlock math="A = \frac{b \cdot h}{2}" label="Área do triângulo" />
+
+## Variáveis
+
+<Variable symbol="A" description="Área do triângulo (em unidades de área, como m² ou cm²)" />
+<Variable symbol="b" description="Comprimento da base do triângulo" />
+<Variable symbol="h" description="Altura relativa à base escolhida (perpendicular à base)" />
+
+## Explicação
+
+A fórmula da área do triângulo é derivada da área do retângulo: todo triângulo pode ser visto como metade de um paralelogramo de mesma base e mesma altura. Por isso, a área é <Formula math="\frac{b \cdot h}{2}" />.
+
+A altura <Formula math="h" /> deve ser sempre medida perpendicularmente à base escolhida. Qualquer um dos três lados pode ser usado como base, desde que a altura correspondente seja utilizada.
+
+<Note type="info">
+Outra fórmula útil é a de Heron: <Formula math="A = \sqrt{s(s-a)(s-b)(s-c)}" />, onde <Formula math="s = \frac{a+b+c}{2}" /> é o semiperímetro. Útil quando se conhecem apenas os três lados.
+</Note>
+
+## Exemplo
+
+<Example title="Triângulo com base 10 cm e altura 6 cm">
+Dados: <Formula math="b = 10 \text{ cm}" />, <Formula math="h = 6 \text{ cm}" />.
+
+<FormulaBlock math="A = \frac{10 \cdot 6}{2} = \frac{60}{2} = 30 \text{ cm}^2" />
+
+A área do triângulo é <Formula math="30 \text{ cm}^2" />.
+</Example>
+
+<Note type="tip">
+Lembre-se: a altura é sempre perpendicular à base. Em triângulos obtusângulos, a altura pode cair fora do triângulo.
+</Note>

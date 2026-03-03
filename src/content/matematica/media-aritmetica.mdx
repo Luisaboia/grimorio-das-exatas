@@ -1,0 +1,59 @@
+---
+title: "Média Aritmética"
+slug: "media-aritmetica"
+category: "matematica"
+subcategory: "estatistica"
+tags: ["média", "aritmética", "estatística", "medida de tendência central"]
+difficulty: "basico"
+description: "Fórmula da média aritmética simples e ponderada"
+formula_preview: "\\bar{x} = \\frac{\\sum x_i}{n}"
+---
+
+# Média Aritmética
+
+A média aritmética é a medida de tendência central mais utilizada na estatística. Representa o valor central de um conjunto de dados.
+
+## Média Aritmética Simples
+
+<FormulaBlock math="\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n} = \frac{x_1 + x_2 + \ldots + x_n}{n}" label="Média aritmética simples" />
+
+## Média Aritmética Ponderada
+
+<FormulaBlock math="\bar{x}_p = \frac{\sum_{i=1}^{n} x_i \cdot p_i}{\sum_{i=1}^{n} p_i}" label="Média aritmética ponderada" />
+
+## Variáveis
+
+<Variable symbol="\bar{x}" description="Média aritmética" />
+<Variable symbol="x_i" description="Cada valor do conjunto de dados" />
+<Variable symbol="n" description="Número total de valores" />
+<Variable symbol="p_i" description="Peso associado ao valor xᵢ (na média ponderada)" />
+
+## Explicação
+
+A média simples atribui o mesmo peso a todos os valores. Já a média ponderada considera que alguns valores têm maior importância (peso) que outros.
+
+A média é sensível a valores extremos (outliers): um valor muito alto ou muito baixo pode distorcer significativamente a média.
+
+<Note type="info">
+A soma de todos os desvios em relação à média é sempre zero: <Formula math="\sum(x_i - \bar{x}) = 0" />. Essa propriedade é fundamental na estatística.
+</Note>
+
+## Exemplo
+
+<Example title="Média das notas: 7, 8, 6, 9 e 5">
+Dados: <Formula math="x_1 = 7" />, <Formula math="x_2 = 8" />, <Formula math="x_3 = 6" />, <Formula math="x_4 = 9" />, <Formula math="x_5 = 5" />, <Formula math="n = 5" />.
+
+<FormulaBlock math="\bar{x} = \frac{7 + 8 + 6 + 9 + 5}{5} = \frac{35}{5} = 7" />
+
+A média das notas é <Formula math="7" />.
+</Example>
+
+<Example title="Média ponderada: provas com pesos diferentes">
+Um aluno obteve notas 8 (peso 2), 6 (peso 3) e 9 (peso 5):
+
+<FormulaBlock math="\bar{x}_p = \frac{8 \cdot 2 + 6 \cdot 3 + 9 \cdot 5}{2 + 3 + 5} = \frac{16 + 18 + 45}{10} = \frac{79}{10} = 7{,}9" />
+</Example>
+
+<Note type="tip">
+Na média ponderada, os valores com maior peso influenciam mais o resultado final. No ENEM, a nota é uma média ponderada das áreas de conhecimento.
+</Note>
