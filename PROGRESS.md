@@ -9,11 +9,13 @@
 ### Completed
 
 - [x] Task-001: Corrigir Filtros de Dificuldade (commit: 4979471)
+- [x] Task-002: Fixar Modo Escuro como Único Tema (commit: bbc4080)
+- [x] Task-003: Criar Página Sobre e Remover Link GitHub (commit: 61558e1)
 
 ### Current Iteration
 
-- Iteration: 1
-- Working on: Task-002
+- Iteration: 3
+- Working on: Task-004
 - Started: 2026-03-03
 
 ## Blockers

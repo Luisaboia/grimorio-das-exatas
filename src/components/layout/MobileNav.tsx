@@ -55,7 +55,7 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
         {/* Drawer header */}
         <div className="flex h-16 items-center justify-between border-b border-surface-200 px-4 border-surface-800">
           <Link href="/" className="text-lg font-bold text-primary-600 text-primary-400" onClick={onClose}>
-            Fórmulas IFPR
+            Grimório das Exatas
           </Link>
           <button
             onClick={onClose}

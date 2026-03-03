@@ -173,7 +173,7 @@ export async function generateMetadata({
     title: formula.frontmatter.title,
     description: formula.frontmatter.description,
     openGraph: {
-      title: `${formula.frontmatter.title} | Fórmulas IFPR`,
+      title: `${formula.frontmatter.title} | Grimório das Exatas`,
       description: formula.frontmatter.description,
       type: "article",
     },

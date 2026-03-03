@@ -19,19 +19,19 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Fórmulas IFPR",
-    template: "%s — Fórmulas IFPR",
+    default: "Grimório das Exatas",
+    template: "%s — Grimório das Exatas",
   },
   description:
-    "Catálogo completo de fórmulas de Física e Matemática para estudo e consulta — IFPR",
-  keywords: ["fórmulas", "física", "matemática", "IFPR", "estudo"],
+    "Catálogo completo de fórmulas de Física e Matemática para estudo e consulta",
+  keywords: ["fórmulas", "física", "matemática", "grimório", "exatas", "estudo"],
   openGraph: {
-    title: "Fórmulas IFPR",
+    title: "Grimório das Exatas",
     description:
-      "Catálogo completo de fórmulas de Física e Matemática para estudo e consulta — IFPR",
+      "Catálogo completo de fórmulas de Física e Matemática para estudo e consulta",
     type: "website",
     locale: "pt_BR",
-    siteName: "Fórmulas IFPR",
+    siteName: "Grimório das Exatas",
   },
   robots: {
     index: true,

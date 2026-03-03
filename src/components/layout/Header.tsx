@@ -32,7 +32,7 @@ export function Header() {
           href="/"
           className="shrink-0 text-lg font-bold tracking-tight text-primary-600 text-primary-400"
         >
-          Fórmulas IFPR
+          Grimório das Exatas
         </Link>
 
         {/* Search — desktop only */}

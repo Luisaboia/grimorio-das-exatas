@@ -1,4 +1,4 @@
-# 📐 Fórmulas IFPR
+# 📐 Grimório das Exatas
 
 Catálogo web completo de fórmulas de **Matemática** e **Física** para estudo e consulta. Renderização LaTeX bonita com KaTeX, busca instantânea, design responsivo e moderno.
 

@@ -18,11 +18,11 @@ export function JsonLd({ formula }: JsonLdProps) {
     url: `${BASE_URL}/formula/${formula.slug}`,
     author: {
       "@type": "Organization",
-      name: "Fórmulas IFPR",
+      name: "Grimório das Exatas",
     },
     publisher: {
       "@type": "Organization",
-      name: "Fórmulas IFPR",
+      name: "Grimório das Exatas",
     },
     educationalLevel: formula.difficulty === "basico"
       ? "Beginner"

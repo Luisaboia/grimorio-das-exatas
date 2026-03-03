@@ -10,10 +10,10 @@ export default function Home() {
       {/* Hero section */}
       <section className="mx-auto max-w-3xl text-center">
         <h1 className="text-4xl font-bold tracking-tight text-surface-50 sm:text-5xl">
-          Fórmulas de Matemática e Física
+          Grimório das Exatas
         </h1>
         <p className="mt-4 text-lg text-surface-800/60 text-surface-50/60">
-          Catálogo completo de fórmulas para estudo e consulta
+          Seu catálogo de fórmulas de Matemática e Física
         </p>
 
         {/* Prominent search bar — triggers command palette */}

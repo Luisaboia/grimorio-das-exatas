@@ -1,4 +1,4 @@
-# Contribuindo com o Fórmulas IFPR
+# Contribuindo com o Grimório das Exatas
 
 Obrigado pelo interesse em contribuir! Este guia explica como adicionar novas fórmulas e colaborar com o projeto.
 
