@@ -3,6 +3,7 @@ import { Card } from "@/components/ui";
 import { Badge } from "@/components/ui";
 import { categories } from "@/lib/categories";
 import { HeroSearch } from "./HeroSearch";
+import { FormulaTypewriter } from "@/components/home/FormulaTypewriter";
 
 export default function Home() {
   return (
@@ -15,6 +16,9 @@ export default function Home() {
         <p className="mt-4 text-lg text-surface-50/60">
           Seu catálogo de fórmulas de Matemática e Física
         </p>
+
+        {/* Formula typing animation */}
+        <FormulaTypewriter />
 
         {/* Prominent search bar — triggers command palette */}
         <div className="mx-auto mt-8 max-w-lg">
