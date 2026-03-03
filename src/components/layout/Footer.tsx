@@ -14,14 +14,6 @@ export function Footer() {
           >
             Sobre
           </Link>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-surface-800/60 transition-colors hover:text-primary-500 text-surface-50/60 hover:text-primary-400"
-          >
-            GitHub
-          </a>
         </nav>
       </div>
     </footer>
