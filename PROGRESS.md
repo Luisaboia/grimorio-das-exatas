@@ -8,15 +8,20 @@
 - [x] Task-005: Integração Supabase — Schema, Seed, Client e Search
 - [x] Task-006: Catálogo de Fórmulas — Listagem e Cards
 - [x] Task-008: Sistema de Busca — Command Palette, API, página de busca
+- [x] Task-009: Conteúdo MDX — Fórmulas de Física (33 arquivos)
+- [x] Task-010: Conteúdo MDX — Fórmulas de Matemática (29 arquivos)
+- [x] Task-011: SEO, Testes e Acessibilidade
+- [x] Task-012: Deploy e Documentação Final
 
-- [x] Task-009: Conteúdo MDX — Fórmulas de Física (32 arquivos criados)
-- [x] Task-010: Conteúdo MDX — Fórmulas de Matemática (28 arquivos criados)
+## Summary
 
-## Current Iteration
+All 10 tasks completed. Project is ready for deployment.
 
-- Iteration: 2
-- Working on: Next task
-- Started: 2026-03-03
+- **62+ fórmulas** (33 Física + 29 Matemática)
+- **35 testes** automatizados passando
+- **Build** e **lint** passando sem erros
+- **SEO**: sitemap, robots.txt, JSON-LD
+- **Documentação**: README, CONTRIBUTING, CHANGELOG
 
 ## Blockers
 
@@ -24,7 +29,7 @@
 
 ## Notes
 
-- Ralph loop initialized
+- Stack: Next.js 16 + Tailwind CSS v4 + react-katex + MDX + Supabase (optional)
+- Deploy target: Vercel
 - PRD created: 2026-03-03
-- Stack: Next.js 15 + Tailwind CSS v4 + react-katex + MDX + Supabase
-- 12 tasks defined covering: setup, design system, layout, MDX/KaTeX, Supabase, catálogo, detalhe, busca, conteúdo Física, conteúdo Matemática, SEO/testes, deploy
+- Final release: 2026-03-03
