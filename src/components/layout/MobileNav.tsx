@@ -48,6 +48,9 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
         className={`fixed top-0 left-0 z-50 flex h-full w-72 flex-col bg-surface-50 shadow-xl transition-transform duration-300 ease-in-out dark:bg-surface-950 lg:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
+        role="dialog"
+        aria-modal={isOpen}
+        aria-label="Menu de navegação"
       >
         {/* Drawer header */}
         <div className="flex h-16 items-center justify-between border-b border-surface-200 px-4 dark:border-surface-800">

@@ -5,6 +5,7 @@ import type { ComponentPropsWithoutRef, ReactNode } from "react";
 import { MDXRemote } from "next-mdx-remote/rsc";
 
 import { Breadcrumbs } from "@/components/layout/Breadcrumbs";
+import { JsonLd } from "@/components/layout/JsonLd";
 import { Badge } from "@/components/ui/Badge";
 import { Example } from "@/components/formulas/Example";
 import { Formula } from "@/components/formulas/Formula";
@@ -231,6 +232,9 @@ export default async function FormulaDetailPage({
 
   return (
     <div className="px-6 py-10 lg:px-10">
+      {/* JSON-LD Structured Data */}
+      <JsonLd formula={frontmatter} />
+
       {/* Breadcrumbs */}
       <Breadcrumbs
         items={[

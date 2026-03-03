@@ -155,6 +155,7 @@ export function CommandPalette({ isOpen, onClose }: CommandPaletteProps) {
             onChange={(e) => handleInputChange(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Buscar fórmulas, conceitos, equações..."
+            aria-label="Buscar fórmulas"
             className="flex-1 bg-transparent py-4 text-base text-surface-800 placeholder:text-surface-800/40 focus:outline-none dark:text-surface-50 dark:placeholder:text-surface-50/40"
           />
           <kbd className="ml-2 shrink-0 rounded-md border border-surface-300 bg-surface-100 px-2 py-0.5 text-xs font-medium text-surface-800/60 dark:border-surface-700 dark:bg-surface-800 dark:text-surface-50/60">

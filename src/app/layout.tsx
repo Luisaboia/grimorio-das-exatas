@@ -26,6 +26,18 @@ export const metadata: Metadata = {
   description:
     "Catálogo completo de fórmulas de Física e Matemática para estudo e consulta — IFPR",
   keywords: ["fórmulas", "física", "matemática", "IFPR", "estudo"],
+  openGraph: {
+    title: "Fórmulas IFPR",
+    description:
+      "Catálogo completo de fórmulas de Física e Matemática para estudo e consulta — IFPR",
+    type: "website",
+    locale: "pt_BR",
+    siteName: "Fórmulas IFPR",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({

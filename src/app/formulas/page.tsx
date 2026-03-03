@@ -9,6 +9,11 @@ export const metadata: Metadata = {
   title: "Catálogo de Fórmulas",
   description:
     "Explore todas as fórmulas de Matemática e Física. Filtre por categoria, subcategoria e dificuldade.",
+  openGraph: {
+    title: "Catálogo de Fórmulas | Fórmulas IFPR",
+    description:
+      "Explore todas as fórmulas de Matemática e Física. Filtre por categoria, subcategoria e dificuldade.",
+  },
 };
 
 export default function FormulasPage() {
