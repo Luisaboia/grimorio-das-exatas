@@ -12,7 +12,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold tracking-tight text-surface-50 sm:text-5xl">
           Grimório das Exatas
         </h1>
-        <p className="mt-4 text-lg text-surface-800/60 text-surface-50/60">
+        <p className="mt-4 text-lg text-surface-50/60">
           Seu catálogo de fórmulas de Matemática e Física
         </p>
 
@@ -24,7 +24,7 @@ export default function Home() {
 
       {/* Category cards */}
       <section className="mx-auto mt-14 max-w-4xl">
-        <h2 className="mb-6 text-xl font-semibold text-surface-800 text-surface-50">
+        <h2 className="mb-6 text-xl font-semibold text-surface-50">
           Categorias
         </h2>
         <div className="grid gap-6 sm:grid-cols-2">
@@ -36,10 +36,10 @@ export default function Home() {
                     {category.icon}
                   </span>
                   <div className="flex-1">
-                    <h3 className="text-xl font-bold text-surface-800 text-surface-50">
+                    <h3 className="text-xl font-bold text-surface-50">
                       {category.name}
                     </h3>
-                    <p className="mt-1 text-sm text-surface-800/60 text-surface-50/60">
+                    <p className="mt-1 text-sm text-surface-50/60">
                       {category.subcategories.length} subcategorias
                     </p>
                   </div>

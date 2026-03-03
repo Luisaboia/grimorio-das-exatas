@@ -15,11 +15,11 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-50 flex h-16 items-center border-b border-surface-200 bg-surface-50/80 px-4 backdrop-blur-md border-surface-800 bg-surface-950/80 lg:px-6">
+      <header className="sticky top-0 z-50 flex h-16 items-center border-b border-surface-800 bg-surface-950/80 px-4 backdrop-blur-md lg:px-6">
         {/* Hamburger — mobile only */}
         <button
           onClick={() => setMobileNavOpen(true)}
-          className="mr-3 flex h-10 w-10 items-center justify-center rounded-full text-surface-800 transition-colors hover:bg-surface-200 text-surface-50 hover:bg-surface-800 lg:hidden"
+          className="mr-3 flex h-10 w-10 items-center justify-center rounded-full text-surface-50 transition-colors hover:bg-surface-800 lg:hidden"
           aria-label="Abrir menu"
         >
           <svg className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -30,7 +30,7 @@ export function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="shrink-0 text-lg font-bold tracking-tight text-primary-600 text-primary-400"
+          className="shrink-0 text-lg font-bold tracking-tight text-primary-400"
         >
           Grimório das Exatas
         </Link>

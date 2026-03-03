@@ -34,7 +34,7 @@ export function SearchBar({
       type="button"
       onClick={handleClick}
       onKeyDown={handleKeyDown}
-      className={`group relative flex w-full items-center rounded-full border border-surface-200 bg-surface-50 text-left transition-all duration-200 hover:border-primary-400 hover:ring-2 hover:ring-primary-400/30 border-surface-800 bg-surface-900 hover:border-primary-500 hover:ring-primary-500/30 ${
+      className={`group relative flex w-full items-center rounded-full border border-surface-800 bg-surface-900 text-left transition-all duration-200 hover:border-primary-500 hover:ring-2 hover:ring-primary-500/30 ${
         isLarge ? "px-5 py-3.5" : "px-4 py-2.5"
       } ${className}`}
       aria-label="Buscar fórmulas (Ctrl+K)"
@@ -61,7 +61,7 @@ export function SearchBar({
       >
         Buscar fórmulas...
       </span>
-      <kbd className="ml-2 hidden shrink-0 items-center gap-0.5 rounded-md border border-surface-300 bg-surface-100 px-2 py-0.5 text-xs font-medium text-surface-800/50 border-surface-700 bg-surface-800 text-surface-50/50 sm:flex">
+      <kbd className="ml-2 hidden shrink-0 items-center gap-0.5 rounded-md border border-surface-700 bg-surface-800 px-2 py-0.5 text-xs font-medium text-surface-50/50 sm:flex">
         Ctrl+K
       </kbd>
     </button>

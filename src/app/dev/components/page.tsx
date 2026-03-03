@@ -11,10 +11,10 @@ function Section({
 }) {
   return (
     <section className="space-y-4">
-      <h2 className="text-2xl font-bold text-surface-800 text-surface-50">
+      <h2 className="text-2xl font-bold text-surface-50">
         {title}
       </h2>
-      <div className="rounded-2xl border border-surface-200 bg-surface-50/50 p-6 border-surface-800 bg-surface-900/50">
+      <div className="rounded-2xl border p-6 border-surface-800 bg-surface-900/50">
         {children}
       </div>
     </section>
@@ -46,10 +46,10 @@ export default function ComponentsShowcase() {
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-4xl font-bold tracking-tight text-surface-800 text-surface-50">
+            <h1 className="text-4xl font-bold tracking-tight text-surface-50">
               Design System
             </h1>
-            <p className="mt-2 text-lg text-surface-800/60 text-surface-50/60">
+            <p className="mt-2 text-lg text-surface-50/60">
               Componentes UI — Física IFPR
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function ComponentsShowcase() {
         <Section title="Button">
           <div className="space-y-6">
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 Variantes
               </p>
               <div className="flex flex-wrap gap-3">
@@ -71,7 +71,7 @@ export default function ComponentsShowcase() {
               </div>
             </div>
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 Tamanhos
               </p>
               <div className="flex flex-wrap items-center gap-3">
@@ -81,7 +81,7 @@ export default function ComponentsShowcase() {
               </div>
             </div>
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 Desabilitado
               </p>
               <div className="flex flex-wrap gap-3">
@@ -98,18 +98,18 @@ export default function ComponentsShowcase() {
         <Section title="Card">
           <div className="grid gap-4 sm:grid-cols-2">
             <Card>
-              <h3 className="text-lg font-semibold text-surface-800 text-surface-50">
+              <h3 className="text-lg font-semibold text-surface-50">
                 Card padrão
               </h3>
-              <p className="mt-2 text-sm text-surface-800/70 text-surface-50/70">
+              <p className="mt-2 text-sm text-surface-50/70">
                 Card com glassmorphism sutil e bordas arredondadas.
               </p>
             </Card>
             <Card hover>
-              <h3 className="text-lg font-semibold text-surface-800 text-surface-50">
+              <h3 className="text-lg font-semibold text-surface-50">
                 Card com hover
               </h3>
-              <p className="mt-2 text-sm text-surface-800/70 text-surface-50/70">
+              <p className="mt-2 text-sm text-surface-50/70">
                 Passe o mouse para ver a elevação e scale.
               </p>
             </Card>
@@ -120,7 +120,7 @@ export default function ComponentsShowcase() {
         <Section title="Badge">
           <div className="space-y-4">
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 Disciplinas
               </p>
               <div className="flex flex-wrap gap-2">
@@ -130,7 +130,7 @@ export default function ComponentsShowcase() {
               </div>
             </div>
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 Dificuldade
               </p>
               <div className="flex flex-wrap gap-2">
@@ -154,7 +154,7 @@ export default function ComponentsShowcase() {
         <Section title="Skeleton">
           <div className="space-y-6">
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 Skeleton básico
               </p>
               <div className="flex flex-col gap-2">
@@ -164,13 +164,13 @@ export default function ComponentsShowcase() {
               </div>
             </div>
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 SkeletonText
               </p>
               <SkeletonText lines={4} />
             </div>
             <div>
-              <p className="mb-3 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-3 text-sm font-medium text-surface-50/70">
                 SkeletonCard
               </p>
               <div className="grid gap-4 sm:grid-cols-2">
@@ -185,18 +185,18 @@ export default function ComponentsShowcase() {
         <Section title="Tipografia">
           <div className="space-y-4">
             <div>
-              <p className="mb-2 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-2 text-sm font-medium text-surface-50/70">
                 Font Sans (Geist)
               </p>
-              <p className="font-sans text-xl text-surface-800 text-surface-50">
+              <p className="font-sans text-xl text-surface-50">
                 A velocidade é a taxa de variação da posição.
               </p>
             </div>
             <div>
-              <p className="mb-2 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-2 text-sm font-medium text-surface-50/70">
                 Font Mono (JetBrains Mono)
               </p>
-              <p className="font-mono text-xl text-surface-800 text-surface-50">
+              <p className="font-mono text-xl text-surface-50">
                 v = d / t → F = m × a
               </p>
             </div>
@@ -207,7 +207,7 @@ export default function ComponentsShowcase() {
         <Section title="Paleta de Cores">
           <div className="space-y-4">
             <div>
-              <p className="mb-2 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-2 text-sm font-medium text-surface-50/70">
                 Primary
               </p>
               <div className="flex flex-wrap gap-1">
@@ -225,7 +225,7 @@ export default function ComponentsShowcase() {
               </div>
             </div>
             <div>
-              <p className="mb-2 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-2 text-sm font-medium text-surface-50/70">
                 Secondary
               </p>
               <div className="flex flex-wrap gap-1">
@@ -243,7 +243,7 @@ export default function ComponentsShowcase() {
               </div>
             </div>
             <div>
-              <p className="mb-2 text-sm font-medium text-surface-800/70 text-surface-50/70">
+              <p className="mb-2 text-sm font-medium text-surface-50/70">
                 Accent
               </p>
               <div className="flex flex-wrap gap-1">

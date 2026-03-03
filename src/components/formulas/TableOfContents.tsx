@@ -40,10 +40,10 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
   return (
     <nav aria-label="Sumário">
       <div className="sticky top-24">
-        <h4 className="mb-3 text-sm font-semibold text-surface-800 text-surface-50">
+        <h4 className="mb-3 text-sm font-semibold text-surface-50">
           Nesta página
         </h4>
-        <ul className="space-y-2 border-l-2 border-surface-200 border-surface-700">
+        <ul className="space-y-2 border-l-2 border-surface-700">
           {headings.map((heading) => (
             <li key={heading.id}>
               <a
@@ -52,8 +52,8 @@ export function TableOfContents({ headings }: TableOfContentsProps) {
                   heading.level === 3 ? "pl-6" : "pl-3"
                 } ${
                   activeId === heading.id
-                    ? "border-primary-500 text-primary-600 text-primary-400"
-                    : "border-transparent text-surface-800/60 hover:text-surface-800 text-surface-50/60 hover:text-surface-50"
+                    ? "border-primary-500 text-primary-400"
+                    : "border-transparent text-surface-50/60 hover:text-surface-50"
                 }`}
               >
                 {heading.text}

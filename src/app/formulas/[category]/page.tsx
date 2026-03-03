@@ -70,7 +70,7 @@ export default async function CategoryPage({ params, searchParams }: CategoryPag
             {cat.name}
           </h1>
         </div>
-        <p className="mt-2 text-lg text-surface-800/60 text-surface-50/60">
+        <p className="mt-2 text-lg text-surface-50/60">
           {cat.subcategories.length} subcategorias disponíveis
         </p>
       </div>

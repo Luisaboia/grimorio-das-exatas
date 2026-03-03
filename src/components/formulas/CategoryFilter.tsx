@@ -33,7 +33,7 @@ export function CategoryFilter({
     <div className="space-y-4">
       {/* Category chips */}
       <div className="flex flex-wrap items-center gap-2">
-        <span className="mr-1 text-sm font-medium text-surface-800/60 text-surface-50/60">
+        <span className="mr-1 text-sm font-medium text-surface-50/60">
           Categoria:
         </span>
         <FilterChip href="/formulas" active={!currentCategory}>
@@ -53,7 +53,7 @@ export function CategoryFilter({
       {/* Subcategory chips (show when a category is selected) */}
       {activeCategory && (
         <div className="flex flex-wrap items-center gap-2">
-          <span className="mr-1 text-sm font-medium text-surface-800/60 text-surface-50/60">
+          <span className="mr-1 text-sm font-medium text-surface-50/60">
             Subcategoria:
           </span>
           <FilterChip
@@ -76,7 +76,7 @@ export function CategoryFilter({
 
       {/* Difficulty filter — shown on all catalog pages */}
       <div className="flex flex-wrap items-center gap-2">
-        <span className="mr-1 text-sm font-medium text-surface-800/60 text-surface-50/60">
+        <span className="mr-1 text-sm font-medium text-surface-50/60">
           Dificuldade:
         </span>
         <FilterChip href={basePath} active={!currentDifficulty}>
@@ -113,9 +113,9 @@ function FilterChip({
       href={href}
       className={`inline-flex items-center gap-1.5 rounded-full px-3.5 py-1.5 text-sm font-medium transition-all duration-200 ${
         active
-          ? "bg-primary-500 text-white shadow-sm bg-primary-600"
+          ? "bg-primary-600 text-white shadow-sm"
           : className ||
-            "bg-surface-100 text-surface-800/70 hover:bg-surface-200 bg-surface-800 text-surface-50/70 hover:bg-surface-700"
+            "bg-surface-800 text-surface-50/70 hover:bg-surface-700"
       }`}
     >
       {children}

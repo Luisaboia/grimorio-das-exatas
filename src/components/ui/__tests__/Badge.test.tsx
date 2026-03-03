@@ -18,24 +18,24 @@ describe("Badge", () => {
     render(<Badge variant="fisica">Física</Badge>);
     const el = screen.getByText("Física");
     expect(el).toBeInTheDocument();
-    expect(el.className).toContain("bg-primary-100");
+    expect(el.className).toContain("bg-primary-900");
   });
 
   it("renders with 'matematica' variant", () => {
     render(<Badge variant="matematica">Matemática</Badge>);
     const el = screen.getByText("Matemática");
-    expect(el.className).toContain("bg-secondary-100");
+    expect(el.className).toContain("bg-secondary-900");
   });
 
   it("renders with difficulty variants", () => {
     const { rerender } = render(<Badge variant="basico">Básico</Badge>);
-    expect(screen.getByText("Básico").className).toContain("bg-green-100");
+    expect(screen.getByText("Básico").className).toContain("bg-green-900");
 
     rerender(<Badge variant="intermediario">Intermediário</Badge>);
-    expect(screen.getByText("Intermediário").className).toContain("bg-yellow-100");
+    expect(screen.getByText("Intermediário").className).toContain("bg-yellow-900");
 
     rerender(<Badge variant="avancado">Avançado</Badge>);
-    expect(screen.getByText("Avançado").className).toContain("bg-red-100");
+    expect(screen.getByText("Avançado").className).toContain("bg-red-900");
   });
 
   it("accepts additional className", () => {

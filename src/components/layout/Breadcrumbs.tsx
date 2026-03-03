@@ -14,7 +14,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
 
   return (
     <nav aria-label="Breadcrumb" className="mb-6">
-      <ol className="flex flex-wrap items-center gap-1.5 text-sm text-surface-800/60 text-surface-50/60">
+      <ol className="flex flex-wrap items-center gap-1.5 text-sm text-surface-50/60">
         {items.map((item, index) => {
           const isLast = index === items.length - 1;
 
@@ -27,7 +27,7 @@ export function Breadcrumbs({ items }: BreadcrumbsProps) {
               )}
               {isLast || !item.href ? (
                 <span
-                  className="font-medium text-surface-800 text-surface-50"
+                  className="font-medium text-surface-50"
                   aria-current={isLast ? "page" : undefined}
                 >
                   {item.label}

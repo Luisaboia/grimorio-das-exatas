@@ -14,9 +14,9 @@ const variantClasses: Record<ButtonVariant, string> = {
   secondary:
     "bg-secondary-500 text-white hover:bg-secondary-600 active:bg-secondary-700 shadow-sm hover:shadow-md",
   ghost:
-    "bg-transparent text-surface-800 hover:bg-surface-100 text-surface-50 hover:bg-surface-800",
+    "bg-transparent text-surface-50 hover:bg-surface-800",
   outline:
-    "border-2 border-primary-500 text-primary-600 hover:bg-primary-50 text-primary-400 hover:bg-primary-950",
+    "border-2 border-primary-500 text-primary-400 hover:bg-primary-950",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

@@ -84,7 +84,7 @@ export default async function SubcategoryPage({
             <h1 className="text-3xl font-bold tracking-tight text-surface-50 sm:text-4xl">
               {sub.name}
             </h1>
-            <p className="mt-1 text-lg text-surface-800/60 text-surface-50/60">
+            <p className="mt-1 text-lg text-surface-50/60">
               {cat.name}
             </p>
           </div>
