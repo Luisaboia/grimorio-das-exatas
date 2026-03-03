@@ -1,6 +1,9 @@
+export { CategoryFilter } from "./CategoryFilter";
 export { Example } from "./Example";
 export { Formula } from "./Formula";
 export { FormulaBlock } from "./FormulaBlock";
+export { FormulaCard } from "./FormulaCard";
+export { FormulaGrid } from "./FormulaGrid";
 export { MDXContent } from "./MDXContent";
 export { Note } from "./Note";
 export { Variable } from "./Variable";

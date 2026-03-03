@@ -6,6 +6,7 @@
 - [x] Task-002: Design System e Componentes UI Base (commit: 4225c11)
 - [x] Task-004: Configuração MDX e Renderização KaTeX
 - [x] Task-005: Integração Supabase — Schema, Seed, Client e Search
+- [x] Task-006: Catálogo de Fórmulas — Listagem e Cards
 
 ## Current Iteration
 
