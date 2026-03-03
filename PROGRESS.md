@@ -9,6 +9,8 @@
 - [x] Task-006: Catálogo de Fórmulas — Listagem e Cards
 - [x] Task-008: Sistema de Busca — Command Palette, API, página de busca
 
+- [x] Task-009: Conteúdo MDX — Fórmulas de Física (32 arquivos criados)
+
 ## Current Iteration
 
 - Iteration: 2

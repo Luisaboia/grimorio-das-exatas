@@ -1,0 +1,44 @@
+---
+title: "Lei de Snell-Descartes"
+slug: "lei-snell-descartes"
+category: "fisica"
+subcategory: "optica"
+tags: ["refração", "Snell", "índice de refração", "óptica"]
+difficulty: "intermediario"
+description: "A Lei de Snell-Descartes descreve a relação entre os ângulos de incidência e refração quando a luz passa de um meio para outro"
+formula_preview: "n_1 \\sin\\theta_1 = n_2 \\sin\\theta_2"
+---
+
+# Lei de Snell-Descartes
+
+A Lei de Snell-Descartes (ou Lei da Refração) descreve como a direção de propagação da luz muda ao passar de um meio para outro com índice de refração diferente.
+
+<FormulaBlock math="n_1 \sin\theta_1 = n_2 \sin\theta_2" label="Lei de Snell-Descartes" />
+
+## Variáveis
+
+<Variable symbol="n_1" description="Índice de refração do meio de incidência" unit="adimensional" />
+<Variable symbol="n_2" description="Índice de refração do meio de refração" unit="adimensional" />
+<Variable symbol="\theta_1" description="Ângulo de incidência (em relação à normal)" unit="° (graus) ou rad (radianos)" />
+<Variable symbol="\theta_2" description="Ângulo de refração (em relação à normal)" unit="° (graus) ou rad (radianos)" />
+
+## Explicação
+
+Quando a luz passa de um meio menos refringente para um mais refringente (<Formula math="n_1 < n_2" />), o raio se aproxima da normal. No caso contrário, ele se afasta. O índice de refração do vácuo é <Formula math="n = 1" />, da água é <Formula math="n \approx 1{,}33" /> e do vidro é <Formula math="n \approx 1{,}5" />.
+
+<Note type="info">
+Quando a luz passa de um meio mais refringente para um menos refringente, existe um ângulo limite acima do qual ocorre reflexão total interna — princípio utilizado nas fibras ópticas.
+</Note>
+
+## Exemplo
+
+<Example title="Luz entrando na água">
+Um raio de luz passa do ar (<Formula math="n_1 = 1{,}00" />) para a água (<Formula math="n_2 = 1{,}33" />) com ângulo de incidência <Formula math="\theta_1 = 45°" />.
+
+Qual o ângulo de refração?
+
+<FormulaBlock math="1{,}00 \times \sin 45° = 1{,}33 \times \sin\theta_2" />
+<FormulaBlock math="\sin\theta_2 = \frac{0{,}707}{1{,}33} \approx 0{,}532 \implies \theta_2 \approx 32{,}1°" />
+
+O ângulo de refração é de aproximadamente **32,1°**.
+</Example>

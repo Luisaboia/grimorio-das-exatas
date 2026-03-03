@@ -1,0 +1,42 @@
+---
+title: "Lei de Faraday"
+slug: "lei-faraday"
+category: "fisica"
+subcategory: "eletromagnetismo"
+tags: ["Faraday", "indução", "fluxo magnético", "fem", "eletromagnetismo"]
+difficulty: "intermediario"
+description: "A Lei de Faraday afirma que a força eletromotriz induzida é igual à taxa de variação do fluxo magnético"
+formula_preview: "\\varepsilon = -\\frac{d\\Phi_B}{dt}"
+---
+
+# Lei de Faraday
+
+A Lei de Faraday da Indução Eletromagnética é um dos pilares do eletromagnetismo. Ela descreve como um campo magnético variável gera uma força eletromotriz (fem) e, consequentemente, uma corrente elétrica.
+
+<FormulaBlock math="\varepsilon = -\frac{d\Phi_B}{dt}" label="Lei de Faraday" />
+
+## Variáveis
+
+<Variable symbol="\varepsilon" description="Força eletromotriz induzida (fem)" unit="V (Volt)" />
+<Variable symbol="\Phi_B" description="Fluxo magnético através da espira" unit="Wb (Weber)" />
+<Variable symbol="t" description="Tempo" unit="s (segundos)" />
+
+## Explicação
+
+O fluxo magnético é dado por <Formula math="\Phi_B = B \cdot A \cdot \cos\theta" />, onde <Formula math="B" /> é o campo magnético, <Formula math="A" /> é a área da espira e <Formula math="\theta" /> é o ângulo entre o campo e a normal à espira. O sinal negativo (Lei de Lenz) indica que a fem induzida se opõe à variação do fluxo que a originou.
+
+<Note type="info">
+A Lei de Faraday é a base do funcionamento de geradores, transformadores e motores elétricos. Sem ela, não teríamos o sistema de geração e distribuição de energia que usamos hoje.
+</Note>
+
+## Exemplo
+
+<Example title="Espira em campo variável">
+Uma espira de área <Formula math="A = 0{,}05 \text{ m}^2" /> está perpendicular a um campo magnético que varia de <Formula math="B_1 = 0{,}2 \text{ T}" /> para <Formula math="B_2 = 0{,}8 \text{ T}" /> em <Formula math="\Delta t = 0{,}1 \text{ s}" />.
+
+Variação do fluxo: <Formula math="\Delta\Phi_B = (0{,}8 - 0{,}2) \times 0{,}05 = 0{,}03 \text{ Wb}" />
+
+<FormulaBlock math="|\varepsilon| = \frac{\Delta\Phi_B}{\Delta t} = \frac{0{,}03}{0{,}1} = 0{,}3 \text{ V}" />
+
+A fem induzida é de **0,3 V** (300 mV).
+</Example>

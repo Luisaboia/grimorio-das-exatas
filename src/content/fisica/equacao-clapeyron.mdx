@@ -1,0 +1,42 @@
+---
+title: "Equação de Clapeyron"
+slug: "equacao-clapeyron"
+category: "fisica"
+subcategory: "termodinamica"
+tags: ["gás ideal", "Clapeyron", "pressão", "volume", "temperatura", "termodinâmica"]
+difficulty: "intermediario"
+description: "A equação de Clapeyron é a equação de estado dos gases ideais, relacionando pressão, volume e temperatura"
+formula_preview: "PV = nRT"
+---
+
+# Equação de Clapeyron
+
+A equação de Clapeyron (ou equação dos gases ideais) relaciona pressão, volume, quantidade de matéria e temperatura de um gás ideal.
+
+<FormulaBlock math="PV = nRT" label="Equação de Clapeyron" />
+
+## Variáveis
+
+<Variable symbol="P" description="Pressão do gás" unit="Pa (Pascal)" />
+<Variable symbol="V" description="Volume do gás" unit="m³ (metros cúbicos)" />
+<Variable symbol="n" description="Número de mols do gás" unit="mol" />
+<Variable symbol="R" description="Constante universal dos gases ideais" unit="8,314 J/(mol·K)" />
+<Variable symbol="T" description="Temperatura absoluta" unit="K (Kelvin)" />
+
+## Explicação
+
+Em um gás ideal, as moléculas são pontuais e não interagem entre si. Embora nenhum gás real seja perfeitamente ideal, essa aproximação funciona muito bem para gases em condições de baixa pressão e alta temperatura. A constante <Formula math="R = 8{,}314 \text{ J/(mol·K)}" /> vale para o SI; em outras unidades, utiliza-se <Formula math="R = 0{,}082 \text{ atm·L/(mol·K)}" />.
+
+<Note type="warning">
+A temperatura deve estar sempre em Kelvin! Para converter de Celsius para Kelvin: <Formula math="T(K) = T(°C) + 273{,}15" />.
+</Note>
+
+## Exemplo
+
+<Example title="Volume de um gás">
+Qual o volume ocupado por <Formula math="n = 2 \text{ mol}" /> de gás ideal a <Formula math="T = 300 \text{ K}" /> e <Formula math="P = 1{,}01 \times 10^5 \text{ Pa}" />?
+
+<FormulaBlock math="V = \frac{nRT}{P} = \frac{2 \times 8{,}314 \times 300}{1{,}01 \times 10^5} = \frac{4\,988{,}4}{101\,000} \approx 0{,}0494 \text{ m}^3 \approx 49{,}4 \text{ L}" />
+
+O gás ocupa aproximadamente **49,4 litros**.
+</Example>

@@ -1,0 +1,44 @@
+---
+title: "Equação de Torricelli"
+slug: "torricelli"
+category: "fisica"
+subcategory: "cinematica"
+tags: ["Torricelli", "velocidade", "aceleração", "deslocamento", "cinemática"]
+difficulty: "intermediario"
+description: "A equação de Torricelli relaciona velocidade, aceleração e deslocamento sem a variável tempo"
+formula_preview: "v^2 = v_0^2 + 2a\\Delta s"
+---
+
+# Equação de Torricelli
+
+A equação de Torricelli é extremamente útil nos problemas de cinemática em que o tempo não é fornecido nem solicitado. Ela relaciona diretamente a velocidade final, a velocidade inicial, a aceleração e o deslocamento.
+
+<FormulaBlock math="v^2 = v_0^2 + 2a\Delta s" label="Equação de Torricelli" />
+
+## Variáveis
+
+<Variable symbol="v" description="Velocidade final do corpo" unit="m/s (metros por segundo)" />
+<Variable symbol="v_0" description="Velocidade inicial do corpo" unit="m/s (metros por segundo)" />
+<Variable symbol="a" description="Aceleração constante do corpo" unit="m/s² (metros por segundo ao quadrado)" />
+<Variable symbol="\Delta s" description="Deslocamento (variação da posição)" unit="m (metros)" />
+
+## Explicação
+
+A equação de Torricelli é derivada combinando as duas equações horárias do MRUV, eliminando o tempo <Formula math="t" />. Isso a torna muito prática quando o enunciado não envolve informações sobre tempo.
+
+<Note type="warning">
+Lembre-se: esta equação só é válida para movimentos com aceleração constante (MRUV). Não use em situações onde a aceleração varia.
+</Note>
+
+## Exemplo
+
+<Example title="Frenagem de um veículo">
+Um carro trafega a <Formula math="v_0 = 20 \text{ m/s}" /> e freia com aceleração <Formula math="a = -5 \text{ m/s}^2" /> até parar (<Formula math="v = 0" />).
+
+Qual a distância percorrida até parar?
+
+<FormulaBlock math="0^2 = 20^2 + 2 \times (-5) \times \Delta s" />
+<FormulaBlock math="0 = 400 - 10\Delta s \implies \Delta s = \frac{400}{10} = 40 \text{ m}" />
+
+O carro percorre **40 metros** até parar completamente.
+</Example>

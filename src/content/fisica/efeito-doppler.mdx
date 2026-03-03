@@ -1,0 +1,42 @@
+---
+title: "Efeito Doppler"
+slug: "efeito-doppler"
+category: "fisica"
+subcategory: "ondulatoria"
+tags: ["Doppler", "frequência", "onda", "som", "ondulatória"]
+difficulty: "intermediario"
+description: "O efeito Doppler descreve a mudança na frequência percebida de uma onda quando a fonte ou o observador se movem"
+formula_preview: "f' = f \\cdot \\frac{v \\pm v_o}{v \\mp v_f}"
+---
+
+# Efeito Doppler
+
+O efeito Doppler é o fenômeno em que a frequência percebida de uma onda muda quando há movimento relativo entre a fonte e o observador.
+
+<FormulaBlock math="f' = f \cdot \frac{v \pm v_o}{v \mp v_f}" label="Efeito Doppler" />
+
+## Variáveis
+
+<Variable symbol="f'" description="Frequência percebida pelo observador" unit="Hz (Hertz)" />
+<Variable symbol="f" description="Frequência emitida pela fonte" unit="Hz (Hertz)" />
+<Variable symbol="v" description="Velocidade de propagação da onda no meio" unit="m/s (metros por segundo)" />
+<Variable symbol="v_o" description="Velocidade do observador em relação ao meio" unit="m/s (metros por segundo)" />
+<Variable symbol="v_f" description="Velocidade da fonte em relação ao meio" unit="m/s (metros por segundo)" />
+
+## Explicação
+
+Quando fonte e observador se aproximam, a frequência percebida aumenta (som mais agudo). Quando se afastam, a frequência diminui (som mais grave). No numerador, soma-se <Formula math="v_o" /> quando o observador se aproxima da fonte e subtrai-se quando se afasta. No denominador, subtrai-se <Formula math="v_f" /> quando a fonte se aproxima do observador e soma-se quando se afasta.
+
+<Note type="info">
+O efeito Doppler também ocorre com ondas eletromagnéticas (luz). Na astronomia, o deslocamento para o vermelho (redshift) indica que galáxias distantes estão se afastando de nós.
+</Note>
+
+## Exemplo
+
+<Example title="Ambulância se aproximando">
+Uma ambulância emite som com frequência <Formula math="f = 700 \text{ Hz}" /> e se aproxima de um observador parado (<Formula math="v_o = 0" />) a <Formula math="v_f = 30 \text{ m/s}" />. A velocidade do som no ar é <Formula math="v = 340 \text{ m/s}" />.
+
+<FormulaBlock math="f' = 700 \times \frac{340 + 0}{340 - 30} = 700 \times \frac{340}{310} \approx 700 \times 1{,}097 \approx 768 \text{ Hz}" />
+
+O observador percebe uma frequência de aproximadamente **768 Hz**, mais aguda que a original.
+</Example>

@@ -1,0 +1,47 @@
+---
+title: "Resistores em Série e Paralelo"
+slug: "resistores-serie-paralelo"
+category: "fisica"
+subcategory: "eletrodinamica"
+tags: ["resistores", "série", "paralelo", "circuito", "eletrodinâmica"]
+difficulty: "intermediario"
+description: "As fórmulas de resistência equivalente permitem simplificar circuitos com resistores em série e em paralelo"
+formula_preview: "R_{eq} = R_1 + R_2 + \\ldots"
+---
+
+# Resistores em Série e Paralelo
+
+Circuitos elétricos podem ter resistores associados em série ou em paralelo. Cada configuração tem uma fórmula própria para calcular a resistência equivalente.
+
+**Em série:**
+<FormulaBlock math="R_{eq} = R_1 + R_2 + R_3 + \ldots" label="Resistores em Série" />
+
+**Em paralelo:**
+<FormulaBlock math="\frac{1}{R_{eq}} = \frac{1}{R_1} + \frac{1}{R_2} + \frac{1}{R_3} + \ldots" label="Resistores em Paralelo" />
+
+## Variáveis
+
+<Variable symbol="R_{eq}" description="Resistência equivalente da associação" unit="Ω (Ohm)" />
+<Variable symbol="R_1, R_2, R_3, \ldots" description="Resistências individuais dos resistores" unit="Ω (Ohm)" />
+
+## Explicação
+
+Em **série**, a corrente é a mesma em todos os resistores, mas a tensão se divide. A resistência equivalente é sempre maior que qualquer resistor individual. Em **paralelo**, a tensão é a mesma em todos, mas a corrente se divide. A resistência equivalente é sempre menor que a menor resistência individual.
+
+<Note type="tip">
+Para dois resistores em paralelo, existe uma fórmula simplificada: <Formula math="R_{eq} = \frac{R_1 \cdot R_2}{R_1 + R_2}" />.
+</Note>
+
+## Exemplo
+
+<Example title="Circuito misto">
+Três resistores de <Formula math="R_1 = 10 \text{ Ω}" />, <Formula math="R_2 = 20 \text{ Ω}" /> e <Formula math="R_3 = 20 \text{ Ω}" />. Os resistores <Formula math="R_2" /> e <Formula math="R_3" /> estão em paralelo, e o conjunto está em série com <Formula math="R_1" />.
+
+Paralelo de <Formula math="R_2" /> e <Formula math="R_3" />:
+<FormulaBlock math="R_{23} = \frac{20 \times 20}{20 + 20} = \frac{400}{40} = 10 \text{ Ω}" />
+
+Série com <Formula math="R_1" />:
+<FormulaBlock math="R_{eq} = R_1 + R_{23} = 10 + 10 = 20 \text{ Ω}" />
+
+A resistência equivalente do circuito é **20 Ω**.
+</Example>

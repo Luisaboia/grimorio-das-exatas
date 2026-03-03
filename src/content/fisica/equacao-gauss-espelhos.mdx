@@ -1,0 +1,44 @@
+---
+title: "Equação de Gauss para Espelhos"
+slug: "equacao-gauss-espelhos"
+category: "fisica"
+subcategory: "optica"
+tags: ["espelhos", "Gauss", "distância focal", "óptica"]
+difficulty: "intermediario"
+description: "A equação de Gauss relaciona a distância focal, a distância do objeto e a distância da imagem em espelhos e lentes"
+formula_preview: "\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}"
+---
+
+# Equação de Gauss para Espelhos
+
+A equação de Gauss (ou equação dos pontos conjugados) permite calcular a posição da imagem formada por espelhos esféricos e lentes delgadas.
+
+<FormulaBlock math="\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}" label="Equação de Gauss" />
+
+## Variáveis
+
+<Variable symbol="f" description="Distância focal do espelho ou lente" unit="m (metros)" />
+<Variable symbol="d_o" description="Distância do objeto ao vértice do espelho" unit="m (metros)" />
+<Variable symbol="d_i" description="Distância da imagem ao vértice do espelho" unit="m (metros)" />
+
+## Explicação
+
+Para espelhos côncavos, a distância focal é positiva; para convexos, é negativa (convenção de Gauss). Se <Formula math="d_i > 0" />, a imagem é real; se <Formula math="d_i < 0" />, a imagem é virtual. A equação também vale para lentes, com as devidas convenções de sinal.
+
+<Note type="tip">
+Para espelhos esféricos, a distância focal é metade do raio de curvatura: <Formula math="f = \frac{R}{2}" />.
+</Note>
+
+## Exemplo
+
+<Example title="Imagem em espelho côncavo">
+Um objeto está a <Formula math="d_o = 30 \text{ cm}" /> de um espelho côncavo de distância focal <Formula math="f = 20 \text{ cm}" />.
+
+Onde se forma a imagem?
+
+<FormulaBlock math="\frac{1}{20} = \frac{1}{30} + \frac{1}{d_i} \implies \frac{1}{d_i} = \frac{1}{20} - \frac{1}{30} = \frac{3 - 2}{60} = \frac{1}{60}" />
+
+<FormulaBlock math="d_i = 60 \text{ cm}" />
+
+A imagem se forma a **60 cm** do espelho, real e invertida.
+</Example>

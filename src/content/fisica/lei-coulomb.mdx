@@ -1,0 +1,44 @@
+---
+title: "Lei de Coulomb"
+slug: "lei-coulomb"
+category: "fisica"
+subcategory: "eletrostatica"
+tags: ["Coulomb", "carga elétrica", "força elétrica", "eletrostática"]
+difficulty: "basico"
+description: "A Lei de Coulomb calcula a força de interação entre duas cargas elétricas pontuais"
+formula_preview: "F = k \\frac{|q_1 q_2|}{d^2}"
+---
+
+# Lei de Coulomb
+
+A Lei de Coulomb descreve a força de atração ou repulsão entre duas cargas elétricas pontuais. A força é proporcional ao produto das cargas e inversamente proporcional ao quadrado da distância entre elas.
+
+<FormulaBlock math="F = k \frac{|q_1 q_2|}{d^2}" label="Lei de Coulomb" />
+
+## Variáveis
+
+<Variable symbol="F" description="Módulo da força elétrica entre as cargas" unit="N (Newton)" />
+<Variable symbol="k" description="Constante eletrostática do meio" unit="N·m²/C² (no vácuo: 9 × 10⁹)" />
+<Variable symbol="q_1" description="Carga elétrica do primeiro corpo" unit="C (Coulomb)" />
+<Variable symbol="q_2" description="Carga elétrica do segundo corpo" unit="C (Coulomb)" />
+<Variable symbol="d" description="Distância entre as cargas" unit="m (metros)" />
+
+## Explicação
+
+Cargas de mesmo sinal se repelem; cargas de sinais opostos se atraem. A constante eletrostática no vácuo é <Formula math="k_0 = 9 \times 10^9 \text{ N·m}^2/\text{C}^2" />. A lei de Coulomb é análoga à lei da gravitação universal, mas pode ser atrativa ou repulsiva.
+
+<Note type="tip">
+A carga elementar (do próton ou elétron) vale <Formula math="e = 1{,}6 \times 10^{-19} \text{ C}" />. As cargas macroscópicas geralmente são da ordem de microcoulombs (<Formula math="\mu\text{C} = 10^{-6} \text{ C}" />).
+</Note>
+
+## Exemplo
+
+<Example title="Duas cargas pontuais">
+Duas cargas <Formula math="q_1 = 3 \times 10^{-6} \text{ C}" /> e <Formula math="q_2 = 5 \times 10^{-6} \text{ C}" /> estão separadas por <Formula math="d = 0{,}1 \text{ m}" />.
+
+Qual a força entre elas?
+
+<FormulaBlock math="F = 9 \times 10^9 \times \frac{3 \times 10^{-6} \times 5 \times 10^{-6}}{(0{,}1)^2} = 9 \times 10^9 \times \frac{15 \times 10^{-12}}{0{,}01} = 13{,}5 \text{ N}" />
+
+A força de repulsão entre as cargas é de **13,5 N**.
+</Example>

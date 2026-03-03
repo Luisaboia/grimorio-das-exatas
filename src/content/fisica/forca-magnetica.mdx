@@ -1,0 +1,42 @@
+---
+title: "Força Magnética"
+slug: "forca-magnetica"
+category: "fisica"
+subcategory: "eletromagnetismo"
+tags: ["força magnética", "campo magnético", "carga", "Lorentz", "eletromagnetismo"]
+difficulty: "intermediario"
+description: "A força magnética atua sobre uma carga elétrica em movimento dentro de um campo magnético"
+formula_preview: "F = qvB\\sin\\theta"
+---
+
+# Força Magnética
+
+A força magnética (componente magnética da força de Lorentz) atua sobre uma carga elétrica em movimento na presença de um campo magnético.
+
+<FormulaBlock math="F = qvB\sin\theta" label="Força Magnética sobre Carga" />
+
+## Variáveis
+
+<Variable symbol="F" description="Módulo da força magnética" unit="N (Newton)" />
+<Variable symbol="q" description="Carga elétrica da partícula" unit="C (Coulomb)" />
+<Variable symbol="v" description="Velocidade da partícula" unit="m/s (metros por segundo)" />
+<Variable symbol="B" description="Módulo do campo magnético" unit="T (Tesla)" />
+<Variable symbol="\theta" description="Ângulo entre o vetor velocidade e o vetor campo magnético" unit="° (graus) ou rad (radianos)" />
+
+## Explicação
+
+A direção da força magnética é perpendicular tanto à velocidade quanto ao campo magnético. Por isso, ela nunca realiza trabalho — apenas muda a direção do movimento, não a velocidade escalar. A regra da mão direita ajuda a determinar o sentido da força: aponte os dedos na direção de <Formula math="v" />, curvando-os na direção de <Formula math="B" />; o polegar indica a direção de <Formula math="F" /> para cargas positivas.
+
+<Note type="warning">
+Se a partícula se move paralelamente ao campo magnético (<Formula math="\theta = 0°" /> ou <Formula math="180°" />), a força magnética é zero! A carga deve ter componente de velocidade perpendicular ao campo.
+</Note>
+
+## Exemplo
+
+<Example title="Elétron em campo magnético">
+Um elétron (<Formula math="q = 1{,}6 \times 10^{-19} \text{ C}" />) se move a <Formula math="v = 5 \times 10^6 \text{ m/s}" /> perpendicularmente a um campo de <Formula math="B = 0{,}02 \text{ T}" /> (<Formula math="\theta = 90°" />).
+
+<FormulaBlock math="F = 1{,}6 \times 10^{-19} \times 5 \times 10^6 \times 0{,}02 \times \sin 90° = 1{,}6 \times 10^{-14} \text{ N}" />
+
+A força magnética sobre o elétron é de <Formula math="1{,}6 \times 10^{-14} \text{ N}" />. Apesar de parecer pequena, para a massa do elétron essa força produz uma aceleração enorme.
+</Example>

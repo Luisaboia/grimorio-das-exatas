@@ -1,0 +1,42 @@
+---
+title: "Força de Atrito"
+slug: "forca-atrito"
+category: "fisica"
+subcategory: "dinamica"
+tags: ["atrito", "coeficiente de atrito", "normal", "dinâmica"]
+difficulty: "basico"
+description: "A força de atrito é proporcional à força normal e ao coeficiente de atrito entre as superfícies"
+formula_preview: "f_{at} = \\mu \\cdot N"
+---
+
+# Força de Atrito
+
+A força de atrito surge quando há contato entre superfícies e se opõe ao movimento ou à tendência de movimento relativo entre elas.
+
+<FormulaBlock math="f_{at} = \mu \cdot N" label="Força de Atrito" />
+
+## Variáveis
+
+<Variable symbol="f_{at}" description="Força de atrito" unit="N (Newton)" />
+<Variable symbol="\mu" description="Coeficiente de atrito (estático ou cinético)" unit="adimensional" />
+<Variable symbol="N" description="Força normal sobre o corpo" unit="N (Newton)" />
+
+## Explicação
+
+Existem dois tipos de atrito: **estático** (impede o início do movimento) e **cinético** (atua durante o movimento). O coeficiente de atrito estático <Formula math="\mu_e" /> é geralmente maior que o cinético <Formula math="\mu_c" />. A força normal <Formula math="N" /> é perpendicular à superfície de contato.
+
+<Note type="tip">
+Em superfícies horizontais sem forças verticais extras, a normal é igual ao peso: <Formula math="N = P = mg" />. Em planos inclinados, <Formula math="N = mg\cos\theta" />.
+</Note>
+
+## Exemplo
+
+<Example title="Bloco em superfície horizontal">
+Um bloco de <Formula math="m = 10 \text{ kg}" /> está sobre uma superfície horizontal com coeficiente de atrito cinético <Formula math="\mu_c = 0{,}3" />. Qual a força de atrito? (Use <Formula math="g = 10 \text{ m/s}^2" />.)
+
+A normal em superfície horizontal é: <Formula math="N = mg = 10 \times 10 = 100 \text{ N}" />
+
+<FormulaBlock math="f_{at} = 0{,}3 \times 100 = 30 \text{ N}" />
+
+A força de atrito cinético é de **30 N**.
+</Example>
