@@ -3,11 +3,11 @@
 ## Completed
 
 - [x] Task-001: Inicialização do Projeto Next.js (commit: 842cd8a)
-- [x] Task-002: Design System e Componentes UI Base
+- [x] Task-002: Design System e Componentes UI Base (commit: 4225c11)
 
 ## Current Iteration
 
-- Iteration: 1
+- Iteration: 2
 - Working on: Task-003
 - Started: 2026-03-03
 

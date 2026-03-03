@@ -2,6 +2,9 @@ import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import { JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/layout/ThemeProvider";
+import { Header } from "@/components/layout/Header";
+import { Sidebar } from "@/components/layout/Sidebar";
+import { Footer } from "@/components/layout/Footer";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -15,9 +18,13 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Física & Matemática — IFPR",
+  title: {
+    default: "Fórmulas IFPR",
+    template: "%s — Fórmulas IFPR",
+  },
   description:
-    "Catálogo interativo de fórmulas de Física e Matemática para estudantes do IFPR",
+    "Catálogo completo de fórmulas de Física e Matemática para estudo e consulta — IFPR",
+  keywords: ["fórmulas", "física", "matemática", "IFPR", "estudo"],
 };
 
 export default function RootLayout({
@@ -37,7 +44,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <div className="flex min-h-screen flex-col">
+            <Header />
+            <div className="flex flex-1">
+              <Sidebar />
+              <main className="flex-1 lg:ml-64">
+                {children}
+              </main>
+            </div>
+            <Footer />
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
