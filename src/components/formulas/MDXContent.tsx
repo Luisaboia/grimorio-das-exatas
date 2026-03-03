@@ -4,13 +4,32 @@ import "katex/dist/katex.min.css";
 
 import type { MDXRemoteSerializeResult } from "next-mdx-remote";
 import { MDXRemote } from "next-mdx-remote";
-import type { ComponentPropsWithoutRef } from "react";
+import type { ComponentPropsWithoutRef, ReactNode } from "react";
 
 import { Example } from "./Example";
 import { Formula } from "./Formula";
 import { FormulaBlock } from "./FormulaBlock";
 import { Note } from "./Note";
 import { Variable } from "./Variable";
+
+function getTextContent(node: ReactNode): string {
+  if (typeof node === "string") return node;
+  if (typeof node === "number") return String(node);
+  if (Array.isArray(node)) return node.map(getTextContent).join("");
+  if (node && typeof node === "object" && "props" in node) {
+    return getTextContent((node as { props: { children?: ReactNode } }).props.children);
+  }
+  return "";
+}
+
+function slugify(text: string): string {
+  return text
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
+}
 
 const mdxComponents = {
   // Custom formula components
@@ -27,18 +46,26 @@ const mdxComponents = {
       {...props}
     />
   ),
-  h2: (props: ComponentPropsWithoutRef<"h2">) => (
-    <h2
-      className="mb-3 mt-6 text-2xl font-semibold text-surface-800 dark:text-surface-100"
-      {...props}
-    />
-  ),
-  h3: (props: ComponentPropsWithoutRef<"h3">) => (
-    <h3
-      className="mb-2 mt-5 text-xl font-semibold text-surface-800 dark:text-surface-100"
-      {...props}
-    />
-  ),
+  h2: (props: ComponentPropsWithoutRef<"h2">) => {
+    const id = slugify(getTextContent(props.children));
+    return (
+      <h2
+        id={id}
+        className="mb-3 mt-6 scroll-mt-24 text-2xl font-semibold text-surface-800 dark:text-surface-100"
+        {...props}
+      />
+    );
+  },
+  h3: (props: ComponentPropsWithoutRef<"h3">) => {
+    const id = slugify(getTextContent(props.children));
+    return (
+      <h3
+        id={id}
+        className="mb-2 mt-5 scroll-mt-24 text-xl font-semibold text-surface-800 dark:text-surface-100"
+        {...props}
+      />
+    );
+  },
   p: (props: ComponentPropsWithoutRef<"p">) => (
     <p
       className="my-3 leading-relaxed text-surface-800 dark:text-surface-200"
