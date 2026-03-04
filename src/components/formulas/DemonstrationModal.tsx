@@ -77,11 +77,11 @@ export function DemonstrationModal({
         className="relative z-10 flex max-h-[85vh] w-full max-w-4xl flex-col rounded-2xl border border-surface-700 bg-surface-950 shadow-2xl animate-[scaleIn_0.2s_ease-out]"
       >
         {/* Header — fixed at top */}
-        <div className="flex shrink-0 items-center justify-between rounded-t-2xl border-b border-surface-800 bg-surface-950 px-6 py-4">
+        <div className="flex shrink-0 items-center justify-between rounded-t-2xl border-b border-surface-800 bg-surface-950 px-3 py-3 sm:px-6 sm:py-4">
           <div className="flex items-center gap-3 min-w-0">
             <span className="text-xl" aria-hidden="true">{config.icon}</span>
             <h2 className="truncate text-lg font-bold text-surface-50">{title}</h2>
-            <span className={`inline-flex shrink-0 items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${config.color}`}>
+            <span className={`hidden sm:inline-flex shrink-0 items-center rounded-full px-2.5 py-0.5 text-xs font-semibold ${config.color}`}>
               {config.label}
             </span>
           </div>
@@ -99,7 +99,7 @@ export function DemonstrationModal({
         {/* Body — scrollable content, no scrollbar */}
         <style>{`.demo-scroll::-webkit-scrollbar { display: none; }`}</style>
         <div
-          className="demo-scroll flex-1 overflow-y-auto px-6 py-6 sm:px-8 sm:py-8"
+          className="demo-scroll flex-1 overflow-y-auto px-3 py-4 sm:px-8 sm:py-8"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           <div className="mdx-content">
@@ -108,7 +108,7 @@ export function DemonstrationModal({
         </div>
 
         {/* Footer — fixed at bottom */}
-        <div className="shrink-0 border-t border-surface-800 px-6 py-4 text-center">
+        <div className="shrink-0 border-t border-surface-800 px-3 py-3 sm:px-6 sm:py-4 text-center">
           <button
             onClick={onClose}
             className="rounded-lg bg-surface-800 px-6 py-2 text-sm font-medium text-surface-50 transition-colors hover:bg-surface-700"
