@@ -305,9 +305,9 @@ export default async function FormulaDetailPage({
       </div>
 
       {/* Content + optional Table of Contents */}
-      <div className="mt-8 flex gap-10">
+      <div className="mt-8 flex gap-0 xl:gap-10">
         {/* MDX Content */}
-        <div className="min-w-0 flex-1">
+        <div className="min-w-0 flex-1 overflow-x-hidden break-words">
           <div className="mdx-content">
             <MDXRemote source={content} components={mdxComponents} />
           </div>
