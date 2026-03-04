@@ -87,9 +87,9 @@ export function FormulaTypewriter() {
   const showFormula = phase === "paused" || (phase === "deleting" && charIndex > 0);
 
   return (
-    <div className="mt-5 flex flex-col items-center gap-2" aria-live="polite">
+    <div className="mt-5 flex flex-col items-center gap-2 overflow-hidden" aria-live="polite">
       {/* Title line with blinking cursor */}
-      <span className="text-sm tracking-wide text-surface-50/50">
+      <span className="text-xs tracking-wide text-surface-50/50 sm:text-sm">
         {displayedTitle}
         <span className="animate-blink ml-px inline-block w-[2px] translate-y-[1px] bg-primary-400">
           &nbsp;
@@ -98,7 +98,7 @@ export function FormulaTypewriter() {
 
       {/* Rendered formula — fades in/out */}
       <span
-        className={`text-base transition-opacity duration-500 ${
+        className={`max-w-full overflow-x-auto text-sm transition-opacity duration-500 sm:text-base ${
           showFormula ? "opacity-90" : "opacity-0"
         }`}
       >
