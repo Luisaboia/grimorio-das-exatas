@@ -45,7 +45,7 @@ export function MobileNav({ isOpen, onClose, onOpenSearch }: MobileNavProps) {
 
       {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 z-50 flex h-full w-72 flex-col bg-surface-950 shadow-xl transition-transform duration-300 ease-in-out lg:hidden ${
+        className={`fixed top-0 left-0 z-50 flex h-full w-[80vw] max-w-72 flex-col bg-surface-950 shadow-xl transition-transform duration-300 ease-in-out lg:hidden ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
         role="dialog"
