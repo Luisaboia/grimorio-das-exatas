@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Média Aritmética"
+slug: "media-aritmetica"
+type: "deducao"
+---
+
+## De onde vem a fórmula da média aritmética?
+
+A média aritmética responde à pergunta: se **distribuíssemos igualmente** um total entre todos os elementos, quanto cada um receberia?
+
+Imagine <Formula math="n" /> pessoas que possuem quantidades <Formula math="x_1, x_2, \ldots, x_n" /> de um recurso. Queremos encontrar o valor <Formula math="\bar{x}" /> tal que, se todos tivessem exatamente <Formula math="\bar{x}" />, o total seria o mesmo.
+
+A soma de todos os valores originais é:
+
+<FormulaBlock math="\text{Total} = x_1 + x_2 + \cdots + x_n = \sum_{i=1}^{n} x_i" />
+
+Se cada um dos <Formula math="n" /> elementos recebe <Formula math="\bar{x}" />, o total redistribuído é:
+
+<FormulaBlock math="n \cdot \bar{x}" />
+
+Igualando os totais:
+
+<FormulaBlock math="n \cdot \bar{x} = \sum_{i=1}^{n} x_i" />
+
+Isolando <Formula math="\bar{x}" />:
+
+<FormulaBlock math="\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}" label="Média aritmética" />
+
+<Example title="Notas de um aluno: 7, 8, 6, 9">
+<FormulaBlock math="\bar{x} = \frac{7 + 8 + 6 + 9}{4} = \frac{30}{4} = 7{,}5" />
+</Example>
+
+<Note type="tip">
+A média é o "ponto de equilíbrio" dos dados. Se colocássemos pesos iguais em cada valor sobre uma régua, a média seria o ponto onde a régua ficaria equilibrada.
+</Note>

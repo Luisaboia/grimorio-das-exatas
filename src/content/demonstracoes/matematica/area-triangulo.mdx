@@ -1,0 +1,33 @@
+---
+title: "Demonstração: Área do Triângulo"
+slug: "area-triangulo"
+type: "deducao"
+---
+
+## De onde vem a fórmula da área do triângulo?
+
+A fórmula <Formula math="A = \frac{b \cdot h}{2}" /> é derivada diretamente da área de um retângulo.
+
+Considere um retângulo de base <Formula math="b" /> e altura <Formula math="h" />. Sua área é:
+
+<FormulaBlock math="A_{\text{ret}} = b \cdot h" label="Área do retângulo" />
+
+Agora, trace uma diagonal desse retângulo. Ela divide o retângulo em **dois triângulos congruentes** (iguais em forma e área).
+
+Cada triângulo tem exatamente a metade da área do retângulo:
+
+<FormulaBlock math="A_{\triangle} = \frac{A_{\text{ret}}}{2} = \frac{b \cdot h}{2}" />
+
+Mas esse argumento vale para qualquer triângulo? Sim! Dado um triângulo qualquer com base <Formula math="b" /> e altura <Formula math="h" />, podemos sempre construir um retângulo (ou paralelogramo) que o envolve, de modo que o triângulo ocupe exatamente metade da área.
+
+Portanto, para **todo** triângulo:
+
+<FormulaBlock math="A = \frac{b \cdot h}{2}" label="Área do triângulo" />
+
+<Note type="tip">
+A altura <Formula math="h" /> é sempre medida perpendicularmente à base escolhida. Qualquer lado pode ser a base — basta usar a altura correspondente.
+</Note>
+
+<Note type="info">
+Essa demonstração aparece na Proposição 41 do Livro I dos Elementos de Euclides (séc. III a.C.), onde ele mostra que um triângulo é metade de um paralelogramo de mesma base e altura.
+</Note>

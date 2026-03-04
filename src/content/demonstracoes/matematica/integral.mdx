@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Integral"
+slug: "integral"
+type: "mista"
+---
+
+## De onde vem o conceito de integral?
+
+A integral resolve o problema de calcular a **área sob uma curva**. A ideia é aproximar essa área usando retângulos cada vez mais finos.
+
+Dada uma função <Formula math="f(x) \geq 0" /> no intervalo <Formula math="[a, b]" />, dividimos o intervalo em <Formula math="n" /> partes iguais de largura <Formula math="\Delta x = \frac{b-a}{n}" />.
+
+A soma das áreas dos retângulos é a **soma de Riemann**:
+
+<FormulaBlock math="S_n = \sum_{i=1}^{n} f(x_i) \cdot \Delta x" />
+
+À medida que <Formula math="n \to \infty" /> (retângulos cada vez mais estreitos), a soma converge para a área exata:
+
+<FormulaBlock math="\int_a^b f(x)\,dx = \lim_{n \to \infty} \sum_{i=1}^{n} f(x_i) \cdot \Delta x" label="Integral definida" />
+
+### Teorema Fundamental do Cálculo
+
+A conexão entre integral e derivada é dada pelo **Teorema Fundamental do Cálculo**: se <Formula math="F'(x) = f(x)" />, então:
+
+<FormulaBlock math="\int_a^b f(x)\,dx = F(b) - F(a)" />
+
+Isso significa que integrar é a operação inversa de derivar — em vez de calcular infinitos retângulos, basta encontrar uma **primitiva** <Formula math="F" />.
+
+<Note type="info">
+**Newton** e **Leibniz** descobriram independentemente (por volta de 1665–1675) que derivação e integração são operações inversas. Essa descoberta — o Teorema Fundamental do Cálculo — é considerada uma das maiores conquistas da matemática.
+</Note>
+
+<Note type="tip">
+O símbolo <Formula math="\int" /> foi criado por Leibniz como um "S" alongado, representando "Summa" (soma) — uma referência direta às somas de Riemann.
+</Note>

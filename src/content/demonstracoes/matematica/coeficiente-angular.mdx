@@ -1,0 +1,34 @@
+---
+title: "Demonstração: Coeficiente Angular"
+slug: "coeficiente-angular"
+type: "deducao"
+---
+
+## De onde vem a fórmula do coeficiente angular?
+
+O coeficiente angular <Formula math="m" /> mede o quanto uma reta "sobe" ou "desce" para cada unidade que avançamos na horizontal. Vamos formalizá-lo.
+
+Considere dois pontos distintos sobre uma reta: <Formula math="A(x_1, y_1)" /> e <Formula math="B(x_2, y_2)" />.
+
+A variação vertical (chamada de **rise**, ou "subida") é:
+
+<FormulaBlock math="\Delta y = y_2 - y_1" />
+
+A variação horizontal (chamada de **run**, ou "avanço") é:
+
+<FormulaBlock math="\Delta x = x_2 - x_1" />
+
+A inclinação é a razão entre essas variações:
+
+<FormulaBlock math="m = \frac{\Delta y}{\Delta x} = \frac{y_2 - y_1}{x_2 - x_1}" label="Coeficiente angular" />
+
+Essa razão é **constante** para qualquer par de pontos sobre a mesma reta — essa é justamente a propriedade que define uma reta como "linear".
+
+<Example title="Reta passando por (1, 3) e (4, 9)">
+<FormulaBlock math="m = \frac{9 - 3}{4 - 1} = \frac{6}{3} = 2" />
+A reta sobe 2 unidades a cada 1 unidade para a direita.
+</Example>
+
+<Note type="tip">
+Se <Formula math="m > 0" />, a reta é crescente. Se <Formula math="m < 0" />, é decrescente. Se <Formula math="m = 0" />, a reta é horizontal. O coeficiente angular também pode ser expresso como <Formula math="m = \tan\alpha" />, onde <Formula math="\alpha" /> é o ângulo que a reta faz com o eixo <Formula math="x" />.
+</Note>

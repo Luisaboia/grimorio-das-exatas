@@ -1,0 +1,36 @@
+---
+title: "Demonstração: Equação da Reta"
+slug: "equacao-reta"
+type: "deducao"
+---
+
+## De onde vem a equação da reta?
+
+A equação <Formula math="y = mx + b" /> descreve qualquer reta não-vertical no plano cartesiano. Vamos deduzi-la a partir da definição de **coeficiente angular**.
+
+Sabemos que o coeficiente angular <Formula math="m" /> mede a inclinação constante da reta. Para quaisquer dois pontos da reta, a razão entre a variação vertical e horizontal é sempre <Formula math="m" />.
+
+Tome um ponto fixo <Formula math="(0, b)" /> — onde a reta cruza o eixo <Formula math="y" /> — e um ponto genérico <Formula math="(x, y)" /> sobre a reta.
+
+Pela definição de coeficiente angular:
+
+<FormulaBlock math="m = \frac{y - b}{x - 0} = \frac{y - b}{x}" />
+
+Multiplicando ambos os lados por <Formula math="x" />:
+
+<FormulaBlock math="mx = y - b" />
+
+Isolando <Formula math="y" />:
+
+<FormulaBlock math="y = mx + b" label="Equação reduzida da reta" />
+
+<Variable symbol="m" description="coeficiente angular — inclinação da reta" />
+<Variable symbol="b" description="coeficiente linear — ponto onde a reta corta o eixo y" />
+
+<Note type="info">
+Quando a reta passa pela origem, <Formula math="b = 0" /> e a equação se simplifica para <Formula math="y = mx" />. Retas horizontais têm <Formula math="m = 0" />, resultando em <Formula math="y = b" />.
+</Note>
+
+<Note type="tip">
+Se você conhece um ponto <Formula math="(x_0, y_0)" /> e o coeficiente angular, pode usar a forma ponto-inclinação: <Formula math="y - y_0 = m(x - x_0)" />.
+</Note>

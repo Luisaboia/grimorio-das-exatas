@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Desvio Padrão"
+slug: "desvio-padrao"
+type: "deducao"
+---
+
+## De onde vem a fórmula do desvio padrão?
+
+A média nos diz o valor central dos dados, mas não revela o quão **espalhados** eles estão. O desvio padrão mede exatamente essa dispersão.
+
+Dado um conjunto de <Formula math="n" /> valores <Formula math="x_1, x_2, \ldots, x_n" /> com média <Formula math="\bar{x}" />, queremos medir a distância típica de cada valor à média.
+
+O **desvio** de cada valor é <Formula math="x_i - \bar{x}" />. Porém, a soma simples dos desvios é sempre zero (valores acima e abaixo da média se cancelam):
+
+<FormulaBlock math="\sum_{i=1}^{n}(x_i - \bar{x}) = 0" />
+
+Para evitar o cancelamento, elevamos cada desvio ao **quadrado**:
+
+<FormulaBlock math="(x_i - \bar{x})^2" />
+
+A média desses quadrados é a **variância**:
+
+<FormulaBlock math="\sigma^2 = \frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n}" />
+
+Como a variância está em unidades ao quadrado, tiramos a raiz para voltar à unidade original:
+
+<FormulaBlock math="\sigma = \sqrt{\frac{\sum_{i=1}^{n}(x_i - \bar{x})^2}{n}}" label="Desvio padrão" />
+
+<Example title="Dados: 2, 4, 4, 4, 5, 5, 7, 9">
+Média: <Formula math="\bar{x} = 5" />. Soma dos quadrados dos desvios: <Formula math="9+1+1+1+0+0+4+16 = 32" />. Variância: <Formula math="32/8 = 4" />. Desvio padrão: <Formula math="\sigma = 2" />.
+</Example>
+
+<Note type="tip">
+Desvio padrão pequeno significa dados concentrados em torno da média. Desvio padrão grande indica dados muito espalhados. Em amostras (em vez de populações), divide-se por <Formula math="n - 1" /> em vez de <Formula math="n" /> (correção de Bessel).
+</Note>

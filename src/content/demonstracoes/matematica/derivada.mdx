@@ -1,0 +1,34 @@
+---
+title: "Demonstração: Derivada"
+slug: "derivada"
+type: "deducao"
+---
+
+## De onde vem a fórmula da derivada?
+
+A derivada responde à pergunta: qual é a **taxa instantânea de variação** de uma função em um ponto?
+
+Considere uma função <Formula math="f(x)" /> e dois pontos sobre seu gráfico: <Formula math="(x, f(x))" /> e <Formula math="(x+h, f(x+h))" />, onde <Formula math="h" /> é um pequeno deslocamento.
+
+A **taxa média de variação** entre esses pontos é a inclinação da reta secante:
+
+<FormulaBlock math="\text{taxa média} = \frac{f(x+h) - f(x)}{h}" />
+
+À medida que <Formula math="h" /> se aproxima de zero, a reta secante se aproxima da **reta tangente** ao gráfico no ponto <Formula math="x" />.
+
+A taxa instantânea — a derivada — é o limite dessa razão:
+
+<FormulaBlock math="f'(x) = \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}" label="Definição de derivada" />
+
+<Example title="Derivada de f(x) = x²">
+<FormulaBlock math="f'(x) = \lim_{h \to 0} \frac{(x+h)^2 - x^2}{h} = \lim_{h \to 0} \frac{x^2 + 2xh + h^2 - x^2}{h}" />
+<FormulaBlock math="= \lim_{h \to 0} \frac{2xh + h^2}{h} = \lim_{h \to 0} (2x + h) = 2x" />
+</Example>
+
+<Note type="info">
+Geometricamente, a derivada é a **inclinação da reta tangente**. Fisicamente, se <Formula math="f(t)" /> é a posição, então <Formula math="f'(t)" /> é a velocidade instantânea — exatamente a motivação que levou Newton a criar o Cálculo.
+</Note>
+
+<Note type="tip">
+A notação <Formula math="f'(x)" /> é de Lagrange. Leibniz usava <Formula math="\frac{df}{dx}" />, que enfatiza a ideia de razão entre variações infinitesimais.
+</Note>

@@ -1,0 +1,33 @@
+---
+title: "Demonstração: Volume do Cone"
+slug: "volume-cone"
+type: "deducao"
+---
+
+## De onde vem a fórmula do volume do cone?
+
+A fórmula <Formula math="V = \frac{1}{3}\pi r^2 h" /> mostra que o cone ocupa exatamente **um terço** do cilindro de mesma base e altura.
+
+Considere um cone de raio <Formula math="r" /> e altura <Formula math="h" />. A uma altura <Formula math="y" /> da base, a seção transversal é um círculo cujo raio diminui linearmente. Por semelhança de triângulos, o raio da seção à distância <Formula math="y" /> do vértice é:
+
+<FormulaBlock math="r(y) = \frac{r}{h} \cdot y" />
+
+A área dessa seção é:
+
+<FormulaBlock math="A(y) = \pi \left(\frac{r}{h} \cdot y\right)^2 = \frac{\pi r^2}{h^2} \cdot y^2" />
+
+Pelo **princípio de Cavalieri**, o volume é a soma (integral) de todas as seções de <Formula math="y = 0" /> a <Formula math="y = h" />:
+
+<FormulaBlock math="V = \int_0^h \frac{\pi r^2}{h^2} y^2 \, dy = \frac{\pi r^2}{h^2} \cdot \frac{h^3}{3}" />
+
+Simplificando:
+
+<FormulaBlock math="V = \frac{1}{3}\pi r^2 h" label="Volume do cone" />
+
+<Note type="tip">
+O fator <Formula math="\frac{1}{3}" /> aparece porque a área da seção cresce com <Formula math="y^2" />, e a integral de <Formula math="y^2" /> de 0 a <Formula math="h" /> é <Formula math="\frac{h^3}{3}" />. Esse mesmo fator aparece em toda pirâmide!
+</Note>
+
+<Note type="info">
+Demócrito foi o primeiro a conjecturar que o cone tem <Formula math="\frac{1}{3}" /> do volume do cilindro. A demonstração rigorosa veio com Eudoxo de Cnido, usando o método da exaustão.
+</Note>

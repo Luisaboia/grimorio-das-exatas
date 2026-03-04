@@ -1,0 +1,27 @@
+---
+title: "Demonstração: Área do Trapézio"
+slug: "area-trapezio"
+type: "deducao"
+---
+
+## De onde vem a fórmula da área do trapézio?
+
+A fórmula <Formula math="A = \frac{(B + b) \cdot h}{2}" /> pode ser demonstrada duplicando o trapézio para formar um paralelogramo.
+
+Considere um trapézio com base maior <Formula math="B" />, base menor <Formula math="b" /> e altura <Formula math="h" />.
+
+Fazemos uma cópia do trapézio, giramos 180° e encaixamos ao lado do original. O resultado é um **paralelogramo** cuja base mede <Formula math="B + b" /> e cuja altura é <Formula math="h" />:
+
+<FormulaBlock math="A_{\text{paralelogramo}} = (B + b) \cdot h" />
+
+Como o paralelogramo é formado por **dois trapézios iguais**, a área de cada um é a metade:
+
+<FormulaBlock math="A_{\text{trapézio}} = \frac{(B + b) \cdot h}{2}" label="Área do trapézio" />
+
+Outra maneira de ver: trace uma diagonal do trapézio, dividindo-o em dois triângulos. Um tem base <Formula math="B" /> e altura <Formula math="h" />, o outro tem base <Formula math="b" /> e altura <Formula math="h" />:
+
+<FormulaBlock math="A = \frac{B \cdot h}{2} + \frac{b \cdot h}{2} = \frac{(B + b) \cdot h}{2}" />
+
+<Note type="tip">
+Se <Formula math="B = b" />, o trapézio vira um retângulo e a fórmula se reduz a <Formula math="A = b \cdot h" />. Boa forma de verificar!
+</Note>

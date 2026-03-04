@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Volume da Esfera"
+slug: "volume-esfera"
+type: "mista"
+---
+
+## De onde vem a fórmula do volume da esfera?
+
+A fórmula <Formula math="V = \frac{4}{3}\pi r^3" /> pode ser deduzida pelo **princípio de Cavalieri**, comparando a esfera com um cilindro "furado" por um cone.
+
+Considere uma esfera de raio <Formula math="r" /> e, ao lado, um cilindro de raio <Formula math="r" /> e altura <Formula math="2r" />, do qual removemos dois cones de raio <Formula math="r" /> e altura <Formula math="r" /> (um em cada extremidade).
+
+Cortando ambos os sólidos a uma altura <Formula math="y" /> do centro, obtemos seções transversais circulares.
+
+Na esfera, pelo Teorema de Pitágoras, o raio da seção vale <Formula math="\sqrt{r^2 - y^2}" />, logo:
+
+<FormulaBlock math="A_{\text{esfera}}(y) = \pi(r^2 - y^2)" />
+
+No cilindro furado, a seção é uma coroa circular (disco do cilindro menos disco do cone):
+
+<FormulaBlock math="A_{\text{cilindro-cone}}(y) = \pi r^2 - \pi y^2 = \pi(r^2 - y^2)" />
+
+Como as áreas das seções são iguais para toda altura <Formula math="y" />, pelo **princípio de Cavalieri**, os volumes são iguais:
+
+<FormulaBlock math="V_{\text{esfera}} = V_{\text{cilindro}} - 2 \cdot V_{\text{cone}}" />
+<FormulaBlock math="= \pi r^2 \cdot 2r - 2 \cdot \frac{1}{3}\pi r^2 \cdot r" />
+<FormulaBlock math="= 2\pi r^3 - \frac{2}{3}\pi r^3 = \frac{4}{3}\pi r^3" />
+
+Portanto:
+
+<FormulaBlock math="V = \frac{4}{3}\pi r^3" label="Volume da esfera" />
+
+<Note type="info">
+**Arquimedes** considerava essa descoberta sua maior realização. Ele provou que o volume da esfera é <Formula math="\frac{2}{3}" /> do volume do cilindro circunscrito — e pediu que essa relação fosse gravada em seu túmulo.
+</Note>

@@ -1,0 +1,31 @@
+---
+title: "Demonstração: Termo Geral da PA"
+slug: "progressao-aritmetica"
+type: "deducao"
+---
+
+## De onde vem a fórmula do termo geral da PA?
+
+Uma **Progressão Aritmética** (PA) é uma sequência onde cada termo é obtido somando uma constante <Formula math="r" /> (razão) ao termo anterior.
+
+Pela definição, os termos da PA são:
+
+<FormulaBlock math="a_1,\quad a_2 = a_1 + r,\quad a_3 = a_1 + 2r,\quad \ldots" />
+
+Observamos o padrão — para chegar ao segundo termo, somamos <Formula math="r" /> uma vez; ao terceiro, duas vezes:
+
+<FormulaBlock math="a_2 = a_1 + 1 \cdot r" />
+<FormulaBlock math="a_3 = a_1 + 2 \cdot r" />
+<FormulaBlock math="a_4 = a_1 + 3 \cdot r" />
+
+Perceba que o número de vezes que somamos <Formula math="r" /> é sempre **uma unidade a menos** que a posição do termo. Generalizando para a posição <Formula math="n" />:
+
+<FormulaBlock math="a_n = a_1 + (n - 1) \cdot r" label="Termo geral da PA" />
+
+<Note type="tip">
+Para memorizar: o expoente de <Formula math="r" /> é sempre <Formula math="(n-1)" /> porque do primeiro ao <Formula math="n" />-ésimo termo damos <Formula math="(n-1)" /> "passos" de tamanho <Formula math="r" />.
+</Note>
+
+<Note type="info">
+As progressões aritméticas já eram estudadas pelos babilônios e aparecem nas obras de Gauss, que aos 10 anos encontrou a soma <Formula math="1 + 2 + \ldots + 100 = 5050" /> usando propriedades da PA.
+</Note>

@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Diferença de Quadrados"
+slug: "fatoracao"
+type: "deducao"
+---
+
+## De onde vem a fatoração da diferença de quadrados?
+
+A identidade <Formula math="a^2 - b^2 = (a+b)(a-b)" /> é uma das fatorações mais úteis da álgebra. Vamos demonstrá-la expandindo o lado direito.
+
+Partimos do produto:
+
+<FormulaBlock math="(a+b)(a-b)" label="Produto a verificar" />
+
+Aplicamos a propriedade distributiva:
+
+<FormulaBlock math="= a \cdot a + a \cdot (-b) + b \cdot a + b \cdot (-b)" />
+
+Simplificando cada parcela:
+
+<FormulaBlock math="= a^2 - ab + ab - b^2" />
+
+Os termos <Formula math="-ab" /> e <Formula math="+ab" /> se cancelam:
+
+<FormulaBlock math="(a+b)(a-b) = a^2 - b^2" label="Diferença de quadrados" />
+
+Isso confirma que, sempre que tivermos uma diferença de dois quadrados perfeitos, podemos fatorar como o produto da soma pela diferença.
+
+<Note type="tip">
+Essa identidade é muito útil para simplificar expressões e resolver equações. Por exemplo: <Formula math="x^2 - 9 = (x+3)(x-3)" />.
+</Note>
+
+<Note type="info">
+A diferença de quadrados aparece em diversas áreas: desde cálculos aritméticos rápidos (como <Formula math="51 \times 49 = 50^2 - 1^2 = 2499" />) até demonstrações em teoria dos números.
+</Note>

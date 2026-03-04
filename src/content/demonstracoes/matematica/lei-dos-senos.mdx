@@ -1,0 +1,37 @@
+---
+title: "Demonstração: Lei dos Senos"
+slug: "lei-dos-senos"
+type: "deducao"
+---
+
+## De onde vem a Lei dos Senos?
+
+A Lei dos Senos relaciona os lados de um triângulo com os senos dos ângulos opostos e o raio da circunferência circunscrita:
+
+<FormulaBlock math="\frac{a}{\sin A} = \frac{b}{\sin B} = \frac{c}{\sin C} = 2R" label="Lei dos Senos" />
+
+Vamos demonstrar que <Formula math="\frac{a}{\sin A} = 2R" /> usando o **teorema do ângulo inscrito**.
+
+Inscreva o triângulo <Formula math="ABC" /> em uma circunferência de raio <Formula math="R" />. Trace o diâmetro que parte do vértice <Formula math="B" />, chegando ao ponto <Formula math="D" /> na circunferência.
+
+O segmento <Formula math="BD" /> é um diâmetro, portanto <Formula math="BD = 2R" />.
+
+Pelo teorema do ângulo inscrito, o ângulo <Formula math="BDA" /> é igual ao ângulo <Formula math="BCA = C" />, pois ambos subtendem o mesmo arco. Além disso, o triângulo <Formula math="BDA" /> é retângulo em <Formula math="A" /> (pois está inscrito em semicírculo).
+
+No triângulo retângulo <Formula math="BDA" />:
+
+<FormulaBlock math="\sin D = \frac{a}{BD} = \frac{a}{2R}" />
+
+Como <Formula math="\angle D = \angle A" /> (ângulos inscritos no mesmo arco):
+
+<FormulaBlock math="\sin A = \frac{a}{2R}" />
+
+Isolando:
+
+<FormulaBlock math="\frac{a}{\sin A} = 2R" />
+
+O mesmo raciocínio se repete para os lados <Formula math="b" /> e <Formula math="c" />, completando a demonstração.
+
+<Note type="tip">
+A Lei dos Senos é especialmente útil quando conhecemos um lado e o ângulo oposto. Ela também permite calcular o raio <Formula math="R" /> da circunferência circunscrita.
+</Note>

@@ -1,0 +1,45 @@
+---
+title: "Demonstração: Lei dos Cossenos"
+slug: "lei-dos-cossenos"
+type: "deducao"
+---
+
+## De onde vem a Lei dos Cossenos?
+
+A Lei dos Cossenos generaliza o Teorema de Pitágoras para triângulos quaisquer:
+
+<FormulaBlock math="a^2 = b^2 + c^2 - 2bc \cos A" label="Lei dos Cossenos" />
+
+Vamos demonstrá-la usando **geometria analítica**.
+
+Posicione o triângulo <Formula math="ABC" /> no plano cartesiano com o vértice <Formula math="A" /> na origem e o lado <Formula math="c" /> ao longo do eixo <Formula math="x" />:
+
+<FormulaBlock math="A = (0, 0), \quad B = (c, 0)" />
+
+O vértice <Formula math="C" /> está a uma distância <Formula math="b" /> de <Formula math="A" />, formando o ângulo <Formula math="A" /> com o eixo <Formula math="x" />:
+
+<FormulaBlock math="C = (b \cos A, \; b \sin A)" />
+
+O lado <Formula math="a" /> é a distância de <Formula math="B" /> a <Formula math="C" />. Pela fórmula da distância:
+
+<FormulaBlock math="a^2 = (b\cos A - c)^2 + (b\sin A)^2" />
+
+Expandindo:
+
+<FormulaBlock math="= b^2\cos^2 A - 2bc\cos A + c^2 + b^2\sin^2 A" />
+
+Reagrupando os termos com <Formula math="b^2" />:
+
+<FormulaBlock math="= b^2(\cos^2 A + \sin^2 A) + c^2 - 2bc\cos A" />
+
+Como <Formula math="\cos^2 A + \sin^2 A = 1" /> (identidade trigonométrica fundamental):
+
+<FormulaBlock math="a^2 = b^2 + c^2 - 2bc\cos A" />
+
+<Note type="tip">
+Quando <Formula math="A = 90°" />, temos <Formula math="\cos 90° = 0" />, e a fórmula se reduz a <Formula math="a^2 = b^2 + c^2" /> — exatamente o Teorema de Pitágoras!
+</Note>
+
+<Note type="info">
+A Lei dos Cossenos já era conhecida por Euclides (Proposições 12 e 13 do Livro II dos Elementos), mas em linguagem puramente geométrica. A formulação com cosseno veio séculos depois, com o desenvolvimento da trigonometria.
+</Note>

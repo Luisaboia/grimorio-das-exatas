@@ -1,0 +1,32 @@
+---
+title: "Demonstração: Área do Círculo"
+slug: "area-circulo"
+type: "mista"
+---
+
+## De onde vem a fórmula da área do círculo?
+
+A fórmula <Formula math="A = \pi r^2" /> pode ser deduzida pelo **método da exaustão**: dividimos o círculo em setores cada vez mais finos.
+
+Imagine um círculo de raio <Formula math="r" /> dividido em <Formula math="n" /> setores iguais. Reorganizamos esses setores alternando a orientação (ponta para cima, ponta para baixo), formando uma figura que se aproxima de um retângulo.
+
+Quando <Formula math="n \to \infty" />, essa figura se torna um retângulo perfeito com:
+
+<FormulaBlock math="\text{base} = \frac{C}{2} = \frac{2\pi r}{2} = \pi r" />
+<FormulaBlock math="\text{altura} = r" />
+
+A área desse retângulo é:
+
+<FormulaBlock math="A = \text{base} \times \text{altura} = \pi r \cdot r" />
+
+Portanto:
+
+<FormulaBlock math="A = \pi r^2" label="Área do círculo" />
+
+<Note type="info">
+Essa ideia remonta a **Arquimedes** (séc. III a.C.), que usou o método da exaustão para provar que a área do círculo é igual à de um triângulo retângulo com catetos iguais ao raio e à circunferência. Esse foi um dos primeiros passos rumo ao cálculo integral.
+</Note>
+
+<Note type="tip">
+A chave da demonstração é perceber que metade da circunferência (<Formula math="\pi r" />) vira a base do retângulo e o raio vira a altura.
+</Note>

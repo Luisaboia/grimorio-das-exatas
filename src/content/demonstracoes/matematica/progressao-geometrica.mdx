@@ -1,0 +1,31 @@
+---
+title: "Demonstração: Termo Geral da PG"
+slug: "progressao-geometrica"
+type: "deducao"
+---
+
+## De onde vem a fórmula do termo geral da PG?
+
+Uma **Progressão Geométrica** (PG) é uma sequência onde cada termo é obtido multiplicando o anterior por uma constante <Formula math="q" /> (razão).
+
+Pela definição, os termos da PG são:
+
+<FormulaBlock math="a_1,\quad a_2 = a_1 \cdot q,\quad a_3 = a_1 \cdot q^2,\quad \ldots" />
+
+Observamos o padrão — para chegar ao segundo termo, multiplicamos por <Formula math="q" /> uma vez; ao terceiro, duas vezes:
+
+<FormulaBlock math="a_2 = a_1 \cdot q^1" />
+<FormulaBlock math="a_3 = a_1 \cdot q^2" />
+<FormulaBlock math="a_4 = a_1 \cdot q^3" />
+
+O expoente de <Formula math="q" /> é sempre **uma unidade a menos** que a posição do termo. Generalizando para a posição <Formula math="n" />:
+
+<FormulaBlock math="a_n = a_1 \cdot q^{n-1}" label="Termo geral da PG" />
+
+<Note type="tip">
+Compare com a PA: na PA somamos <Formula math="r" /> repetidamente, na PG multiplicamos por <Formula math="q" /> repetidamente. A estrutura da fórmula é análoga!
+</Note>
+
+<Note type="info">
+As progressões geométricas são fundamentais para modelar juros compostos, crescimento populacional e decaimento radioativo.
+</Note>

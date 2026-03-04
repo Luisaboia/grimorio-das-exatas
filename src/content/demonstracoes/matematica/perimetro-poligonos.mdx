@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Perímetro de Polígonos"
+slug: "perimetro-poligonos"
+type: "deducao"
+---
+
+## De onde vem a fórmula do perímetro?
+
+O **perímetro** de qualquer polígono é, por definição, a soma dos comprimentos de todos os seus lados.
+
+Para um polígono de <Formula math="n" /> lados com comprimentos <Formula math="l_1, l_2, \ldots, l_n" />:
+
+<FormulaBlock math="P = l_1 + l_2 + \ldots + l_n = \sum_{i=1}^{n} l_i" label="Perímetro geral" />
+
+No caso de um **polígono regular** (todos os lados iguais, cada um medindo <Formula math="l" />), a soma se simplifica:
+
+<FormulaBlock math="P = l + l + \ldots + l = n \cdot l" />
+
+Portanto:
+
+<FormulaBlock math="P = n \cdot l" label="Perímetro de polígono regular" />
+
+Casos particulares conhecidos:
+
+<FormulaBlock math="\text{Triângulo equilátero: } P = 3l" />
+<FormulaBlock math="\text{Quadrado: } P = 4l" />
+<FormulaBlock math="\text{Hexágono regular: } P = 6l" />
+
+<Note type="tip">
+Quando <Formula math="n \to \infty" /> e <Formula math="l \to 0" /> de forma adequada, o polígono regular se aproxima de um círculo, e o perímetro se aproxima de <Formula math="2\pi r" />. Essa é a base da definição de <Formula math="\pi" />!
+</Note>
+
+<Note type="info">
+Arquimedes usou polígonos de 96 lados inscritos e circunscritos em um círculo para estimar <Formula math="\pi" /> entre <Formula math="\frac{223}{71}" /> e <Formula math="\frac{22}{7}" />.
+</Note>

@@ -1,0 +1,37 @@
+---
+title: "Demonstração: Fórmulas de Adição"
+slug: "formulas-adicao"
+type: "deducao"
+---
+
+## De onde vem a fórmula do seno da soma?
+
+Queremos demonstrar que:
+
+<FormulaBlock math="\sin(a + b) = \sin a \cos b + \cos a \sin b" label="Seno da soma" />
+
+Usaremos uma construção geométrica no **círculo unitário**.
+
+Considere dois ângulos <Formula math="a" /> e <Formula math="b" /> medidos a partir do eixo horizontal positivo. No círculo unitário, o ponto correspondente ao ângulo <Formula math="a + b" /> tem coordenada vertical <Formula math="\sin(a+b)" />.
+
+Construa um retângulo auxiliar: trace o raio que forma ângulo <Formula math="a" /> com o eixo <Formula math="x" /> e, a partir dele, gire mais <Formula math="b" />. Projetando perpendicularmente sobre o eixo vertical, decompomos a altura total em duas partes.
+
+A primeira componente vertical vem do seno de <Formula math="a" /> projetado na direção do cosseno de <Formula math="b" />:
+
+<FormulaBlock math="\text{parte 1} = \sin a \cdot \cos b" />
+
+A segunda componente vertical vem do cosseno de <Formula math="a" /> projetado na direção do seno de <Formula math="b" />:
+
+<FormulaBlock math="\text{parte 2} = \cos a \cdot \sin b" />
+
+Somando as duas contribuições:
+
+<FormulaBlock math="\sin(a + b) = \sin a \cos b + \cos a \sin b" />
+
+Substituindo <Formula math="b" /> por <Formula math="-b" /> e usando <Formula math="\sin(-b) = -\sin b" /> e <Formula math="\cos(-b) = \cos b" />:
+
+<FormulaBlock math="\sin(a - b) = \sin a \cos b - \cos a \sin b" />
+
+<Note type="tip">
+A fórmula do cosseno da soma pode ser obtida de forma análoga: <Formula math="\cos(a+b) = \cos a \cos b - \sin a \sin b" />. Note o sinal negativo — é o oposto do seno da soma.
+</Note>

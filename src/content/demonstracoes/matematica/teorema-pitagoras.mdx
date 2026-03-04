@@ -1,0 +1,39 @@
+---
+title: "Demonstração: Teorema de Pitágoras"
+slug: "teorema-pitagoras"
+type: "mista"
+---
+
+## De onde vem o Teorema de Pitágoras?
+
+O Teorema de Pitágoras afirma que, em um triângulo retângulo com catetos <Formula math="a" /> e <Formula math="b" /> e hipotenusa <Formula math="c" />:
+
+<FormulaBlock math="a^2 + b^2 = c^2" label="Teorema de Pitágoras" />
+
+Vamos demonstrá-lo usando **áreas de quadrados**.
+
+Construa um quadrado de lado <Formula math="(a + b)" />. Dentro dele, posicione quatro cópias do triângulo retângulo nos cantos, formando um quadrado interno inclinado de lado <Formula math="c" />.
+
+A área do quadrado grande é:
+
+<FormulaBlock math="(a + b)^2 = a^2 + 2ab + b^2" />
+
+Essa mesma área pode ser calculada somando o quadrado interno e os quatro triângulos:
+
+<FormulaBlock math="A = c^2 + 4 \cdot \frac{a \cdot b}{2} = c^2 + 2ab" />
+
+Igualando as duas expressões:
+
+<FormulaBlock math="a^2 + 2ab + b^2 = c^2 + 2ab" />
+
+Cancelando <Formula math="2ab" /> de ambos os lados:
+
+<FormulaBlock math="a^2 + b^2 = c^2" />
+
+<Note type="info">
+Embora leve o nome de **Pitágoras** (séc. VI a.C.), a relação já era conhecida pelos babilônios cerca de 1000 anos antes, como registrado na tábua Plimpton 322. Existem mais de 400 demonstrações diferentes desse teorema!
+</Note>
+
+<Note type="tip">
+Essa demonstração usa a mesma identidade do produto notável <Formula math="(a+b)^2" />. Os produtos notáveis e Pitágoras estão conectados pela álgebra das áreas.
+</Note>

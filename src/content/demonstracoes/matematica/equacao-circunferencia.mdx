@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Equação da Circunferência"
+slug: "equacao-circunferencia"
+type: "deducao"
+---
+
+## De onde vem a equação da circunferência?
+
+A circunferência é o conjunto de todos os pontos que estão a uma mesma distância <Formula math="r" /> (raio) de um ponto fixo <Formula math="C(a, b)" /> (centro).
+
+Seja <Formula math="P(x, y)" /> um ponto qualquer sobre a circunferência. Pela definição, a distância de <Formula math="P" /> ao centro <Formula math="C" /> é exatamente <Formula math="r" />.
+
+Usando a **fórmula da distância entre dois pontos**:
+
+<FormulaBlock math="d(P, C) = \sqrt{(x - a)^2 + (y - b)^2} = r" />
+
+Elevando ambos os lados ao quadrado para eliminar a raiz:
+
+<FormulaBlock math="(x - a)^2 + (y - b)^2 = r^2" label="Equação da circunferência" />
+
+<Variable symbol="a" description="coordenada x do centro" />
+<Variable symbol="b" description="coordenada y do centro" />
+<Variable symbol="r" description="raio da circunferência" />
+
+Quando o centro está na origem (<Formula math="a = 0, b = 0" />), a equação se simplifica:
+
+<FormulaBlock math="x^2 + y^2 = r^2" />
+
+<Example title="Circunferência com centro (2, -3) e raio 5">
+<FormulaBlock math="(x - 2)^2 + (y + 3)^2 = 25" />
+</Example>
+
+<Note type="tip">
+Se a equação aparecer na forma <Formula math="x^2 + y^2 + Dx + Ey + F = 0" />, basta completar o quadrado em <Formula math="x" /> e em <Formula math="y" /> para identificar o centro e o raio.
+</Note>

@@ -1,0 +1,39 @@
+---
+title: "Demonstração: Mediana"
+slug: "mediana"
+type: "deducao"
+---
+
+## De onde vem o conceito de mediana?
+
+A mediana é o valor que divide um conjunto de dados ordenados exatamente ao meio: metade dos valores fica abaixo e metade fica acima.
+
+Dado um conjunto de <Formula math="n" /> valores ordenados em ordem crescente: <Formula math="x_{(1)} \leq x_{(2)} \leq \cdots \leq x_{(n)}" />, a mediana <Formula math="Md" /> depende de <Formula math="n" /> ser ímpar ou par.
+
+### Caso 1: n ímpar
+
+Se <Formula math="n" /> é ímpar, existe exatamente um valor central. Sua posição é:
+
+<FormulaBlock math="Md = x_{\left(\frac{n+1}{2}\right)}" label="Mediana (n ímpar)" />
+
+<Example title="Dados: 3, 5, 7, 8, 12">
+<Formula math="n = 5" /> (ímpar). Posição central: <Formula math="\frac{5+1}{2} = 3" />. Logo <Formula math="Md = x_{(3)} = 7" />.
+</Example>
+
+### Caso 2: n par
+
+Se <Formula math="n" /> é par, não há um único valor central. Tomamos a média dos dois valores centrais:
+
+<FormulaBlock math="Md = \frac{x_{\left(\frac{n}{2}\right)} + x_{\left(\frac{n}{2}+1\right)}}{2}" label="Mediana (n par)" />
+
+<Example title="Dados: 3, 5, 7, 8, 12, 14">
+<Formula math="n = 6" /> (par). Posições centrais: 3ª e 4ª. Logo <Formula math="Md = \frac{7 + 8}{2} = 7{,}5" />.
+</Example>
+
+<Note type="info">
+Ao contrário da média, a mediana é **resistente a valores extremos** (outliers). Por isso é frequentemente usada para representar renda, preços de imóveis e outros dados com distribuição assimétrica.
+</Note>
+
+<Note type="tip">
+Para memorizar: a mediana é literalmente o "meio do caminho" dos dados ordenados. Enquanto a média pode ser distorcida por um valor muito alto ou muito baixo, a mediana permanece estável.
+</Note>

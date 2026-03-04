@@ -1,0 +1,32 @@
+---
+title: "Demonstração: Distância entre Dois Pontos"
+slug: "distancia-dois-pontos"
+type: "deducao"
+---
+
+## De onde vem a fórmula da distância entre dois pontos?
+
+Dados dois pontos <Formula math="A(x_1, y_1)" /> e <Formula math="B(x_2, y_2)" /> no plano cartesiano, queremos encontrar a distância <Formula math="d" /> entre eles.
+
+Construa um **triângulo retângulo** ligando os dois pontos: trace uma reta horizontal por <Formula math="A" /> e uma reta vertical por <Formula math="B" />. Elas se cruzam no ponto <Formula math="C(x_2, y_1)" />.
+
+Os catetos desse triângulo medem:
+
+<FormulaBlock math="\overline{AC} = |x_2 - x_1|" />
+<FormulaBlock math="\overline{BC} = |y_2 - y_1|" />
+
+A distância <Formula math="d = \overline{AB}" /> é a hipotenusa. Pelo **Teorema de Pitágoras**:
+
+<FormulaBlock math="d^2 = (x_2 - x_1)^2 + (y_2 - y_1)^2" />
+
+Tirando a raiz quadrada (distância é positiva):
+
+<FormulaBlock math="d = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}" label="Distância entre dois pontos" />
+
+<Example title="Distância entre (1, 2) e (4, 6)">
+<FormulaBlock math="d = \sqrt{(4-1)^2 + (6-2)^2} = \sqrt{9 + 16} = \sqrt{25} = 5" />
+</Example>
+
+<Note type="tip">
+A ordem dos pontos não importa, pois as diferenças são elevadas ao quadrado. Além disso, essa fórmula pode ser estendida para 3 dimensões: <Formula math="d = \sqrt{(\Delta x)^2 + (\Delta y)^2 + (\Delta z)^2}" />.
+</Note>

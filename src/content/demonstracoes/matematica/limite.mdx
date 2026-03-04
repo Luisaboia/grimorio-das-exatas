@@ -1,0 +1,35 @@
+---
+title: "Demonstração: Conceito de Limite"
+slug: "limite"
+type: "mista"
+---
+
+## De onde vem o conceito de limite?
+
+O limite é a ideia central do Cálculo. Informalmente, dizemos que:
+
+<FormulaBlock math="\lim_{x \to a} f(x) = L" label="Definição de limite" />
+
+quando o valor de <Formula math="f(x)" /> se aproxima de <Formula math="L" /> à medida que <Formula math="x" /> se aproxima de <Formula math="a" />, sem necessariamente atingi-lo.
+
+### Intuição epsilon-delta
+
+A definição rigorosa, chamada **epsilon-delta** (<Formula math="\varepsilon\text{-}\delta" />), formaliza essa ideia:
+
+Para todo <Formula math="\varepsilon > 0" /> (tolerância na saída), existe um <Formula math="\delta > 0" /> (tolerância na entrada) tal que:
+
+<FormulaBlock math="0 < |x - a| < \delta \implies |f(x) - L| < \varepsilon" />
+
+Em palavras: podemos tornar <Formula math="f(x)" /> tão próximo de <Formula math="L" /> quanto quisermos, bastando escolher <Formula math="x" /> suficientemente perto de <Formula math="a" />.
+
+<Example title="Limite simples">
+Para <Formula math="f(x) = 2x + 1" />, temos <Formula math="\lim_{x \to 3} f(x) = 7" />, pois quanto mais <Formula math="x" /> se aproxima de 3, mais <Formula math="f(x)" /> se aproxima de 7.
+</Example>
+
+<Note type="info">
+O conceito de limite foi desenvolvido ao longo de séculos. **Newton** (1665) e **Leibniz** (1675) usaram noções intuitivas de "quantidades evanescentes" para criar o Cálculo. A definição rigorosa <Formula math="\varepsilon\text{-}\delta" /> só veio com **Cauchy** e **Weierstrass** no século XIX, resolvendo paradoxos que existiam há 150 anos.
+</Note>
+
+<Note type="tip">
+O limite é a porta de entrada para a derivada e a integral. Sem ele, não é possível formalizar taxas instantâneas nem áreas sob curvas.
+</Note>
