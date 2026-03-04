@@ -29,6 +29,7 @@
 - [x] Task-004: 29 demonstrações de Matemática (commit: c080c37)
 - [x] Task-005: 33 demonstrações de Física (commit: 271d1fc)
 - [x] Task-006: Indicador visual nos cards do catálogo (commit: 31bfa53)
+- [x] Task-007: Testes e polish final (commit: 5464adc)
 
 ### Current Iteration
 

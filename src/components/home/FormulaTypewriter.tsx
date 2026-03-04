@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback } from "react";
 import "katex/dist/katex.min.css";
 import { InlineMath } from "react-katex";
 
@@ -33,15 +33,14 @@ export function FormulaTypewriter() {
   const [charIndex, setCharIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>("typing");
 
-  // Shuffle order on mount so it feels fresh each visit
-  const order = useMemo(() => {
+  const [order] = useState(() => {
     const indices = FORMULAS.map((_, i) => i);
     for (let i = indices.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
       [indices[i], indices[j]] = [indices[j], indices[i]];
     }
     return indices;
-  }, []);
+  });
 
   const current = FORMULAS[order[formulaIndex % order.length]];
   const displayedTitle = current.title.slice(0, charIndex);
