@@ -129,3 +129,46 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Graph slider styling */
+.slider-graph::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: oklch(0.66 0.15 250);
+  border: 2px solid oklch(0.55 0.15 180);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.slider-graph::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.slider-graph::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: oklch(0.66 0.15 250);
+  border: 2px solid oklch(0.55 0.15 180);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
+
+.slider-graph::-moz-range-thumb:hover {
+  transform: scale(1.2);
+}
+
+.slider-graph::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+  background: oklch(0.25 0.01 260);
+}
+
+.slider-graph::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: oklch(0.25 0.01 260);
+}
