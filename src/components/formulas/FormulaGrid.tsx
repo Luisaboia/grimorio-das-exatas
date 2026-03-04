@@ -1,4 +1,5 @@
 import { SkeletonCard } from "@/components/ui/Skeleton";
+import { hasDemonstracao } from "@/lib/mdx";
 import type { FormulaFrontmatter } from "@/types/formula";
 
 import { FormulaCard } from "./FormulaCard";
@@ -48,7 +49,7 @@ export function FormulaGrid({ formulas, loading = false }: FormulaGridProps) {
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {formulas.map((formula, index) => (
-        <FormulaCard key={formula.slug} formula={formula} index={index} />
+        <FormulaCard key={formula.slug} formula={formula} index={index} hasDemonstracao={hasDemonstracao(formula.slug)} />
       ))}
     </div>
   );

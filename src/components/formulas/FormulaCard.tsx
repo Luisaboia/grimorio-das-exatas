@@ -11,6 +11,7 @@ import type { FormulaFrontmatter } from "@/types/formula";
 interface FormulaCardProps {
   formula: FormulaFrontmatter;
   index?: number;
+  hasDemonstracao?: boolean;
 }
 
 const difficultyLabels: Record<FormulaFrontmatter["difficulty"], string> = {
@@ -24,7 +25,7 @@ const categoryLabels: Record<FormulaFrontmatter["category"], string> = {
   matematica: "Matemática",
 };
 
-export function FormulaCard({ formula, index = 0 }: FormulaCardProps) {
+export function FormulaCard({ formula, index = 0, hasDemonstracao = false }: FormulaCardProps) {
   return (
     <Link
       href={`/formula/${formula.slug}`}
@@ -33,9 +34,17 @@ export function FormulaCard({ formula, index = 0 }: FormulaCardProps) {
     >
       <Card
         hover
-        className="flex h-full animate-[fadeInUp_0.4s_ease-out_both] flex-col"
+        className="relative flex h-full animate-[fadeInUp_0.4s_ease-out_both] flex-col"
         style={{ animationDelay: `${index * 60}ms` }}
       >
+        {hasDemonstracao && (
+          <span
+            className="absolute top-3 right-3 text-xs opacity-50 transition-opacity group-hover:opacity-80"
+            title="Demonstração disponível"
+          >
+            📖
+          </span>
+        )}
         {/* KaTeX preview */}
         <div className="mb-4 flex min-h-[3.5rem] items-center justify-center overflow-hidden rounded-lg bg-surface-900 px-3 py-3">
           <div className="text-base text-surface-50">
