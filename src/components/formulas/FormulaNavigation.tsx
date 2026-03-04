@@ -31,7 +31,7 @@ export function FormulaNavigation({
       </div>
 
       {/* Prev / Next */}
-      <div className="flex items-stretch justify-between gap-4 border-t border-surface-700 pt-6">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-stretch sm:justify-between sm:gap-4 border-t border-surface-700 pt-6">
         {previous ? (
           <Link
             href={`/formula/${previous.slug}`}
@@ -45,7 +45,7 @@ export function FormulaNavigation({
             </span>
           </Link>
         ) : (
-          <div className="flex-1" />
+          <div className="hidden sm:block sm:flex-1" />
         )}
 
         {next ? (
@@ -61,7 +61,7 @@ export function FormulaNavigation({
             </span>
           </Link>
         ) : (
-          <div className="flex-1" />
+          <div className="hidden sm:block sm:flex-1" />
         )}
       </div>
     </div>
