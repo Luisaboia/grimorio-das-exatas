@@ -1,0 +1,33 @@
+---
+title: "Demonstração: Segunda Lei de Newton"
+slug: "segunda-lei-newton"
+type: "mista"
+---
+
+A Segunda Lei de Newton é um dos pilares da mecânica clássica. Vamos deduzi-la a partir da formulação original de Newton.
+
+<Note type="info">
+Em sua obra *Principia Mathematica* (1687), Newton formulou a lei em termos da **quantidade de movimento** (momentum), não diretamente como F = ma.
+</Note>
+
+Newton definiu que a força resultante é igual à taxa de variação temporal da quantidade de movimento:
+
+<FormulaBlock math="\vec{F} = \frac{d\vec{p}}{dt}" label="Formulação original de Newton" />
+
+A quantidade de movimento é definida como o produto da massa pela velocidade:
+
+<FormulaBlock math="\vec{p} = m \cdot \vec{v}" label="Definição de momento linear" />
+
+Substituindo na expressão da força e considerando **massa constante**:
+
+<FormulaBlock math="\vec{F} = \frac{d(m\vec{v})}{dt} = m \cdot \frac{d\vec{v}}{dt}" label="Massa constante sai da derivada" />
+
+Como a derivada da velocidade em relação ao tempo é a **aceleração** (<Formula math="\vec{a} = d\vec{v}/dt" />), obtemos:
+
+<FormulaBlock math="\vec{F} = m \cdot \vec{a}" label="Segunda Lei de Newton" />
+
+<Note type="tip">
+A formulação com <Formula math="d\vec{p}/dt" /> é mais geral: ela também funciona para sistemas com massa variável, como foguetes.
+</Note>
+
+Portanto, a força resultante sobre um corpo é diretamente proporcional à sua massa e à aceleração adquirida. Quanto maior a massa, maior a força necessária para produzir a mesma aceleração.

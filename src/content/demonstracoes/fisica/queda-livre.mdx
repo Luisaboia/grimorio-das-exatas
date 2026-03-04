@@ -1,0 +1,36 @@
+---
+title: "Demonstração: Queda Livre"
+slug: "queda-livre"
+type: "deducao"
+---
+
+A queda livre é um caso particular do MRUV em que o objeto parte do repouso e a única aceleração é a gravidade. Vamos deduzir a equação da altura.
+
+Partimos da equação horária do MRUV:
+
+<FormulaBlock math="s = s_0 + v_0 t + \frac{1}{2} a t^2" label="Equação geral do MRUV" />
+
+Na queda livre, aplicamos duas condições:
+
+- A velocidade inicial é nula: <Formula math="v_0 = 0" />
+- A aceleração é a gravidade: <Formula math="a = g" />
+
+Substituindo essas condições:
+
+<FormulaBlock math="s - s_0 = 0 \cdot t + \frac{1}{2} g \, t^2" label="Aplicando v₀ = 0 e a = g" />
+
+Chamando a distância percorrida de <Formula math="h = s - s_0" />:
+
+<FormulaBlock math="h = \frac{1}{2} g \, t^2" label="Equação da queda livre" />
+
+<Note type="info">
+Na superfície da Terra, <Formula math="g \approx 9{,}8 \; \text{m/s}^2" />. Em exercícios, costuma-se usar <Formula math="g = 10 \; \text{m/s}^2" /> para simplificar os cálculos.
+</Note>
+
+<Note type="tip">
+A velocidade em qualquer instante da queda livre é simplesmente <Formula math="v = g \cdot t" />, pois <Formula math="v_0 = 0" />.
+</Note>
+
+<Variable symbol="h" description="Altura de queda (m)" />
+<Variable symbol="g" description="Aceleração da gravidade (m/s²)" />
+<Variable symbol="t" description="Tempo de queda (s)" />

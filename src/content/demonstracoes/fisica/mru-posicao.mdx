@@ -1,0 +1,36 @@
+---
+title: "Demonstração: Equação Horária do MRU"
+slug: "mru-posicao"
+type: "deducao"
+---
+
+No Movimento Retilíneo Uniforme (MRU), a velocidade é constante. Vamos deduzir a equação da posição a partir dessa condição.
+
+Por definição, a velocidade instantânea é a derivada da posição em relação ao tempo:
+
+<FormulaBlock math="v = \frac{ds}{dt}" label="Definição de velocidade instantânea" />
+
+Como no MRU a velocidade <Formula math="v" /> é constante, podemos separar as variáveis e integrar:
+
+<FormulaBlock math="ds = v \, dt" label="Separação de variáveis" />
+
+Integrando ambos os lados — posição de <Formula math="s_0" /> até <Formula math="s" />, e tempo de <Formula math="0" /> até <Formula math="t" />:
+
+<FormulaBlock math="\int_{s_0}^{s} ds = \int_{0}^{t} v \, dt" label="Integração" />
+
+Como <Formula math="v" /> é constante, sai da integral:
+
+<FormulaBlock math="s - s_0 = v \cdot t" label="Resultado da integração" />
+
+Isolando a posição <Formula math="s" />:
+
+<FormulaBlock math="s = s_0 + v \cdot t" label="Equação horária do MRU" />
+
+<Note type="tip">
+No gráfico <Formula math="s \times t" />, o MRU produz uma **reta**, cuja inclinação é a velocidade. Se <Formula math="v > 0" />, a reta é crescente; se <Formula math="v < 0" />, é decrescente.
+</Note>
+
+<Variable symbol="s" description="Posição final (m)" />
+<Variable symbol="s_0" description="Posição inicial (m)" />
+<Variable symbol="v" description="Velocidade constante (m/s)" />
+<Variable symbol="t" description="Tempo (s)" />

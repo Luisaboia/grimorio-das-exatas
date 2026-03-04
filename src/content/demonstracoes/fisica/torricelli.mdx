@@ -1,0 +1,37 @@
+---
+title: "Demonstração: Equação de Torricelli"
+slug: "torricelli"
+type: "deducao"
+---
+
+A equação de Torricelli relaciona velocidade, aceleração e deslocamento sem depender do tempo. Vamos deduzi-la eliminando <Formula math="t" /> das equações do MRUV.
+
+Partimos das duas equações fundamentais do MRUV:
+
+<FormulaBlock math="v = v_0 + a \cdot t" label="Equação da velocidade (I)" />
+
+<FormulaBlock math="\Delta s = v_0 t + \frac{1}{2} a t^2" label="Equação do deslocamento (II)" />
+
+Da equação (I), isolamos o tempo:
+
+<FormulaBlock math="t = \frac{v - v_0}{a}" label="Tempo isolado" />
+
+Substituímos esse valor de <Formula math="t" /> na equação (II):
+
+<FormulaBlock math="\Delta s = v_0 \cdot \frac{v - v_0}{a} + \frac{1}{2} a \cdot \left(\frac{v - v_0}{a}\right)^2" label="Substituição" />
+
+Desenvolvendo o lado direito:
+
+<FormulaBlock math="\Delta s = \frac{v_0 v - v_0^2}{a} + \frac{v^2 - 2v \cdot v_0 + v_0^2}{2a}" label="Expansão" />
+
+Somando as frações com denominador comum <Formula math="2a" />:
+
+<FormulaBlock math="2a \cdot \Delta s = 2v_0 v - 2v_0^2 + v^2 - 2v_0 v + v_0^2 = v^2 - v_0^2" label="Simplificação" />
+
+Portanto:
+
+<FormulaBlock math="v^2 = v_0^2 + 2a \cdot \Delta s" label="Equação de Torricelli" />
+
+<Note type="tip">
+Essa equação é extremamente útil quando o enunciado não fornece o tempo e você precisa relacionar velocidade com deslocamento.
+</Note>

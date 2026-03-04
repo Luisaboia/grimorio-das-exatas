@@ -1,0 +1,39 @@
+---
+title: "Demonstração: Energia Cinética"
+slug: "energia-cinetica"
+type: "deducao"
+---
+
+A energia cinética é a energia associada ao movimento de um corpo. Vamos deduzi-la a partir do teorema trabalho-energia.
+
+Considere uma força resultante constante <Formula math="F" /> aplicada a um corpo de massa <Formula math="m" /> ao longo de um deslocamento <Formula math="ds" />. Pela Segunda Lei de Newton:
+
+<FormulaBlock math="F = m \cdot a" label="Segunda Lei de Newton" />
+
+O trabalho infinitesimal realizado pela força é:
+
+<FormulaBlock math="d\tau = F \cdot ds = m \cdot a \cdot ds" label="Trabalho infinitesimal" />
+
+Como <Formula math="a = dv/dt" /> e <Formula math="ds = v \cdot dt" />, podemos reescrever:
+
+<FormulaBlock math="d\tau = m \cdot \frac{dv}{dt} \cdot v \cdot dt = m \cdot v \cdot dv" label="Substituição de variáveis" />
+
+Integrando de <Formula math="v_0" /> (velocidade inicial) até <Formula math="v" /> (velocidade final):
+
+<FormulaBlock math="\tau = \int_{v_0}^{v} m \cdot v \, dv = m \cdot \frac{v^2}{2} - m \cdot \frac{v_0^2}{2}" label="Integração" />
+
+Portanto, o trabalho é igual à variação da grandeza <Formula math="\frac{1}{2}mv^2" />, que chamamos de **energia cinética**:
+
+<FormulaBlock math="E_c = \frac{1}{2} m v^2" label="Energia cinética" />
+
+E o teorema trabalho-energia fica:
+
+<FormulaBlock math="\tau = \Delta E_c = E_c - E_{c_0}" label="Teorema trabalho-energia" />
+
+<Note type="tip">
+A energia cinética é sempre positiva ou nula — um corpo em repouso tem <Formula math="E_c = 0" />, e qualquer corpo em movimento tem <Formula math="E_c > 0" />.
+</Note>
+
+<Variable symbol="E_c" description="Energia cinética (J)" />
+<Variable symbol="m" description="Massa do corpo (kg)" />
+<Variable symbol="v" description="Velocidade (m/s)" />

@@ -1,0 +1,37 @@
+---
+title: "Demonstração: Equação de Gauss para Espelhos"
+slug: "equacao-gauss-espelhos"
+type: "deducao"
+---
+
+## Dedução da Equação de Gauss
+
+Vamos obter a relação entre distância focal, distância do objeto e distância da imagem usando geometria de triângulos semelhantes.
+
+### Passo 1 — Configuração
+
+Considere um espelho esférico côncavo com centro de curvatura <Formula math="C" />, foco <Formula math="F" /> e um objeto na posição <Formula math="d_o" /> do vértice.
+
+<Variable symbol="f" description="Distância focal do espelho" />
+<Variable symbol="d_o" description="Distância do objeto ao espelho" />
+<Variable symbol="d_i" description="Distância da imagem ao espelho" />
+
+### Passo 2 — Triângulos semelhantes
+
+Traçando raios paralelos ao eixo principal e passando pelo centro, formamos dois pares de triângulos semelhantes. Da semelhança:
+
+<FormulaBlock math="\frac{h_i}{h_o} = \frac{d_i}{d_o}" label="Relação de semelhança" />
+
+### Passo 3 — Relação com o foco
+
+Usando o segundo par de triângulos (entre o foco e o vértice):
+
+<FormulaBlock math="\frac{h_i}{h_o} = \frac{d_i - f}{f}" label="Segundo par" />
+
+### Passo 4 — Igualando
+
+Igualando as duas expressões e reorganizando:
+
+<FormulaBlock math="\frac{1}{f} = \frac{1}{d_o} + \frac{1}{d_i}" label="Equação de Gauss" />
+
+<Note type="info">Essa equação vale tanto para espelhos esféricos quanto para lentes delgadas, respeitando a convenção de sinais.</Note>

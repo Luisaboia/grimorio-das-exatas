@@ -1,0 +1,39 @@
+---
+title: "Demonstração: Dilatação Linear"
+slug: "dilatacao-linear"
+type: "deducao"
+---
+
+A dilatação linear descreve como o comprimento de um objeto sólido varia com a temperatura. Vamos deduzir a expressão a partir da relação de proporcionalidade observada experimentalmente.
+
+Considere uma barra de comprimento inicial <Formula math="L_0" /> a uma temperatura <Formula math="T_0" />. Ao aquecer a barra até a temperatura <Formula math="T" />, seu comprimento muda para <Formula math="L" />.
+
+Experimentalmente, observa-se que a variação do comprimento <Formula math="\Delta L = L - L_0" /> é:
+
+1. **Proporcional ao comprimento original** <Formula math="L_0" /> — barras maiores dilatam mais.
+2. **Proporcional à variação de temperatura** <Formula math="\Delta T = T - T_0" />.
+
+Essas duas proporcionalidades podem ser escritas como:
+
+<FormulaBlock math="\Delta L \propto L_0 \cdot \Delta T" label="Proporcionalidade observada" />
+
+Introduzindo a constante de proporcionalidade <Formula math="\alpha" />, chamada **coeficiente de dilatação linear**:
+
+<FormulaBlock math="\Delta L = L_0 \cdot \alpha \cdot \Delta T" label="Dilatação linear" />
+
+O comprimento final pode ser escrito como:
+
+<FormulaBlock math="L = L_0 + \Delta L = L_0 (1 + \alpha \cdot \Delta T)" label="Comprimento final" />
+
+<Note type="tip">
+O coeficiente <Formula math="\alpha" /> é uma propriedade do material. Por exemplo: aço (<Formula math="\alpha \approx 11 \times 10^{-6} \; °C^{-1}" />), alumínio (<Formula math="\alpha \approx 23 \times 10^{-6} \; °C^{-1}" />). Valores pequenos, mas relevantes em estruturas grandes como pontes e trilhos.
+</Note>
+
+<Note type="info">
+É por isso que pontes possuem **juntas de dilatação** — espaços que permitem a expansão do material sem causar danos estruturais.
+</Note>
+
+<Variable symbol="\Delta L" description="Variação do comprimento (m)" />
+<Variable symbol="L_0" description="Comprimento inicial (m)" />
+<Variable symbol="\alpha" description="Coeficiente de dilatação linear (°C⁻¹)" />
+<Variable symbol="\Delta T" description="Variação de temperatura (°C)" />

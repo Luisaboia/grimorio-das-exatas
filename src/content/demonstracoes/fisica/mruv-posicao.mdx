@@ -1,0 +1,41 @@
+---
+title: "Demonstração: Equação Horária do MRUV"
+slug: "mruv-posicao"
+type: "deducao"
+---
+
+No Movimento Retilíneo Uniformemente Variado (MRUV), a aceleração é constante. Vamos deduzir a equação da posição integrando duas vezes.
+
+A aceleração constante é definida como a derivada da velocidade:
+
+<FormulaBlock math="a = \frac{dv}{dt} \implies dv = a \, dt" label="Definição de aceleração" />
+
+Integrando de <Formula math="v_0" /> a <Formula math="v" /> e de <Formula math="0" /> a <Formula math="t" />:
+
+<FormulaBlock math="v = v_0 + a \cdot t" label="Equação da velocidade no MRUV" />
+
+Agora, como <Formula math="v = ds/dt" />, substituímos e integramos novamente:
+
+<FormulaBlock math="\frac{ds}{dt} = v_0 + a \cdot t" label="Substituição" />
+
+Separando variáveis e integrando de <Formula math="s_0" /> a <Formula math="s" /> e de <Formula math="0" /> a <Formula math="t" />:
+
+<FormulaBlock math="\int_{s_0}^{s} ds = \int_{0}^{t} (v_0 + a \cdot t) \, dt" label="Segunda integração" />
+
+Resolvendo a integral:
+
+<FormulaBlock math="s - s_0 = v_0 \cdot t + \frac{1}{2} a \cdot t^2" label="Resultado" />
+
+Portanto:
+
+<FormulaBlock math="s = s_0 + v_0 t + \frac{1}{2} a t^2" label="Equação horária do MRUV" />
+
+<Note type="tip">
+No gráfico <Formula math="s \times t" />, o MRUV produz uma **parábola**. A concavidade depende do sinal da aceleração.
+</Note>
+
+<Variable symbol="s" description="Posição final (m)" />
+<Variable symbol="s_0" description="Posição inicial (m)" />
+<Variable symbol="v_0" description="Velocidade inicial (m/s)" />
+<Variable symbol="a" description="Aceleração constante (m/s²)" />
+<Variable symbol="t" description="Tempo (s)" />

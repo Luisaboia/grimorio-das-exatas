@@ -1,0 +1,34 @@
+---
+title: "Demonstração: Força Centrípeta"
+slug: "forca-centripeta"
+type: "deducao"
+---
+
+A força centrípeta é a força resultante que mantém um corpo em movimento circular. Vamos deduzi-la combinando a aceleração centrípeta com a Segunda Lei de Newton.
+
+No movimento circular uniforme, a velocidade tem módulo constante, mas sua **direção muda continuamente**. Essa variação de direção gera uma aceleração dirigida para o centro da trajetória, chamada **aceleração centrípeta**.
+
+Pode-se demonstrar geometricamente que a aceleração centrípeta vale:
+
+<FormulaBlock math="a_c = \frac{v^2}{r}" label="Aceleração centrípeta" />
+
+Aplicando a Segunda Lei de Newton (<Formula math="F = ma" />) na direção centrípeta:
+
+<FormulaBlock math="F_c = m \cdot a_c" label="Força resultante centrípeta" />
+
+Substituindo a expressão da aceleração centrípeta:
+
+<FormulaBlock math="F_c = m \cdot \frac{v^2}{r}" label="Força centrípeta" />
+
+Também podemos expressar em termos da velocidade angular <Formula math="\omega" />, usando <Formula math="v = \omega \cdot r" />:
+
+<FormulaBlock math="F_c = m \cdot \omega^2 \cdot r" label="Forma com velocidade angular" />
+
+<Note type="tip">
+A força centrípeta **não é uma nova força da natureza** — ela é o nome dado à resultante das forças que apontam para o centro. Pode ser a gravidade, a tração, o atrito ou qualquer combinação delas.
+</Note>
+
+<Variable symbol="F_c" description="Força centrípeta (N)" />
+<Variable symbol="m" description="Massa do corpo (kg)" />
+<Variable symbol="v" description="Velocidade tangencial (m/s)" />
+<Variable symbol="r" description="Raio da trajetória (m)" />

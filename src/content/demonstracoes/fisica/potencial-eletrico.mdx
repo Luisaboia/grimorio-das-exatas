@@ -1,0 +1,27 @@
+---
+title: "Demonstração: Potencial Elétrico"
+slug: "potencial-eletrico"
+type: "deducao"
+---
+
+## Dedução de V = kQ/d
+
+O potencial elétrico mede a energia potencial por unidade de carga em um ponto do espaço.
+
+### Passo 1 — Trabalho da força elétrica
+
+O trabalho para trazer uma carga de prova <Formula math="q_0" /> do infinito até uma distância <Formula math="d" /> de uma carga <Formula math="Q" /> é:
+
+<FormulaBlock math="W = -\int_{\infty}^{d} \vec{F} \cdot d\vec{r} = -\int_{\infty}^{d} k\frac{Q \, q_0}{r^2} \, dr" label="Trabalho da força elétrica" />
+
+### Passo 2 — Resolvendo a integral
+
+<FormulaBlock math="W = -k Q q_0 \left[-\frac{1}{r}\right]_{\infty}^{d} = k\frac{Q \, q_0}{d}" label="Resultado da integral" />
+
+### Passo 3 — Potencial como energia por carga
+
+Dividindo o trabalho pela carga de prova:
+
+<FormulaBlock math="V = \frac{W}{q_0} = k\frac{Q}{d}" label="Potencial elétrico" />
+
+<Note type="tip">O potencial é **escalar** (não vetorial), o que facilita cálculos em sistemas com várias cargas — basta somar algebricamente.</Note>

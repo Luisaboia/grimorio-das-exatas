@@ -1,0 +1,33 @@
+---
+title: "Demonstração: Potência Mecânica"
+slug: "potencia"
+type: "deducao"
+---
+
+A potência mede a rapidez com que o trabalho é realizado. Vamos deduzi-la a partir da definição de taxa de trabalho.
+
+Se um trabalho <Formula math="\tau" /> é realizado durante um intervalo de tempo <Formula math="\Delta t" />, a **potência média** é definida como:
+
+<FormulaBlock math="P_m = \frac{\tau}{\Delta t}" label="Potência média" />
+
+Para obter a **potência instantânea**, tomamos o limite quando <Formula math="\Delta t \to 0" />:
+
+<FormulaBlock math="P = \frac{d\tau}{dt}" label="Potência instantânea" />
+
+Como o trabalho infinitesimal é <Formula math="d\tau = \vec{F} \cdot d\vec{s}" />, podemos escrever:
+
+<FormulaBlock math="P = \frac{\vec{F} \cdot d\vec{s}}{dt} = \vec{F} \cdot \vec{v}" label="Potência como produto de força e velocidade" />
+
+Em módulo, quando a força é paralela à velocidade:
+
+<FormulaBlock math="P = F \cdot v" label="Potência (força paralela à velocidade)" />
+
+<Note type="tip">
+A unidade de potência no SI é o watt (W): <Formula math="1 \; \text{W} = 1 \; \text{J/s}" />. Uma unidade prática muito usada é o cavalo-vapor: <Formula math="1 \; \text{cv} \approx 735 \; \text{W}" />.
+</Note>
+
+<Variable symbol="P" description="Potência (W)" />
+<Variable symbol="\tau" description="Trabalho realizado (J)" />
+<Variable symbol="\Delta t" description="Intervalo de tempo (s)" />
+<Variable symbol="F" description="Força aplicada (N)" />
+<Variable symbol="v" description="Velocidade (m/s)" />

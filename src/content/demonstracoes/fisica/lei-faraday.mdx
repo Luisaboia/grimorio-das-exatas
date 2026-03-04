@@ -1,0 +1,31 @@
+---
+title: "Demonstração: Lei de Faraday"
+slug: "lei-faraday"
+type: "mista"
+---
+
+## A indução eletromagnética
+
+A Lei de Faraday conecta a variação do fluxo magnético à força eletromotriz induzida.
+
+<Note type="info">Michael Faraday descobriu a indução eletromagnética em 1831, ao observar que uma corrente surgia em uma bobina quando o fluxo magnético através dela variava. Ele não usou equações — foram Maxwell e Neumann que formalizaram a lei.</Note>
+
+### Passo 1 — Fluxo magnético
+
+O fluxo magnético através de uma espira de área <Formula math="A" /> em um campo <Formula math="B" /> é:
+
+<FormulaBlock math="\Phi_B = B \cdot A \cdot \cos\theta" label="Fluxo magnético" />
+
+### Passo 2 — Lei de Faraday
+
+A fem induzida é proporcional à taxa de variação temporal do fluxo:
+
+<FormulaBlock math="\varepsilon = -\frac{d\Phi_B}{dt}" label="Lei de Faraday" />
+
+O sinal negativo vem da **Lei de Lenz**: a corrente induzida se opõe à variação de fluxo que a originou.
+
+### Para N espiras
+
+<FormulaBlock math="\varepsilon = -N\frac{d\Phi_B}{dt}" label="Lei de Faraday para N espiras" />
+
+<Note type="tip">A Lei de Faraday é o princípio por trás de **geradores elétricos**, **transformadores** e **motores** — a base de toda a tecnologia elétrica moderna.</Note>

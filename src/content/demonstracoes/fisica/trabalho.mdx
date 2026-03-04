@@ -1,0 +1,36 @@
+---
+title: "Demonstração: Trabalho de uma Força"
+slug: "trabalho"
+type: "deducao"
+---
+
+O trabalho é a grandeza que mede a transferência de energia por meio de uma força ao longo de um deslocamento. Vamos deduzi-lo a partir do produto escalar de vetores.
+
+Considere uma força constante <Formula math="\vec{F}" /> aplicada a um objeto que sofre um deslocamento <Formula math="\vec{d}" />. O ângulo entre a força e o deslocamento é <Formula math="\theta" />.
+
+O trabalho é definido como o **produto escalar** entre os vetores força e deslocamento:
+
+<FormulaBlock math="\tau = \vec{F} \cdot \vec{d}" label="Definição vetorial de trabalho" />
+
+Pela definição de produto escalar:
+
+<FormulaBlock math="\vec{F} \cdot \vec{d} = |\vec{F}| \cdot |\vec{d}| \cdot \cos\theta" label="Produto escalar" />
+
+Portanto:
+
+<FormulaBlock math="\tau = F \cdot d \cdot \cos\theta" label="Trabalho de uma força constante" />
+
+Analisando os casos particulares:
+
+- Se <Formula math="\theta = 0°" />: a força é paralela ao deslocamento → <Formula math="\tau = F \cdot d" /> (trabalho máximo positivo).
+- Se <Formula math="\theta = 90°" />: a força é perpendicular → <Formula math="\tau = 0" /> (a força não realiza trabalho).
+- Se <Formula math="\theta = 180°" />: a força é contrária ao deslocamento → <Formula math="\tau = -F \cdot d" /> (trabalho negativo/resistente).
+
+<Note type="tip">
+O <Formula math="\cos\theta" /> na fórmula captura apenas a **componente da força na direção do deslocamento**. Componentes perpendiculares não transferem energia.
+</Note>
+
+<Variable symbol="\tau" description="Trabalho (J)" />
+<Variable symbol="F" description="Módulo da força (N)" />
+<Variable symbol="d" description="Módulo do deslocamento (m)" />
+<Variable symbol="\theta" description="Ângulo entre força e deslocamento" />
