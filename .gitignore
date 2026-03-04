@@ -45,10 +45,10 @@ next-env.d.ts
 .swc/
 
 # Planning & progress docs (Ralph loop)
-PRD.md
-PRD-v2.md
-PRD-v3.md
+PRD*.md
 PROGRESS.md
+CHANGELOG.md
+CONTRIBUTING.md
 
 # Copilot agents config
 .github/agents/
