@@ -16,6 +16,7 @@ import { RelatedFormulas } from "@/components/formulas/RelatedFormulas";
 import { TableOfContents } from "@/components/formulas/TableOfContents";
 import type { Heading } from "@/components/formulas/TableOfContents";
 import { Variable } from "@/components/formulas/Variable";
+import { Graph } from "@/components/graphs/Graph";
 import { categories } from "@/lib/categories";
 import {
   getAllFormulas,
@@ -77,6 +78,7 @@ const mdxComponents = {
   Variable,
   Example,
   Note,
+  Graph,
   h1: (props: ComponentPropsWithoutRef<"h1">) => (
     <h1
       className="mb-4 mt-8 text-3xl font-bold text-surface-50 first:mt-0"
