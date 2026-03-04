@@ -23,13 +23,18 @@
 
 ### Completed
 
-_None yet_
+- [x] Task-001: Infraestrutura — tipos, loader MDX, diretório demonstracoes (commit: b05717a)
+- [x] Task-002: Componente DemonstrationModal (commit: 335c5d8)
+- [x] Task-003: Botão Ver Demonstração + page integration (commit: b907816)
+- [x] Task-004: 29 demonstrações de Matemática (commit: c080c37)
+- [x] Task-005: 33 demonstrações de Física (commit: 271d1fc)
+- [x] Task-006: Indicador visual nos cards do catálogo (commit: 31bfa53)
 
 ### Current Iteration
 
-- Iteration: 0
-- Working on: Not started
-- Started: N/A
+- Iteration: 7
+- Working on: ALL DONE
+- Started: 2026-03-03
 
 ## Blockers
 
