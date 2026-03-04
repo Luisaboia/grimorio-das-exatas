@@ -16,7 +16,8 @@ Catálogo web completo de fórmulas de **Matemática** e **Física** para estudo
 - 📱 **Responsivo** — mobile, tablet e desktop
 - 🗂️ **Categorias organizadas** — navegação por sidebar e filtros
 - ⚡ **SSG** — páginas pré-renderizadas para performance máxima
-- 🔗 **SEO** — sitemap, robots.txt, JSON-LD, Open Graph
+- � **Demonstrações** — deduções passo a passo e contexto histórico para cada fórmula
+- �🔗 **SEO** — sitemap, robots.txt, JSON-LD, Open Graph
 
 ## 📁 Estrutura do Projeto
 
