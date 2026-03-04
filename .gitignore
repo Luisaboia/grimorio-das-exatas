@@ -40,3 +40,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# SWC cache
+.swc/
+
+# Planning & progress docs (Ralph loop)
+PRD.md
+PRD-v2.md
+PRD-v3.md
+PROGRESS.md
+
+# Copilot agents config
+.github/agents/
