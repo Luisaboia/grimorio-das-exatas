@@ -29,6 +29,7 @@ const PAUSE_AFTER_DELETING = 400; // ms before starting the next formula
 type Phase = "typing" | "paused" | "deleting" | "waiting";
 
 export function FormulaTypewriter() {
+  const [mounted, setMounted] = useState(false);
   const [formulaIndex, setFormulaIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
   const [phase, setPhase] = useState<Phase>("typing");
@@ -41,6 +42,8 @@ export function FormulaTypewriter() {
     }
     return indices;
   });
+
+  useEffect(() => { setMounted(true); }, []);
 
   const current = FORMULAS[order[formulaIndex % order.length]];
   const displayedTitle = current.title.slice(0, charIndex);
@@ -85,6 +88,11 @@ export function FormulaTypewriter() {
 
   // Formula is visible only when title is fully typed or being held
   const showFormula = phase === "paused" || (phase === "deleting" && charIndex > 0);
+
+  // Placeholder during SSR to avoid hydration mismatch from Math.random()
+  if (!mounted) {
+    return <div className="mt-5 flex h-[52px] flex-col items-center gap-2" aria-hidden="true" />;
+  }
 
   return (
     <div className="mt-5 flex flex-col items-center gap-2 overflow-hidden" aria-live="polite">
