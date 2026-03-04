@@ -14,3 +14,15 @@ export interface FormulaData {
   content: string; // raw MDX content
   slug: string;
 }
+
+export interface DemonstracaoFrontmatter {
+  title: string;
+  slug: string;
+  type: "deducao" | "historia" | "mista";
+}
+
+export interface DemonstracaoData {
+  frontmatter: DemonstracaoFrontmatter;
+  content: string;
+  slug: string;
+}

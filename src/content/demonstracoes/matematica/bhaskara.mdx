@@ -1,0 +1,45 @@
+---
+title: "Demonstração: Fórmula de Bhaskara"
+slug: "bhaskara"
+type: "mista"
+---
+
+## De onde vem a Fórmula de Bhaskara?
+
+A fórmula de Bhaskara é obtida pelo método de **completar quadrados** aplicado à equação geral do segundo grau.
+
+Partindo da equação geral:
+
+<FormulaBlock math="ax^2 + bx + c = 0" label="Equação geral" />
+
+Dividimos tudo por <Formula math="a" /> (com <Formula math="a \neq 0" />):
+
+<FormulaBlock math="x^2 + \frac{b}{a}x + \frac{c}{a} = 0" />
+
+Isolamos o termo independente:
+
+<FormulaBlock math="x^2 + \frac{b}{a}x = -\frac{c}{a}" />
+
+Completamos o quadrado adicionando <Formula math="\left(\frac{b}{2a}\right)^2" /> a ambos os lados:
+
+<FormulaBlock math="x^2 + \frac{b}{a}x + \frac{b^2}{4a^2} = \frac{b^2}{4a^2} - \frac{c}{a}" />
+
+O lado esquerdo é um quadrado perfeito:
+
+<FormulaBlock math="\left(x + \frac{b}{2a}\right)^2 = \frac{b^2 - 4ac}{4a^2}" />
+
+Extraindo a raiz quadrada:
+
+<FormulaBlock math="x + \frac{b}{2a} = \pm\frac{\sqrt{b^2 - 4ac}}{2a}" />
+
+Isolando <Formula math="x" />:
+
+<FormulaBlock math="x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}" label="Fórmula de Bhaskara" />
+
+<Note type="info">
+Embora a fórmula leve o nome do matemático indiano **Bhaskara II** (séc. XII), o método de completar quadrados já era conhecido pelos babilônios há mais de 4000 anos. Bhaskara a sistematizou e popularizou.
+</Note>
+
+<Note type="tip">
+Lembre-se: o discriminante <Formula math="\Delta = b^2 - 4ac" /> determina a natureza das raízes. Ele aparece naturalmente no processo de completar quadrados!
+</Note>

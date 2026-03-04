@@ -125,4 +125,4 @@ Veja o guia completo em [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## 📄 Licença
 
-MIT © Fórmulas IFPR
+MIT © Grimório das Exatas

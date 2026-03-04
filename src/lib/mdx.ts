@@ -4,9 +4,15 @@ import path from "path";
 import matter from "gray-matter";
 import { serialize } from "next-mdx-remote/serialize";
 
-import type { FormulaData, FormulaFrontmatter } from "@/types/formula";
+import type {
+  DemonstracaoData,
+  DemonstracaoFrontmatter,
+  FormulaData,
+  FormulaFrontmatter,
+} from "@/types/formula";
 
 const contentDirectory = path.join(process.cwd(), "src/content");
+const demonstracoesDirectory = path.join(process.cwd(), "src/content/demonstracoes");
 
 function getMDXFiles(dir: string): string[] {
   const files: string[] = [];
@@ -28,7 +34,9 @@ function getMDXFiles(dir: string): string[] {
 }
 
 export function getAllFormulas(): FormulaData[] {
-  const files = getMDXFiles(contentDirectory);
+  const files = getMDXFiles(contentDirectory).filter(
+    (f) => !f.includes(`${path.sep}demonstracoes${path.sep}`),
+  );
 
   const formulas = files.map((filePath) => {
     const fileContent = fs.readFileSync(filePath, "utf-8");
@@ -79,4 +87,28 @@ export function getFormulasBySubcategory(
       f.frontmatter.category === category &&
       f.frontmatter.subcategory === subcategory,
   );
+}
+
+export function getAllDemonstracoes(): DemonstracaoData[] {
+  const files = getMDXFiles(demonstracoesDirectory);
+
+  return files.map((filePath) => {
+    const fileContent = fs.readFileSync(filePath, "utf-8");
+    const { data, content } = matter(fileContent);
+    const frontmatter = data as DemonstracaoFrontmatter;
+    return {
+      frontmatter,
+      content,
+      slug: frontmatter.slug,
+    };
+  });
+}
+
+export function getDemonstracaoBySlug(slug: string): DemonstracaoData | null {
+  const all = getAllDemonstracoes();
+  return all.find((d) => d.slug === slug) ?? null;
+}
+
+export function hasDemonstracao(slug: string): boolean {
+  return getDemonstracaoBySlug(slug) !== null;
 }
