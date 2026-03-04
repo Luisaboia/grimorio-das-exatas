@@ -19,6 +19,18 @@
 - Working on: ALL DONE
 - Started: 2026-03-03
 
+## Phase 3 — Demonstrações Matemáticas (PRD-v3.md)
+
+### Completed
+
+_None yet_
+
+### Current Iteration
+
+- Iteration: 0
+- Working on: Not started
+- Started: N/A
+
 ## Blockers
 
 - None
@@ -27,5 +39,8 @@
 
 - Stack: Next.js 16 + Tailwind CSS v4 + react-katex + MDX + Supabase (optional)
 - Deploy target: Vercel
-- PRD created: 2026-03-03
+- PRD v1 created: 2026-03-03
+- PRD v2 created: 2026-03-03
+- PRD v3 created: 2026-03-03
+- Scope v3: 62 demonstrações (29 mat + 33 fis), modal, botão, indicador em cards
 - Final release: 2026-03-03
