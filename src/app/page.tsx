@@ -7,7 +7,7 @@ import { FormulaTypewriter } from "@/components/home/FormulaTypewriter";
 
 export default function Home() {
   return (
-    <div className="px-6 py-10 lg:px-10">
+    <div className="max-w-full overflow-x-hidden px-4 py-10 sm:px-6 lg:px-10">
       {/* Hero section */}
       <section className="mx-auto max-w-3xl text-center">
         <h1 className="text-3xl font-bold tracking-tight text-surface-50 sm:text-5xl">

@@ -63,7 +63,7 @@ export default async function SubcategoryPage({
   }
 
   return (
-    <div className="px-6 py-10 lg:px-10">
+    <div className="max-w-full overflow-x-hidden px-4 py-10 sm:px-6 lg:px-10">
       {/* Breadcrumbs */}
       <Breadcrumbs
         items={[

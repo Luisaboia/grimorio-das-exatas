@@ -39,7 +39,7 @@ export function FormulaBlock({ math, label }: FormulaBlockProps) {
         </p>
       )}
 
-      <div className="flex items-center justify-center overflow-x-auto py-2 text-base sm:text-xl">
+      <div className="flex max-w-full items-center justify-center overflow-x-auto py-2 text-base sm:text-xl">
         <BlockMath math={math} />
       </div>
 
