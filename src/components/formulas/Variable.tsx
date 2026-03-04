@@ -14,8 +14,8 @@ interface VariableProps {
 
 export function Variable({ symbol, description, unit }: VariableProps) {
   return (
-    <div className="flex items-center gap-4 border-b border-surface-800 py-3 last:border-b-0">
-      <span className="flex w-16 shrink-0 justify-center text-lg">
+    <div className="flex items-center gap-2 sm:gap-4 border-b border-surface-800 py-3 last:border-b-0">
+      <span className="flex w-12 shrink-0 sm:w-16 justify-center text-lg">
         <InlineMath math={symbol} />
       </span>
 
