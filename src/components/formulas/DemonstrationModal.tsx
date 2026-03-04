@@ -59,7 +59,7 @@ export function DemonstrationModal({
 
   return (
     <div
-      className="fixed inset-0 z-[100] flex items-start justify-center overflow-y-auto px-4 py-8 sm:py-16"
+      className="fixed inset-0 z-[100] flex items-center justify-center px-4 py-8 sm:py-16"
       onClick={(e) => {
         if (e.target === e.currentTarget) onClose();
       }}
@@ -74,10 +74,10 @@ export function DemonstrationModal({
         role="dialog"
         aria-modal="true"
         aria-label={`Demonstração: ${title}`}
-        className="relative z-10 w-full max-w-4xl rounded-2xl border border-surface-700 bg-surface-950 shadow-2xl animate-[scaleIn_0.2s_ease-out] sm:my-8"
+        className="relative z-10 flex max-h-[85vh] w-full max-w-4xl flex-col rounded-2xl border border-surface-700 bg-surface-950 shadow-2xl animate-[scaleIn_0.2s_ease-out]"
       >
-        {/* Header */}
-        <div className="sticky top-0 z-20 flex items-center justify-between rounded-t-2xl border-b border-surface-800 bg-surface-950/95 backdrop-blur-sm px-6 py-4">
+        {/* Header — fixed at top */}
+        <div className="flex shrink-0 items-center justify-between rounded-t-2xl border-b border-surface-800 bg-surface-950 px-6 py-4">
           <div className="flex items-center gap-3 min-w-0">
             <span className="text-xl" aria-hidden="true">{config.icon}</span>
             <h2 className="truncate text-lg font-bold text-surface-50">{title}</h2>
@@ -97,14 +97,14 @@ export function DemonstrationModal({
         </div>
 
         {/* Body — scrollable content */}
-        <div className="px-6 py-6 sm:px-8 sm:py-8">
+        <div className="flex-1 overflow-y-auto px-6 py-6 sm:px-8 sm:py-8">
           <div className="mdx-content">
             {children}
           </div>
         </div>
 
-        {/* Footer */}
-        <div className="border-t border-surface-800 px-6 py-4 text-center">
+        {/* Footer — fixed at bottom */}
+        <div className="shrink-0 border-t border-surface-800 px-6 py-4 text-center">
           <button
             onClick={onClose}
             className="rounded-lg bg-surface-800 px-6 py-2 text-sm font-medium text-surface-50 transition-colors hover:bg-surface-700"
