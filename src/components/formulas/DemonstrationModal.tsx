@@ -96,8 +96,12 @@ export function DemonstrationModal({
           </button>
         </div>
 
-        {/* Body — scrollable content */}
-        <div className="flex-1 overflow-y-auto scrollbar-hide px-6 py-6 sm:px-8 sm:py-8">
+        {/* Body — scrollable content, no scrollbar */}
+        <style>{`.demo-scroll::-webkit-scrollbar { display: none; }`}</style>
+        <div
+          className="demo-scroll flex-1 overflow-y-auto px-6 py-6 sm:px-8 sm:py-8"
+          style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
+        >
           <div className="mdx-content">
             {children}
           </div>
