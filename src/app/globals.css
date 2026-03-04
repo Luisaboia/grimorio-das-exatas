@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "katex/dist/katex.min.css";
+@import "mafs/core.css";
 
 @theme {
   /* Primary - blue/indigo for science theme */
@@ -55,6 +56,19 @@
   --foreground: oklch(0.93 0.01 250);
   --card-bg: oklch(0.22 0.015 260 / 0.6);
   --card-border: oklch(0.35 0.02 260 / 0.3);
+
+  /* Mafs dark theme overrides */
+  --mafs-bg: transparent;
+  --mafs-fg: oklch(0.86 0.06 250);
+  --mafs-line-color: oklch(0.30 0.01 260 / 0.5);
+  --mafs-red: oklch(0.65 0.20 25);
+  --mafs-orange: oklch(0.65 0.18 55);
+  --mafs-green: oklch(0.65 0.15 150);
+  --mafs-blue: oklch(0.66 0.15 250);
+  --mafs-indigo: oklch(0.55 0.20 250);
+  --mafs-violet: oklch(0.66 0.15 300);
+  --mafs-pink: oklch(0.65 0.18 350);
+  --mafs-yellow: oklch(0.80 0.15 85);
 }
 
 html, body {
