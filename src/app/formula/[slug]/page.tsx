@@ -19,9 +19,12 @@ import { Variable } from "@/components/formulas/Variable";
 import { categories } from "@/lib/categories";
 import {
   getAllFormulas,
+  getDemonstracaoBySlug,
   getFormulaBySlug,
   getFormulasBySubcategory,
 } from "@/lib/mdx";
+import { DemonstrationButton } from "@/components/formulas/DemonstrationButton";
+import { DemonstrationDisabled } from "@/components/formulas/DemonstrationDisabled";
 
 interface FormulaDetailPageProps {
   params: Promise<{ slug: string }>;
@@ -195,6 +198,9 @@ export default async function FormulaDetailPage({
 
   const { frontmatter, content } = rawFormula;
 
+  // Demonstration data (if available)
+  const demonstracao = getDemonstracaoBySlug(slug);
+
   // Category & subcategory info
   const cat = categories.find((c) => c.slug === frontmatter.category);
   const sub = cat?.subcategories.find(
@@ -283,6 +289,20 @@ export default async function FormulaDetailPage({
         math={frontmatter.formula_preview}
         label={frontmatter.title}
       />
+
+      {/* Demonstration button */}
+      <div className="mt-4">
+        {demonstracao ? (
+          <DemonstrationButton
+            title={demonstracao.frontmatter.title}
+            type={demonstracao.frontmatter.type}
+          >
+            <MDXRemote source={demonstracao.content} components={mdxComponents} />
+          </DemonstrationButton>
+        ) : (
+          <DemonstrationDisabled />
+        )}
+      </div>
 
       {/* Content + optional Table of Contents */}
       <div className="mt-8 flex gap-10">
