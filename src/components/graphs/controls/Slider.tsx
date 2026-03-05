@@ -38,7 +38,7 @@ export function Slider({
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
         className="slider-graph h-2 w-full cursor-pointer appearance-none rounded-full bg-surface-800 outline-none"
-        aria-label={`${label}: ${value}${unit ?? ""}`}
+        aria-label={`${label}: ${value.toFixed(step < 1 ? 1 : 0)}${unit ?? ""}`}
       />
     </div>
   );

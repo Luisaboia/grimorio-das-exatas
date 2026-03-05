@@ -12,7 +12,7 @@ export function GraphContainer({ children, label }: GraphContainerProps) {
       {label && (
         <p className="mb-3 text-sm font-semibold text-accent-300">{label}</p>
       )}
-      <div className="overflow-hidden rounded">
+      <div className="overflow-hidden rounded" role="img" aria-label={label ?? "Gráfico interativo"}>
         {children}
       </div>
     </div>
