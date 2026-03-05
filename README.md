@@ -1,6 +1,6 @@
 # 📐 Grimório das Exatas
 
-Catálogo web completo de fórmulas de **Matemática** e **Física** para estudo e consulta. Renderização LaTeX bonita com KaTeX, busca instantânea, design responsivo e moderno.
+Catálogo web completo de fórmulas de **Matemática** e **Física** para estudo e consulta. Renderização LaTeX bonita com KaTeX, gráficos interativos com Mafs, busca instantânea, design responsivo e moderno.
 
 ![Next.js](https://img.shields.io/badge/Next.js-16-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
@@ -11,13 +11,30 @@ Catálogo web completo de fórmulas de **Matemática** e **Física** para estudo
 
 - 📚 **62+ fórmulas** de Matemática e Física com explicações detalhadas
 - 🧮 **Renderização KaTeX** — fórmulas LaTeX bonitas e nítidas
+- 📊 **15 gráficos interativos** — visualizações com sliders e pontos arrastáveis via [Mafs](https://mafs.dev)
 - 🔍 **Busca instantânea** — Command Palette com `Ctrl+K`
 - 🌙 **Dark mode** com persistência
 - 📱 **Responsivo** — mobile, tablet e desktop
 - 🗂️ **Categorias organizadas** — navegação por sidebar e filtros
 - ⚡ **SSG** — páginas pré-renderizadas para performance máxima
-- � **Demonstrações** — deduções passo a passo e contexto histórico para cada fórmula
-- �🔗 **SEO** — sitemap, robots.txt, JSON-LD, Open Graph
+- 📖 **Demonstrações** — deduções passo a passo e contexto histórico para cada fórmula
+- 🔗 **SEO** — sitemap, robots.txt, JSON-LD, Open Graph
+- ♿ **Acessibilidade** — `role="img"` e `aria-label` nos gráficos, sliders com labels acessíveis
+
+## 📊 Gráficos Interativos
+
+15 fórmulas possuem visualizações interativas embarcadas diretamente no conteúdo MDX. O aluno pode manipular parâmetros via sliders e arrastar pontos no plano cartesiano, visualizando em tempo real como as fórmulas se comportam.
+
+| Categoria | Gráficos |
+|-----------|----------|
+| Trigonometria | Círculo unitário, Identidades fundamentais, Fórmulas de adição |
+| Cálculo | Derivada (reta tangente), Integral (Riemann), Limite |
+| Cinemática | MRU, MRUV, Queda livre |
+| Geometria Analítica | Equação da reta, Coeficiente angular, Distância entre pontos, Circunferência |
+| Álgebra | Bhaskara (parábola com raízes) |
+| Dinâmica | Segunda Lei de Newton (F = ma) |
+
+Os gráficos usam **code splitting** (`React.lazy` + `Suspense`) para não impactar o carregamento inicial das páginas.
 
 ## 📁 Estrutura do Projeto
 
@@ -32,10 +49,23 @@ src/
 │   ├── ui/                 # Button, Card, Badge, Input, Skeleton
 │   ├── layout/             # Header, Sidebar, Footer, MobileNav, Breadcrumbs
 │   ├── formulas/           # FormulaCard, FormulaGrid, MDXContent, KaTeX
+│   ├── graphs/             # Gráficos interativos (Mafs)
+│   │   ├── Graph.tsx       # Entry point MDX (lazy loading)
+│   │   ├── GraphContainer.tsx  # Wrapper com theming escuro
+│   │   ├── registry.ts    # Mapa slug → componente (15 gráficos)
+│   │   ├── controls/       # Slider, ValueDisplay
+│   │   └── formulas/       # Implementações por categoria
+│   │       ├── trigonometria/
+│   │       ├── calculo/
+│   │       ├── cinematica/
+│   │       ├── geometria-analitica/
+│   │       ├── algebra/
+│   │       └── dinamica/
 │   └── search/             # CommandPalette, SearchBar, SearchResults
 ├── content/
 │   ├── fisica/             # 33 fórmulas de Física (MDX)
-│   └── matematica/         # 29 fórmulas de Matemática (MDX)
+│   ├── matematica/         # 29 fórmulas de Matemática (MDX)
+│   └── demonstracoes/      # Deduções passo a passo (MDX)
 ├── lib/                    # mdx.ts, search.ts, supabase.ts, categories.ts
 └── types/                  # TypeScript types
 ```
@@ -50,8 +80,8 @@ src/
 
 ```bash
 # Clone o repositório
-git clone https://github.com/your-username/fisica-ifpr-app.git
-cd fisica-ifpr-app
+git clone https://github.com/Luisaboia/grimorio-das-exatas.git
+cd grimorio-das-exatas
 
 # Instale as dependências
 npm install
@@ -74,7 +104,7 @@ Acesse [http://localhost:3000](http://localhost:3000).
 | `npm run build` | Build de produção |
 | `npm run start` | Inicia servidor de produção |
 | `npm run lint` | Verifica erros de lint |
-| `npm test` | Executa testes |
+| `npm test` | Executa testes (87 testes) |
 
 ## 📝 Como Adicionar Novas Fórmulas
 
@@ -100,6 +130,7 @@ formula_preview: "F = m \\cdot a"
    - `<Variable symbol="F" description="Força" unit="N" />` — variável
    - `<Example title="Título">...</Example>` — exemplo
    - `<Note type="tip|info|warning">...</Note>` — nota/dica
+   - `<Graph type="slug-da-formula" />` — gráfico interativo (se registrado)
 
 4. Execute `npm run build` para verificar que compila corretamente
 
@@ -111,6 +142,7 @@ Veja o guia completo em [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Linguagem**: [TypeScript 5](https://www.typescriptlang.org/)
 - **Estilização**: [Tailwind CSS 4](https://tailwindcss.com/)
 - **Renderização LaTeX**: [react-katex](https://github.com/talyssonoc/react-katex) + [KaTeX](https://katex.org/)
+- **Gráficos Interativos**: [Mafs](https://mafs.dev/) (visualização matemática com SVG)
 - **Conteúdo**: [MDX](https://mdxjs.com/) via [next-mdx-remote](https://github.com/hashicorp/next-mdx-remote)
 - **Banco de Dados**: [Supabase](https://supabase.com/) (PostgreSQL) — opcional
 - **Testes**: [Jest](https://jestjs.io/) + [React Testing Library](https://testing-library.com/)
@@ -123,6 +155,8 @@ Veja o guia completo em [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Supabase é opcional** — se configurado, habilita busca full-text em português
 - Páginas pré-renderizadas como **SSG** para performance máxima
 - **Server Components** por padrão; Client Components apenas para interatividade
+- **Gráficos interativos** carregados via `React.lazy()` + `Suspense` — code splitting automático
+- **Tema escuro** com cores oklch de alto contraste para gráficos e fórmulas
 
 ## 📄 Licença
 
